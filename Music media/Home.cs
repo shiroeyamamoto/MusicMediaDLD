@@ -26,8 +26,6 @@ namespace Music_media
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-            //grh = homeMenu.CreateGraphics();
-            //grh.DrawLine(redPen, 4, 28, 4, 8);
 
         }
 
@@ -94,14 +92,13 @@ namespace Music_media
 
             if (pn.Name == "homeMenu" || pn.Name == "homeTxt" || pn.Name == "homeIco")
             {
-
                 if (menuCheck != 1)
                 {
                     grh.DrawLine(greyPen, 4, 28, 4, 8);
                     menuChecked(menuCheck);
+                    pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
                 menuCheck = 1;
-                homeMenu.BackColor = Color.FromArgb(230, 230, 230);
                 label1.Text = label1.Text + " Home ";
             }
                 
@@ -111,9 +108,10 @@ namespace Music_media
                 {
                     grh.DrawLine(greyPen, 4, 28, 4, 8);
                     menuChecked(menuCheck);
+                    pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
                 menuCheck = 2;
-                musicMenu.BackColor = Color.FromArgb(230, 230, 230);
+                
                 label1.Text = label1.Text + " Music ";
             }
             else if (pn.Name == "queueTxt" || pn.Name == "queueIco" || pn.Name == "queueMenu")
@@ -122,9 +120,9 @@ namespace Music_media
                 {
                     grh.DrawLine(greyPen, 4, 28, 4, 8);
                     menuChecked(menuCheck);
+                    pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
                 menuCheck = 3;
-                queueMenu.BackColor = Color.FromArgb(230, 230, 230);
                 label1.Text = label1.Text + " queue ";
             }
             else if (pn.Name == "playlistsMenu" || pn.Name == "playlistsTxt" || pn.Name == "playlistIco")
@@ -133,9 +131,9 @@ namespace Music_media
                 {
                     grh.DrawLine(greyPen, 4, 28, 4, 8);
                     menuChecked(menuCheck);
+                    pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
                 menuCheck = 4;
-                playlistsMenu.BackColor = Color.FromArgb(230, 230, 230);
                 label1.Text = label1.Text + " Playlists ";
             }
             else if (pn.Name == "settingMenu" || pn.Name == "settingTxt" || pn.Name == "settingIco")
@@ -144,9 +142,9 @@ namespace Music_media
                 {
                     grh.DrawLine(greyPen, 4, 28, 4, 8);
                     menuChecked(menuCheck);
+                    pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
                 menuCheck = 5;
-                settingMenu.BackColor = Color.FromArgb(230, 230, 230);
                 label1.Text = label1.Text + " Setting ";
             }
             grh.DrawLine(redPen, 4, 28, 4, 8);

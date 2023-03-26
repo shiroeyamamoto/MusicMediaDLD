@@ -17,7 +17,7 @@ namespace Music_media
     public partial class Home : Form
     {
         //Menu choice
-        int menuCheck = 1;
+        int menuCheck = 0;
         Pen redPen = new Pen(Color.FromArgb(208, 63, 10), 3);
         Pen greyPen = new Pen(Color.FromArgb(243, 243, 243), 3);
         Graphics grh;
@@ -26,8 +26,8 @@ namespace Music_media
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-            grh = homeMenu.CreateGraphics();
-            grh.DrawLine(redPen, 4, 28, 4, 8);
+            //grh = homeMenu.CreateGraphics();
+            //grh.DrawLine(redPen, 4, 28, 4, 8);
 
         }
 
@@ -84,12 +84,13 @@ namespace Music_media
         //Lựa chọn menu 
         private void homeMenu_Click(object sender, MouseEventArgs e)
         {
-            PanelRounded pn = (PanelRounded)sender;
+            Control pn = (Control)sender;
 
             //grh.Clear(Color.FromArgb(243, 243, 243));
 
-            
+            grh = pn.CreateGraphics();
 
+            label1.Text =" "+ pn.Name +" ";
 
             if (pn.Name == "homeMenu" || pn.Name == "homeTxt" || pn.Name == "homeIco")
             {
@@ -99,12 +100,9 @@ namespace Music_media
                     grh.DrawLine(greyPen, 4, 28, 4, 8);
                     menuChecked(menuCheck);
                 }
-                    
-
                 menuCheck = 1;
                 homeMenu.BackColor = Color.FromArgb(230, 230, 230);
-                //Graphics pgGra = pn.CreateGraphics();
-                //pgGra.DrawLine(redPen, 4, 28, 4, 8);
+                label1.Text = label1.Text + " Home ";
             }
                 
             else if (pn.Name == "musicMenu" || pn.Name == "musicTxt" || pn.Name == "musicIco")
@@ -116,6 +114,7 @@ namespace Music_media
                 }
                 menuCheck = 2;
                 musicMenu.BackColor = Color.FromArgb(230, 230, 230);
+                label1.Text = label1.Text + " Music ";
             }
             else if (pn.Name == "queueTxt" || pn.Name == "queueIco" || pn.Name == "queueMenu")
             {
@@ -126,6 +125,7 @@ namespace Music_media
                 }
                 menuCheck = 3;
                 queueMenu.BackColor = Color.FromArgb(230, 230, 230);
+                label1.Text = label1.Text + " queue ";
             }
             else if (pn.Name == "playlistsMenu" || pn.Name == "playlistsTxt" || pn.Name == "playlistIco")
             {
@@ -136,6 +136,7 @@ namespace Music_media
                 }
                 menuCheck = 4;
                 playlistsMenu.BackColor = Color.FromArgb(230, 230, 230);
+                label1.Text = label1.Text + " Playlists ";
             }
             else if (pn.Name == "settingMenu" || pn.Name == "settingTxt" || pn.Name == "settingIco")
             {
@@ -146,13 +147,20 @@ namespace Music_media
                 }
                 menuCheck = 5;
                 settingMenu.BackColor = Color.FromArgb(230, 230, 230);
+                label1.Text = label1.Text + " Setting ";
             }
-            grh = pn.CreateGraphics ();
             grh.DrawLine(redPen, 4, 28, 4, 8);
-            label1.Text = menuCheck.ToString();
-            
+            label1.Text = label1.Text+ menuCheck.ToString();
+
         }
 
+
+        private void homeMenuDraw_Click(object sender, EventArgs e)
+        {
+            Control pn = (Control)sender;
+            grh = pn.CreateGraphics();
+            grh.DrawLine(redPen, 4, 28, 4, 8);
+        }
         private void menuChecked(int menuCheck)
         {
             if (menuCheck == 1)
@@ -177,16 +185,93 @@ namespace Music_media
             }
         }
 
-        private void PaintLine(object sender, PaintEventArgs e)
+        private void homeMenu_MouseHover(object sender, EventArgs e)
         {
-            Pen reddPen = new Pen(Color.FromArgb(208, 63, 10), 3);
-            e.Graphics.DrawLine(reddPen, 4, 28, 4, 8);
-            //label1.Text = label1.Text + e.ToString();
+            Control pn = (Control)sender;
+            if (pn.Name == "homeMenu" || pn.Name == "homeTxt" || pn.Name == "homeIco")
+            {
+                if (menuCheck != 1)
+                {
+                    pn.BackColor = Color.FromArgb(237, 237, 237);
+                }
+            }
+
+            else if (pn.Name == "musicMenu" || pn.Name == "musicTxt" || pn.Name == "musicIco")
+            {
+                if (menuCheck != 2)
+                {
+                    pn.BackColor = Color.FromArgb(237, 237, 237);
+                }
+            }
+            else if (pn.Name == "queueTxt" || pn.Name == "queueIco" || pn.Name == "queueMenu")
+            {
+                if (menuCheck != 3)
+                {
+                    pn.BackColor = Color.FromArgb(237, 237, 237);
+                }
+            }
+            else if (pn.Name == "playlistsMenu" || pn.Name == "playlistsTxt" || pn.Name == "playlistIco")
+            {
+                if (menuCheck != 4)
+                {
+                    pn.BackColor = Color.FromArgb(237, 237, 237);
+                }
+            }
+            else if (pn.Name == "settingMenu" || pn.Name == "settingTxt" || pn.Name == "settingIco")
+            {
+                if (menuCheck != 5)
+                {
+                    pn.BackColor = Color.FromArgb(237, 237, 237);
+                }
+            }
+        }
+        private void homeMenu_MouseLeave(object sender, EventArgs e)
+        {
+            Control pn = (Control)sender;
+            if (pn.Name == "homeMenu" || pn.Name == "homeTxt" || pn.Name == "homeIco")
+            {
+                if (menuCheck != 1)
+                {
+                    pn.BackColor = Color.FromArgb(243, 243, 243);
+                }
+            }
+
+            else if (pn.Name == "musicMenu" || pn.Name == "musicTxt" || pn.Name == "musicIco")
+            {
+                if (menuCheck != 2)
+                {
+                    pn.BackColor = Color.FromArgb(243, 243, 243);
+                }
+            }
+            else if (pn.Name == "queueTxt" || pn.Name == "queueIco" || pn.Name == "queueMenu")
+            {
+                if (menuCheck != 3)
+                {
+                    pn.BackColor = Color.FromArgb(243, 243, 243);
+                }
+            }
+            else if (pn.Name == "playlistsMenu" || pn.Name == "playlistsTxt" || pn.Name == "playlistIco")
+            {
+                if (menuCheck != 4)
+                {
+                    pn.BackColor = Color.FromArgb(243, 243, 243);
+                }
+            }
+            else if (pn.Name == "settingMenu" || pn.Name == "settingTxt" || pn.Name == "settingIco")
+            {
+                if (menuCheck != 5)
+                {
+                    pn.BackColor = Color.FromArgb(243, 243, 243);
+                }
+            }
         }
 
-        private void musicMenu_Paint(object sender, PaintEventArgs e)
-        {
+        /*  private void PaintLine(object sender, PaintEventArgs e)
+          {
+              Pen reddPen = new Pen(Color.FromArgb(208, 63, 10), 3);
+              e.Graphics.DrawLine(reddPen, 4, 28, 4, 8);
+              //label1.Text = label1.Text + e.ToString();
+          }*/
 
-        }
     }
 }

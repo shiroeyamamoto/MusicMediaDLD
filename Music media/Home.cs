@@ -80,16 +80,10 @@ namespace Music_media
             //this.homeMenu.Click += new System.EventHandler(this.homeMenu_Click);
             //this.homeMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintLine);
         //Lựa chọn menu 
-        private void homeMenu_Click(object sender, MouseEventArgs e)
+        private void homeMenu_MouseDown(object sender, MouseEventArgs e)
         {
             Control pn = (Control)sender;
-
-            //grh.Clear(Color.FromArgb(243, 243, 243));
-
             grh = pn.CreateGraphics();
-
-            label1.Text =" "+ pn.Name +" ";
-
             if (pn.Name == "homeMenu" || pn.Name == "homeTxt" || pn.Name == "homeIco")
             {
                 if (menuCheck != 1)
@@ -99,7 +93,6 @@ namespace Music_media
                     pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
                 menuCheck = 1;
-                label1.Text = label1.Text + " Home ";
             }
                 
             else if (pn.Name == "musicMenu" || pn.Name == "musicTxt" || pn.Name == "musicIco")
@@ -111,8 +104,6 @@ namespace Music_media
                     pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
                 menuCheck = 2;
-                
-                label1.Text = label1.Text + " Music ";
             }
             else if (pn.Name == "queueTxt" || pn.Name == "queueIco" || pn.Name == "queueMenu")
             {
@@ -123,7 +114,6 @@ namespace Music_media
                     pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
                 menuCheck = 3;
-                label1.Text = label1.Text + " queue ";
             }
             else if (pn.Name == "playlistsMenu" || pn.Name == "playlistsTxt" || pn.Name == "playlistIco")
             {
@@ -134,7 +124,6 @@ namespace Music_media
                     pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
                 menuCheck = 4;
-                label1.Text = label1.Text + " Playlists ";
             }
             else if (pn.Name == "settingMenu" || pn.Name == "settingTxt" || pn.Name == "settingIco")
             {
@@ -145,15 +134,12 @@ namespace Music_media
                     pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
                 menuCheck = 5;
-                label1.Text = label1.Text + " Setting ";
             }
-            grh.DrawLine(redPen, 4, 28, 4, 8);
-            label1.Text = label1.Text+ menuCheck.ToString();
 
         }
 
 
-        private void homeMenuDraw_Click(object sender, EventArgs e)
+        private void homeMenu_MouseClick(object sender, MouseEventArgs e)
         {
             Control pn = (Control)sender;
             grh = pn.CreateGraphics();

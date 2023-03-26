@@ -30,17 +30,10 @@
         {
             this.menu = new System.Windows.Forms.Panel();
             this.searchText = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.play = new System.Windows.Forms.Panel();
-            this.trackArea = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.minimum = new System.Windows.Forms.Button();
-            this.fullSreen = new System.Windows.Forms.Button();
-            this.exit = new System.Windows.Forms.Button();
             this.settingMenu = new Music_media.PanelRounded();
             this.settingIco = new DevExpress.XtraEditors.PictureEdit();
             this.settingTxt = new DevExpress.XtraEditors.LabelControl();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panelRounded7 = new Music_media.PanelRounded();
             this.playlistsMenu = new Music_media.PanelRounded();
             this.playlistIco = new DevExpress.XtraEditors.PictureEdit();
@@ -54,12 +47,17 @@
             this.homeMenu = new Music_media.PanelRounded();
             this.homeIco = new DevExpress.XtraEditors.PictureEdit();
             this.homeTxt = new DevExpress.XtraEditors.LabelControl();
+            this.play = new System.Windows.Forms.Panel();
+            this.trackArea = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.minimum = new System.Windows.Forms.Button();
+            this.fullSreen = new System.Windows.Forms.Button();
+            this.exit = new System.Windows.Forms.Button();
             this.menu.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.trackArea.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.settingMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.settingIco.Properties)).BeginInit();
+            this.panel1.SuspendLayout();
             this.playlistsMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.playlistIco.Properties)).BeginInit();
             this.queueMenu.SuspendLayout();
@@ -68,6 +66,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.musicIco.Properties)).BeginInit();
             this.homeMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.homeIco.Properties)).BeginInit();
+            this.trackArea.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menu
@@ -94,6 +94,57 @@
             this.searchText.TabIndex = 11;
             this.searchText.Tag = "";
             // 
+            // settingMenu
+            // 
+            this.settingMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.settingMenu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.settingMenu.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.settingMenu.BorderRadius = 5;
+            this.settingMenu.BorderSize = 2;
+            this.settingMenu.Controls.Add(this.settingIco);
+            this.settingMenu.Controls.Add(this.settingTxt);
+            this.settingMenu.Location = new System.Drawing.Point(5, 480);
+            this.settingMenu.Margin = new System.Windows.Forms.Padding(0);
+            this.settingMenu.Name = "settingMenu";
+            this.settingMenu.Size = new System.Drawing.Size(310, 36);
+            this.settingMenu.TabIndex = 1;
+            this.settingMenu.UnderlinedStyle = false;
+            this.settingMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseClick);
+            this.settingMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseDown);
+            this.settingMenu.MouseEnter += new System.EventHandler(this.homeMenu_MouseHover);
+            this.settingMenu.MouseLeave += new System.EventHandler(this.homeMenu_MouseLeave);
+            this.settingMenu.MouseHover += new System.EventHandler(this.homeMenu_MouseHover);
+            // 
+            // settingIco
+            // 
+            this.settingIco.EditValue = global::Music_media.Properties.Resources.setting;
+            this.settingIco.Enabled = false;
+            this.settingIco.Location = new System.Drawing.Point(12, 7);
+            this.settingIco.Margin = new System.Windows.Forms.Padding(0);
+            this.settingIco.Name = "settingIco";
+            this.settingIco.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.settingIco.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.settingIco.Properties.Appearance.Options.UseBackColor = true;
+            this.settingIco.Properties.Appearance.Options.UseForeColor = true;
+            this.settingIco.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.settingIco.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.settingIco.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.settingIco.Size = new System.Drawing.Size(25, 22);
+            this.settingIco.TabIndex = 11;
+            // 
+            // settingTxt
+            // 
+            this.settingTxt.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.settingTxt.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.settingTxt.Appearance.Options.UseFont = true;
+            this.settingTxt.Appearance.Options.UseForeColor = true;
+            this.settingTxt.Enabled = false;
+            this.settingTxt.Location = new System.Drawing.Point(45, 9);
+            this.settingTxt.Name = "settingTxt";
+            this.settingTxt.Size = new System.Drawing.Size(49, 19);
+            this.settingTxt.TabIndex = 3;
+            this.settingTxt.Text = "Setting";
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.panelRounded7);
@@ -106,6 +157,225 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(319, 169);
             this.panel1.TabIndex = 0;
+            // 
+            // panelRounded7
+            // 
+            this.panelRounded7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.panelRounded7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.panelRounded7.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.panelRounded7.BorderRadius = 5;
+            this.panelRounded7.BorderSize = 2;
+            this.panelRounded7.Location = new System.Drawing.Point(0, 123);
+            this.panelRounded7.Margin = new System.Windows.Forms.Padding(0);
+            this.panelRounded7.Name = "panelRounded7";
+            this.panelRounded7.Size = new System.Drawing.Size(320, 2);
+            this.panelRounded7.TabIndex = 16;
+            this.panelRounded7.UnderlinedStyle = false;
+            // 
+            // playlistsMenu
+            // 
+            this.playlistsMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.playlistsMenu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.playlistsMenu.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.playlistsMenu.BorderRadius = 5;
+            this.playlistsMenu.BorderSize = 2;
+            this.playlistsMenu.Controls.Add(this.playlistIco);
+            this.playlistsMenu.Controls.Add(this.playlistsTxt);
+            this.playlistsMenu.Location = new System.Drawing.Point(5, 133);
+            this.playlistsMenu.Margin = new System.Windows.Forms.Padding(0);
+            this.playlistsMenu.Name = "playlistsMenu";
+            this.playlistsMenu.Size = new System.Drawing.Size(310, 36);
+            this.playlistsMenu.TabIndex = 1;
+            this.playlistsMenu.UnderlinedStyle = false;
+            this.playlistsMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseClick);
+            this.playlistsMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseDown);
+            this.playlistsMenu.MouseEnter += new System.EventHandler(this.homeMenu_MouseHover);
+            this.playlistsMenu.MouseLeave += new System.EventHandler(this.homeMenu_MouseLeave);
+            this.playlistsMenu.MouseHover += new System.EventHandler(this.homeMenu_MouseHover);
+            // 
+            // playlistIco
+            // 
+            this.playlistIco.EditValue = global::Music_media.Properties.Resources.speaker;
+            this.playlistIco.Enabled = false;
+            this.playlistIco.Location = new System.Drawing.Point(12, 7);
+            this.playlistIco.Margin = new System.Windows.Forms.Padding(0);
+            this.playlistIco.Name = "playlistIco";
+            this.playlistIco.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.playlistIco.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.playlistIco.Properties.Appearance.Options.UseBackColor = true;
+            this.playlistIco.Properties.Appearance.Options.UseForeColor = true;
+            this.playlistIco.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.playlistIco.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.playlistIco.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.playlistIco.Size = new System.Drawing.Size(25, 22);
+            this.playlistIco.TabIndex = 11;
+            // 
+            // playlistsTxt
+            // 
+            this.playlistsTxt.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.playlistsTxt.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.playlistsTxt.Appearance.Options.UseFont = true;
+            this.playlistsTxt.Appearance.Options.UseForeColor = true;
+            this.playlistsTxt.Enabled = false;
+            this.playlistsTxt.Location = new System.Drawing.Point(45, 9);
+            this.playlistsTxt.Name = "playlistsTxt";
+            this.playlistsTxt.Size = new System.Drawing.Size(56, 19);
+            this.playlistsTxt.TabIndex = 3;
+            this.playlistsTxt.Text = "Playlists";
+            // 
+            // queueMenu
+            // 
+            this.queueMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.queueMenu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.queueMenu.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.queueMenu.BorderRadius = 5;
+            this.queueMenu.BorderSize = 2;
+            this.queueMenu.Controls.Add(this.queueIco);
+            this.queueMenu.Controls.Add(this.queueTxt);
+            this.queueMenu.Location = new System.Drawing.Point(5, 78);
+            this.queueMenu.Margin = new System.Windows.Forms.Padding(0);
+            this.queueMenu.Name = "queueMenu";
+            this.queueMenu.Size = new System.Drawing.Size(310, 36);
+            this.queueMenu.TabIndex = 1;
+            this.queueMenu.UnderlinedStyle = false;
+            this.queueMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseClick);
+            this.queueMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseDown);
+            this.queueMenu.MouseEnter += new System.EventHandler(this.homeMenu_MouseHover);
+            this.queueMenu.MouseLeave += new System.EventHandler(this.homeMenu_MouseLeave);
+            this.queueMenu.MouseHover += new System.EventHandler(this.homeMenu_MouseHover);
+            // 
+            // queueIco
+            // 
+            this.queueIco.EditValue = global::Music_media.Properties.Resources.queueIco;
+            this.queueIco.Enabled = false;
+            this.queueIco.Location = new System.Drawing.Point(12, 7);
+            this.queueIco.Margin = new System.Windows.Forms.Padding(0);
+            this.queueIco.Name = "queueIco";
+            this.queueIco.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.queueIco.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.queueIco.Properties.Appearance.Options.UseBackColor = true;
+            this.queueIco.Properties.Appearance.Options.UseForeColor = true;
+            this.queueIco.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.queueIco.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.queueIco.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.queueIco.Size = new System.Drawing.Size(25, 22);
+            this.queueIco.TabIndex = 11;
+            // 
+            // queueTxt
+            // 
+            this.queueTxt.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.queueTxt.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.queueTxt.Appearance.Options.UseFont = true;
+            this.queueTxt.Appearance.Options.UseForeColor = true;
+            this.queueTxt.Enabled = false;
+            this.queueTxt.Location = new System.Drawing.Point(45, 9);
+            this.queueTxt.Name = "queueTxt";
+            this.queueTxt.Size = new System.Drawing.Size(77, 19);
+            this.queueTxt.TabIndex = 3;
+            this.queueTxt.Text = "Play queue";
+            // 
+            // musicMenu
+            // 
+            this.musicMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.musicMenu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.musicMenu.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.musicMenu.BorderRadius = 5;
+            this.musicMenu.BorderSize = 2;
+            this.musicMenu.Controls.Add(this.musicIco);
+            this.musicMenu.Controls.Add(this.musicTxt);
+            this.musicMenu.Location = new System.Drawing.Point(5, 39);
+            this.musicMenu.Margin = new System.Windows.Forms.Padding(0);
+            this.musicMenu.Name = "musicMenu";
+            this.musicMenu.Size = new System.Drawing.Size(310, 36);
+            this.musicMenu.TabIndex = 1;
+            this.musicMenu.UnderlinedStyle = false;
+            this.musicMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseClick);
+            this.musicMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseDown);
+            this.musicMenu.MouseEnter += new System.EventHandler(this.homeMenu_MouseHover);
+            this.musicMenu.MouseLeave += new System.EventHandler(this.homeMenu_MouseLeave);
+            this.musicMenu.MouseHover += new System.EventHandler(this.homeMenu_MouseHover);
+            // 
+            // musicIco
+            // 
+            this.musicIco.EditValue = global::Music_media.Properties.Resources.musicIco;
+            this.musicIco.Enabled = false;
+            this.musicIco.Location = new System.Drawing.Point(10, 7);
+            this.musicIco.Margin = new System.Windows.Forms.Padding(0);
+            this.musicIco.Name = "musicIco";
+            this.musicIco.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.musicIco.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.musicIco.Properties.Appearance.Options.UseBackColor = true;
+            this.musicIco.Properties.Appearance.Options.UseForeColor = true;
+            this.musicIco.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.musicIco.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.musicIco.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.musicIco.Size = new System.Drawing.Size(25, 22);
+            this.musicIco.TabIndex = 11;
+            // 
+            // musicTxt
+            // 
+            this.musicTxt.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.musicTxt.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.musicTxt.Appearance.Options.UseFont = true;
+            this.musicTxt.Appearance.Options.UseForeColor = true;
+            this.musicTxt.Enabled = false;
+            this.musicTxt.Location = new System.Drawing.Point(45, 9);
+            this.musicTxt.Name = "musicTxt";
+            this.musicTxt.Size = new System.Drawing.Size(89, 19);
+            this.musicTxt.TabIndex = 3;
+            this.musicTxt.Text = "Music library";
+            // 
+            // homeMenu
+            // 
+            this.homeMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.homeMenu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.homeMenu.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.homeMenu.BorderRadius = 5;
+            this.homeMenu.BorderSize = 2;
+            this.homeMenu.Controls.Add(this.homeIco);
+            this.homeMenu.Controls.Add(this.homeTxt);
+            this.homeMenu.Location = new System.Drawing.Point(5, 0);
+            this.homeMenu.Margin = new System.Windows.Forms.Padding(0);
+            this.homeMenu.Name = "homeMenu";
+            this.homeMenu.Size = new System.Drawing.Size(310, 36);
+            this.homeMenu.TabIndex = 1;
+            this.homeMenu.UnderlinedStyle = false;
+            this.homeMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseClick);
+            this.homeMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseDown);
+            this.homeMenu.MouseEnter += new System.EventHandler(this.homeMenu_MouseHover);
+            this.homeMenu.MouseLeave += new System.EventHandler(this.homeMenu_MouseLeave);
+            this.homeMenu.MouseHover += new System.EventHandler(this.homeMenu_MouseHover);
+            // 
+            // homeIco
+            // 
+            this.homeIco.EditValue = global::Music_media.Properties.Resources.home;
+            this.homeIco.Enabled = false;
+            this.homeIco.Location = new System.Drawing.Point(10, 7);
+            this.homeIco.Margin = new System.Windows.Forms.Padding(0);
+            this.homeIco.Name = "homeIco";
+            this.homeIco.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.homeIco.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.homeIco.Properties.Appearance.Options.UseBackColor = true;
+            this.homeIco.Properties.Appearance.Options.UseForeColor = true;
+            this.homeIco.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.homeIco.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.homeIco.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.homeIco.ShowToolTips = false;
+            this.homeIco.Size = new System.Drawing.Size(25, 22);
+            this.homeIco.TabIndex = 12;
+            // 
+            // homeTxt
+            // 
+            this.homeTxt.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.homeTxt.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.homeTxt.Appearance.Options.UseFont = true;
+            this.homeTxt.Appearance.Options.UseForeColor = true;
+            this.homeTxt.Enabled = false;
+            this.homeTxt.Location = new System.Drawing.Point(45, 9);
+            this.homeTxt.Name = "homeTxt";
+            this.homeTxt.Size = new System.Drawing.Size(42, 19);
+            this.homeTxt.TabIndex = 12;
+            this.homeTxt.Text = "Home";
             // 
             // play
             // 
@@ -211,271 +481,6 @@
             this.exit.MouseLeave += new System.EventHandler(this.exit_MouseLeave);
             this.exit.MouseHover += new System.EventHandler(this.exit_MouseHover);
             // 
-            // settingMenu
-            // 
-            this.settingMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.settingMenu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.settingMenu.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.settingMenu.BorderRadius = 5;
-            this.settingMenu.BorderSize = 2;
-            this.settingMenu.Controls.Add(this.settingIco);
-            this.settingMenu.Controls.Add(this.settingTxt);
-            this.settingMenu.Location = new System.Drawing.Point(5, 480);
-            this.settingMenu.Margin = new System.Windows.Forms.Padding(0);
-            this.settingMenu.Name = "settingMenu";
-            this.settingMenu.Size = new System.Drawing.Size(310, 36);
-            this.settingMenu.TabIndex = 1;
-            this.settingMenu.UnderlinedStyle = false;
-            this.settingMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homeMenu_Click);
-            this.settingMenu.MouseEnter += new System.EventHandler(this.homeMenu_MouseHover);
-            this.settingMenu.MouseLeave += new System.EventHandler(this.homeMenu_MouseLeave);
-            this.settingMenu.MouseHover += new System.EventHandler(this.homeMenu_MouseHover);
-            // 
-            // settingIco
-            // 
-            this.settingIco.EditValue = global::Music_media.Properties.Resources.setting;
-            this.settingIco.Enabled = false;
-            this.settingIco.Location = new System.Drawing.Point(12, 7);
-            this.settingIco.Margin = new System.Windows.Forms.Padding(0);
-            this.settingIco.Name = "settingIco";
-            this.settingIco.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.settingIco.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.settingIco.Properties.Appearance.Options.UseBackColor = true;
-            this.settingIco.Properties.Appearance.Options.UseForeColor = true;
-            this.settingIco.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.settingIco.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.settingIco.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.settingIco.Size = new System.Drawing.Size(25, 22);
-            this.settingIco.TabIndex = 11;
-            // 
-            // settingTxt
-            // 
-            this.settingTxt.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.settingTxt.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.settingTxt.Appearance.Options.UseFont = true;
-            this.settingTxt.Appearance.Options.UseForeColor = true;
-            this.settingTxt.Enabled = false;
-            this.settingTxt.Location = new System.Drawing.Point(45, 9);
-            this.settingTxt.Name = "settingTxt";
-            this.settingTxt.Size = new System.Drawing.Size(49, 19);
-            this.settingTxt.TabIndex = 3;
-            this.settingTxt.Text = "Setting";
-            // 
-            // panelRounded7
-            // 
-            this.panelRounded7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.panelRounded7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.panelRounded7.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.panelRounded7.BorderRadius = 5;
-            this.panelRounded7.BorderSize = 2;
-            this.panelRounded7.Location = new System.Drawing.Point(0, 123);
-            this.panelRounded7.Margin = new System.Windows.Forms.Padding(0);
-            this.panelRounded7.Name = "panelRounded7";
-            this.panelRounded7.Size = new System.Drawing.Size(320, 2);
-            this.panelRounded7.TabIndex = 16;
-            this.panelRounded7.UnderlinedStyle = false;
-            // 
-            // playlistsMenu
-            // 
-            this.playlistsMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.playlistsMenu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.playlistsMenu.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.playlistsMenu.BorderRadius = 5;
-            this.playlistsMenu.BorderSize = 2;
-            this.playlistsMenu.Controls.Add(this.playlistIco);
-            this.playlistsMenu.Controls.Add(this.playlistsTxt);
-            this.playlistsMenu.Location = new System.Drawing.Point(5, 133);
-            this.playlistsMenu.Margin = new System.Windows.Forms.Padding(0);
-            this.playlistsMenu.Name = "playlistsMenu";
-            this.playlistsMenu.Size = new System.Drawing.Size(310, 36);
-            this.playlistsMenu.TabIndex = 1;
-            this.playlistsMenu.UnderlinedStyle = false;
-            this.playlistsMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homeMenu_Click);
-            this.playlistsMenu.MouseEnter += new System.EventHandler(this.homeMenu_MouseHover);
-            this.playlistsMenu.MouseLeave += new System.EventHandler(this.homeMenu_MouseLeave);
-            this.playlistsMenu.MouseHover += new System.EventHandler(this.homeMenu_MouseHover);
-            // 
-            // playlistIco
-            // 
-            this.playlistIco.EditValue = global::Music_media.Properties.Resources.speaker;
-            this.playlistIco.Enabled = false;
-            this.playlistIco.Location = new System.Drawing.Point(12, 7);
-            this.playlistIco.Margin = new System.Windows.Forms.Padding(0);
-            this.playlistIco.Name = "playlistIco";
-            this.playlistIco.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.playlistIco.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.playlistIco.Properties.Appearance.Options.UseBackColor = true;
-            this.playlistIco.Properties.Appearance.Options.UseForeColor = true;
-            this.playlistIco.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.playlistIco.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.playlistIco.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.playlistIco.Size = new System.Drawing.Size(25, 22);
-            this.playlistIco.TabIndex = 11;
-            // 
-            // playlistsTxt
-            // 
-            this.playlistsTxt.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.playlistsTxt.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.playlistsTxt.Appearance.Options.UseFont = true;
-            this.playlistsTxt.Appearance.Options.UseForeColor = true;
-            this.playlistsTxt.Enabled = false;
-            this.playlistsTxt.Location = new System.Drawing.Point(45, 9);
-            this.playlistsTxt.Name = "playlistsTxt";
-            this.playlistsTxt.Size = new System.Drawing.Size(56, 19);
-            this.playlistsTxt.TabIndex = 3;
-            this.playlistsTxt.Text = "Playlists";
-            // 
-            // queueMenu
-            // 
-            this.queueMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.queueMenu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.queueMenu.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.queueMenu.BorderRadius = 5;
-            this.queueMenu.BorderSize = 2;
-            this.queueMenu.Controls.Add(this.queueIco);
-            this.queueMenu.Controls.Add(this.queueTxt);
-            this.queueMenu.Location = new System.Drawing.Point(5, 78);
-            this.queueMenu.Margin = new System.Windows.Forms.Padding(0);
-            this.queueMenu.Name = "queueMenu";
-            this.queueMenu.Size = new System.Drawing.Size(310, 36);
-            this.queueMenu.TabIndex = 1;
-            this.queueMenu.UnderlinedStyle = false;
-            this.queueMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homeMenu_Click);
-            this.queueMenu.MouseEnter += new System.EventHandler(this.homeMenu_MouseHover);
-            this.queueMenu.MouseLeave += new System.EventHandler(this.homeMenu_MouseLeave);
-            this.queueMenu.MouseHover += new System.EventHandler(this.homeMenu_MouseHover);
-            // 
-            // queueIco
-            // 
-            this.queueIco.EditValue = global::Music_media.Properties.Resources.queueIco;
-            this.queueIco.Enabled = false;
-            this.queueIco.Location = new System.Drawing.Point(12, 7);
-            this.queueIco.Margin = new System.Windows.Forms.Padding(0);
-            this.queueIco.Name = "queueIco";
-            this.queueIco.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.queueIco.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.queueIco.Properties.Appearance.Options.UseBackColor = true;
-            this.queueIco.Properties.Appearance.Options.UseForeColor = true;
-            this.queueIco.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.queueIco.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.queueIco.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.queueIco.Size = new System.Drawing.Size(25, 22);
-            this.queueIco.TabIndex = 11;
-            // 
-            // queueTxt
-            // 
-            this.queueTxt.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.queueTxt.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.queueTxt.Appearance.Options.UseFont = true;
-            this.queueTxt.Appearance.Options.UseForeColor = true;
-            this.queueTxt.Enabled = false;
-            this.queueTxt.Location = new System.Drawing.Point(45, 9);
-            this.queueTxt.Name = "queueTxt";
-            this.queueTxt.Size = new System.Drawing.Size(77, 19);
-            this.queueTxt.TabIndex = 3;
-            this.queueTxt.Text = "Play queue";
-            // 
-            // musicMenu
-            // 
-            this.musicMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.musicMenu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.musicMenu.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.musicMenu.BorderRadius = 5;
-            this.musicMenu.BorderSize = 2;
-            this.musicMenu.Controls.Add(this.musicIco);
-            this.musicMenu.Controls.Add(this.musicTxt);
-            this.musicMenu.Location = new System.Drawing.Point(5, 39);
-            this.musicMenu.Margin = new System.Windows.Forms.Padding(0);
-            this.musicMenu.Name = "musicMenu";
-            this.musicMenu.Size = new System.Drawing.Size(310, 36);
-            this.musicMenu.TabIndex = 1;
-            this.musicMenu.UnderlinedStyle = false;
-            this.musicMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homeMenu_Click);
-            this.musicMenu.MouseEnter += new System.EventHandler(this.homeMenu_MouseHover);
-            this.musicMenu.MouseLeave += new System.EventHandler(this.homeMenu_MouseLeave);
-            this.musicMenu.MouseHover += new System.EventHandler(this.homeMenu_MouseHover);
-            // 
-            // musicIco
-            // 
-            this.musicIco.EditValue = global::Music_media.Properties.Resources.musicIco;
-            this.musicIco.Enabled = false;
-            this.musicIco.Location = new System.Drawing.Point(10, 7);
-            this.musicIco.Margin = new System.Windows.Forms.Padding(0);
-            this.musicIco.Name = "musicIco";
-            this.musicIco.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.musicIco.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.musicIco.Properties.Appearance.Options.UseBackColor = true;
-            this.musicIco.Properties.Appearance.Options.UseForeColor = true;
-            this.musicIco.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.musicIco.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.musicIco.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.musicIco.Size = new System.Drawing.Size(25, 22);
-            this.musicIco.TabIndex = 11;
-            // 
-            // musicTxt
-            // 
-            this.musicTxt.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.musicTxt.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.musicTxt.Appearance.Options.UseFont = true;
-            this.musicTxt.Appearance.Options.UseForeColor = true;
-            this.musicTxt.Enabled = false;
-            this.musicTxt.Location = new System.Drawing.Point(45, 9);
-            this.musicTxt.Name = "musicTxt";
-            this.musicTxt.Size = new System.Drawing.Size(89, 19);
-            this.musicTxt.TabIndex = 3;
-            this.musicTxt.Text = "Music library";
-            // 
-            // homeMenu
-            // 
-            this.homeMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.homeMenu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.homeMenu.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.homeMenu.BorderRadius = 5;
-            this.homeMenu.BorderSize = 2;
-            this.homeMenu.Controls.Add(this.homeIco);
-            this.homeMenu.Controls.Add(this.homeTxt);
-            this.homeMenu.Location = new System.Drawing.Point(5, 0);
-            this.homeMenu.Margin = new System.Windows.Forms.Padding(0);
-            this.homeMenu.Name = "homeMenu";
-            this.homeMenu.Size = new System.Drawing.Size(310, 36);
-            this.homeMenu.TabIndex = 1;
-            this.homeMenu.UnderlinedStyle = false;
-            this.homeMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homeMenu_Click);
-            this.homeMenu.MouseEnter += new System.EventHandler(this.homeMenu_MouseHover);
-            this.homeMenu.MouseLeave += new System.EventHandler(this.homeMenu_MouseLeave);
-            this.homeMenu.MouseHover += new System.EventHandler(this.homeMenu_MouseHover);
-            // 
-            // homeIco
-            // 
-            this.homeIco.EditValue = global::Music_media.Properties.Resources.home;
-            this.homeIco.Enabled = false;
-            this.homeIco.Location = new System.Drawing.Point(10, 7);
-            this.homeIco.Margin = new System.Windows.Forms.Padding(0);
-            this.homeIco.Name = "homeIco";
-            this.homeIco.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.homeIco.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.homeIco.Properties.Appearance.Options.UseBackColor = true;
-            this.homeIco.Properties.Appearance.Options.UseForeColor = true;
-            this.homeIco.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.homeIco.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.homeIco.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.homeIco.ShowToolTips = false;
-            this.homeIco.Size = new System.Drawing.Size(25, 22);
-            this.homeIco.TabIndex = 12;
-            // 
-            // homeTxt
-            // 
-            this.homeTxt.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.homeTxt.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.homeTxt.Appearance.Options.UseFont = true;
-            this.homeTxt.Appearance.Options.UseForeColor = true;
-            this.homeTxt.Enabled = false;
-            this.homeTxt.Location = new System.Drawing.Point(45, 9);
-            this.homeTxt.Name = "homeTxt";
-            this.homeTxt.Size = new System.Drawing.Size(42, 19);
-            this.homeTxt.TabIndex = 12;
-            this.homeTxt.Text = "Home";
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -494,13 +499,10 @@
             this.Text = "Home";
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.trackArea.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.settingMenu.ResumeLayout(false);
             this.settingMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.settingIco.Properties)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.playlistsMenu.ResumeLayout(false);
             this.playlistsMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.playlistIco.Properties)).EndInit();
@@ -513,6 +515,9 @@
             this.homeMenu.ResumeLayout(false);
             this.homeMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.homeIco.Properties)).EndInit();
+            this.trackArea.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

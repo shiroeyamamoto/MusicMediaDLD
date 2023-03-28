@@ -156,6 +156,47 @@
   <ItemGroup>
     <None Include="Resources\setting.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DLDIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\random.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\un random.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nextbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unrepeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full-screen.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

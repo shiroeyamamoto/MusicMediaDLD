@@ -8,9 +8,9 @@ namespace Music_media.Menu_Choice
     class MenuChoice
     {
 
-        private static void menuChecked(Control ctr)
+        public static void backcolor(Control ctr, Color color)
         {
-                ctr.BackColor = Color.FromArgb(243, 243, 243);
+            ctr.BackColor = color;
         }
         public static void DrawLineRed(object sender)
         {
@@ -19,7 +19,7 @@ namespace Music_media.Menu_Choice
             Pen redPen = new Pen(Color.FromArgb(208, 63, 10), 3);
             grh.DrawLine(redPen, 4, 28, 4, 8);
         }
-        public static void menu(object sender, MouseEventArgs e, ref Control  choiced)
+        public static void menu(object sender, MouseEventArgs e, ref Control choiced)
         {
             Graphics grh;
             Pen greyPen = new Pen(Color.FromArgb(243, 243, 243), 3);
@@ -27,14 +27,12 @@ namespace Music_media.Menu_Choice
             grh = pn.CreateGraphics();
             if (pn.Name == "homeMenu" || pn.Name == "homeTxt" || pn.Name == "homeIco")
             {
-                if (choiced.Name!="homeMenu")
+                if (choiced.Name != "homeMenu")
                 {
                     grh.DrawLine(greyPen, 4, 28, 4, 8);
-                    //menuChecked(menuCheck);
-                    menuChecked(choiced);
+                    backcolor(choiced, Color.FromArgb(243, 243, 243));
                     pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
-                //menuCheck = 1;
             }
 
             else if (pn.Name == "musicMenu" || pn.Name == "musicTxt" || pn.Name == "musicIco")
@@ -42,44 +40,36 @@ namespace Music_media.Menu_Choice
                 if (choiced.Name != "musicMenu")
                 {
                     grh.DrawLine(greyPen, 4, 28, 4, 8);
-                    //menuChecked(menuCheck);
-                    menuChecked(choiced);
+                    backcolor(choiced, Color.FromArgb(243, 243, 243));
                     pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
-                //menuCheck = 2;
             }
             else if (pn.Name == "queueTxt" || pn.Name == "queueIco" || pn.Name == "queueMenu")
             {
                 if (choiced.Name != "queueMenu")
                 {
                     grh.DrawLine(greyPen, 4, 28, 4, 8);
-                    //menuChecked(menuCheck);
-                    menuChecked(choiced);
+                    backcolor(choiced, Color.FromArgb(243, 243, 243));
                     pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
-                //menuCheck = 3;
             }
             else if (pn.Name == "playlistsMenu" || pn.Name == "playlistsTxt" || pn.Name == "playlistIco")
             {
                 if (choiced.Name != "playlistsMenu")
                 {
                     grh.DrawLine(greyPen, 4, 28, 4, 8);
-                    //menuChecked(menuCheck);
-                    menuChecked(choiced);
+                    backcolor(choiced, Color.FromArgb(243, 243, 243));
                     pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
-                //menuCheck = 4;
             }
             else if (pn.Name == "settingMenu" || pn.Name == "settingTxt" || pn.Name == "settingIco")
             {
                 if (choiced.Name != "settingMenu")
                 {
                     grh.DrawLine(greyPen, 4, 28, 4, 8);
-                    //menuChecked(menuCheck);
-                    menuChecked(choiced);
+                    backcolor(choiced, Color.FromArgb(243, 243, 243));
                     pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
-                //menuCheck = 5;
             }
             choiced = pn;
         }
@@ -123,6 +113,6 @@ namespace Music_media.Menu_Choice
                 }
             }
         }
-        
+
     }
 }

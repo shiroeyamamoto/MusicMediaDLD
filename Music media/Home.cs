@@ -77,7 +77,7 @@ namespace Music_media
             int nWidthEllipse, // height of ellipse
             int nHeightEllipse // width of ellipse
         );
-        
+
         //Lựa chọn menu 
 
         private void menuChoice(object sender, MouseEventArgs e)
@@ -90,16 +90,31 @@ namespace Music_media
         }
         private void menuHover(object sender, EventArgs e)
         {
-            MenuChoice.menuEvent(sender, e, ref choiced, Color.FromArgb(237,237,237));
+            MenuChoice.menuEvent(sender, e, ref choiced, Color.FromArgb(237, 237, 237));
         }
         private void menuLeave(object sender, EventArgs e)
         {
-            MenuChoice.menuEvent(sender, e, ref choiced, Color.FromArgb(243,243,243));
+            MenuChoice.menuEvent(sender, e, ref choiced, Color.FromArgb(243, 243, 243));
         }
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            
+
         }
+
+        //setup button
+        private void litteButtonHover(object sender, EventArgs e)
+        {
+            Control ctr = (Control)sender;
+            MenuChoice.backcolor(ctr, Color.FromArgb(234, 234, 234));
+        }
+        private void litteButtonLeave(object sender, EventArgs e)
+        {
+            Control ctr = (Control)sender;
+            if(ctr.Name=="backBt") MenuChoice.backcolor(ctr, Color.FromArgb(243, 243, 243));
+
+        }
+
+
         private void searchText_Enter(object sender, EventArgs e)
         {
             customTextbox ctr = (customTextbox)sender;
@@ -108,12 +123,9 @@ namespace Music_media
             ctr.Refresh();
         }
 
-        /*  private void PaintLine(object sender, PaintEventArgs e)
-          {
-              Pen reddPen = new Pen(Color.FromArgb(208, 63, 10), 3);
-              e.Graphics.DrawLine(reddPen, 4, 28, 4, 8);
-              //label1.Text = label1.Text + e.ToString();
-          }*/
+        private void redLine(object sender, MouseEventArgs e)
+        {
 
+        }
     }
 }

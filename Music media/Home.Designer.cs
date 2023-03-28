@@ -29,11 +29,18 @@
         private void InitializeComponent()
         {
             this.menu = new System.Windows.Forms.Panel();
-            this.searchText = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.play = new System.Windows.Forms.Panel();
+            this.trackArea = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.minimum = new System.Windows.Forms.Button();
+            this.fullSreen = new System.Windows.Forms.Button();
+            this.exit = new System.Windows.Forms.Button();
+            this.searchText = new Music_media.customControl.customTextbox();
             this.settingMenu = new Music_media.PanelRounded();
             this.settingIco = new DevExpress.XtraEditors.PictureEdit();
             this.settingTxt = new DevExpress.XtraEditors.LabelControl();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panelRounded7 = new Music_media.PanelRounded();
             this.playlistsMenu = new Music_media.PanelRounded();
             this.playlistIco = new DevExpress.XtraEditors.PictureEdit();
@@ -47,17 +54,12 @@
             this.homeMenu = new Music_media.PanelRounded();
             this.homeIco = new DevExpress.XtraEditors.PictureEdit();
             this.homeTxt = new DevExpress.XtraEditors.LabelControl();
-            this.play = new System.Windows.Forms.Panel();
-            this.trackArea = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.minimum = new System.Windows.Forms.Button();
-            this.fullSreen = new System.Windows.Forms.Button();
-            this.exit = new System.Windows.Forms.Button();
             this.menu.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.trackArea.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.settingMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.settingIco.Properties)).BeginInit();
-            this.panel1.SuspendLayout();
             this.playlistsMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.playlistIco.Properties)).BeginInit();
             this.queueMenu.SuspendLayout();
@@ -66,8 +68,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.musicIco.Properties)).BeginInit();
             this.homeMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.homeIco.Properties)).BeginInit();
-            this.trackArea.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menu
@@ -84,15 +84,137 @@
             this.menu.Size = new System.Drawing.Size(321, 522);
             this.menu.TabIndex = 0;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panelRounded7);
+            this.panel1.Controls.Add(this.playlistsMenu);
+            this.panel1.Controls.Add(this.queueMenu);
+            this.panel1.Controls.Add(this.musicMenu);
+            this.panel1.Controls.Add(this.homeMenu);
+            this.panel1.Location = new System.Drawing.Point(0, 95);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(319, 169);
+            this.panel1.TabIndex = 0;
+            // 
+            // play
+            // 
+            this.play.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.play.AutoScroll = true;
+            this.play.AutoSize = true;
+            this.play.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.play.Location = new System.Drawing.Point(0, 522);
+            this.play.Margin = new System.Windows.Forms.Padding(0);
+            this.play.Name = "play";
+            this.play.Size = new System.Drawing.Size(1119, 121);
+            this.play.TabIndex = 2;
+            // 
+            // trackArea
+            // 
+            this.trackArea.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.trackArea.AutoScroll = true;
+            this.trackArea.AutoSize = true;
+            this.trackArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.trackArea.Controls.Add(this.panel2);
+            this.trackArea.Controls.Add(this.minimum);
+            this.trackArea.Controls.Add(this.fullSreen);
+            this.trackArea.Controls.Add(this.exit);
+            this.trackArea.Location = new System.Drawing.Point(319, 0);
+            this.trackArea.Margin = new System.Windows.Forms.Padding(0);
+            this.trackArea.Name = "trackArea";
+            this.trackArea.Size = new System.Drawing.Size(800, 522);
+            this.trackArea.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(63, 52);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(516, 291);
+            this.panel2.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 55);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "label1";
+            // 
+            // minimum
+            // 
+            this.minimum.FlatAppearance.BorderSize = 0;
+            this.minimum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.minimum.ForeColor = System.Drawing.Color.Black;
+            this.minimum.Location = new System.Drawing.Point(668, 1);
+            this.minimum.Margin = new System.Windows.Forms.Padding(0);
+            this.minimum.MaximumSize = new System.Drawing.Size(44, 30);
+            this.minimum.MinimumSize = new System.Drawing.Size(44, 30);
+            this.minimum.Name = "minimum";
+            this.minimum.Size = new System.Drawing.Size(44, 30);
+            this.minimum.TabIndex = 10;
+            this.minimum.TabStop = false;
+            this.minimum.Text = "-";
+            this.minimum.UseVisualStyleBackColor = true;
+            this.minimum.Click += new System.EventHandler(this.minimum_Click);
+            this.minimum.MouseEnter += new System.EventHandler(this.minimum_MouseHover);
+            this.minimum.MouseLeave += new System.EventHandler(this.exit_MouseLeave);
+            this.minimum.MouseHover += new System.EventHandler(this.minimum_MouseHover);
+            // 
+            // fullSreen
+            // 
+            this.fullSreen.FlatAppearance.BorderSize = 0;
+            this.fullSreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fullSreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.fullSreen.ForeColor = System.Drawing.Color.Black;
+            this.fullSreen.Location = new System.Drawing.Point(712, 0);
+            this.fullSreen.Margin = new System.Windows.Forms.Padding(0);
+            this.fullSreen.MaximumSize = new System.Drawing.Size(44, 30);
+            this.fullSreen.MinimumSize = new System.Drawing.Size(44, 30);
+            this.fullSreen.Name = "fullSreen";
+            this.fullSreen.Size = new System.Drawing.Size(44, 30);
+            this.fullSreen.TabIndex = 9;
+            this.fullSreen.TabStop = false;
+            this.fullSreen.Text = "\t▢";
+            this.fullSreen.UseVisualStyleBackColor = true;
+            this.fullSreen.MouseEnter += new System.EventHandler(this.fullSreen_MouseEnter);
+            this.fullSreen.MouseLeave += new System.EventHandler(this.exit_MouseLeave);
+            this.fullSreen.MouseHover += new System.EventHandler(this.fullSreen_MouseEnter);
+            // 
+            // exit
+            // 
+            this.exit.FlatAppearance.BorderSize = 0;
+            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.exit.ForeColor = System.Drawing.Color.Black;
+            this.exit.Location = new System.Drawing.Point(756, 0);
+            this.exit.Margin = new System.Windows.Forms.Padding(0);
+            this.exit.MaximumSize = new System.Drawing.Size(44, 30);
+            this.exit.MinimumSize = new System.Drawing.Size(44, 30);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(44, 30);
+            this.exit.TabIndex = 7;
+            this.exit.TabStop = false;
+            this.exit.Text = "X";
+            this.exit.UseVisualStyleBackColor = true;
+            this.exit.Click += new System.EventHandler(this.Exit_Click);
+            this.exit.MouseEnter += new System.EventHandler(this.exit_MouseHover);
+            this.exit.MouseLeave += new System.EventHandler(this.exit_MouseLeave);
+            this.exit.MouseHover += new System.EventHandler(this.exit_MouseHover);
+            // 
             // searchText
             // 
+            this.searchText.BorderColor = System.Drawing.Color.Red;
             this.searchText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.searchText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
             this.searchText.Location = new System.Drawing.Point(17, 52);
             this.searchText.Name = "searchText";
             this.searchText.Size = new System.Drawing.Size(285, 26);
-            this.searchText.TabIndex = 11;
-            this.searchText.Tag = "";
+            this.searchText.TabIndex = 13;
+            this.searchText.TabStop = false;
+            this.searchText.Enter += new System.EventHandler(this.searchText_Enter);
             // 
             // settingMenu
             // 
@@ -109,11 +231,11 @@
             this.settingMenu.Size = new System.Drawing.Size(310, 36);
             this.settingMenu.TabIndex = 1;
             this.settingMenu.UnderlinedStyle = false;
-            this.settingMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseClick);
-            this.settingMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseDown);
-            this.settingMenu.MouseEnter += new System.EventHandler(this.homeMenu_MouseHover);
-            this.settingMenu.MouseLeave += new System.EventHandler(this.homeMenu_MouseLeave);
-            this.settingMenu.MouseHover += new System.EventHandler(this.homeMenu_MouseHover);
+            this.settingMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.redLine);
+            this.settingMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuChoice);
+            this.settingMenu.MouseEnter += new System.EventHandler(this.menuHover);
+            this.settingMenu.MouseLeave += new System.EventHandler(this.menuLeave);
+            this.settingMenu.MouseHover += new System.EventHandler(this.menuHover);
             // 
             // settingIco
             // 
@@ -145,19 +267,6 @@
             this.settingTxt.TabIndex = 3;
             this.settingTxt.Text = "Setting";
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.panelRounded7);
-            this.panel1.Controls.Add(this.playlistsMenu);
-            this.panel1.Controls.Add(this.queueMenu);
-            this.panel1.Controls.Add(this.musicMenu);
-            this.panel1.Controls.Add(this.homeMenu);
-            this.panel1.Location = new System.Drawing.Point(0, 95);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(319, 169);
-            this.panel1.TabIndex = 0;
-            // 
             // panelRounded7
             // 
             this.panelRounded7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
@@ -187,11 +296,11 @@
             this.playlistsMenu.Size = new System.Drawing.Size(310, 36);
             this.playlistsMenu.TabIndex = 1;
             this.playlistsMenu.UnderlinedStyle = false;
-            this.playlistsMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseClick);
-            this.playlistsMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseDown);
-            this.playlistsMenu.MouseEnter += new System.EventHandler(this.homeMenu_MouseHover);
-            this.playlistsMenu.MouseLeave += new System.EventHandler(this.homeMenu_MouseLeave);
-            this.playlistsMenu.MouseHover += new System.EventHandler(this.homeMenu_MouseHover);
+            this.playlistsMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.redLine);
+            this.playlistsMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuChoice);
+            this.playlistsMenu.MouseEnter += new System.EventHandler(this.menuHover);
+            this.playlistsMenu.MouseLeave += new System.EventHandler(this.menuLeave);
+            this.playlistsMenu.MouseHover += new System.EventHandler(this.menuHover);
             // 
             // playlistIco
             // 
@@ -238,11 +347,11 @@
             this.queueMenu.Size = new System.Drawing.Size(310, 36);
             this.queueMenu.TabIndex = 1;
             this.queueMenu.UnderlinedStyle = false;
-            this.queueMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseClick);
-            this.queueMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseDown);
-            this.queueMenu.MouseEnter += new System.EventHandler(this.homeMenu_MouseHover);
-            this.queueMenu.MouseLeave += new System.EventHandler(this.homeMenu_MouseLeave);
-            this.queueMenu.MouseHover += new System.EventHandler(this.homeMenu_MouseHover);
+            this.queueMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.redLine);
+            this.queueMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuChoice);
+            this.queueMenu.MouseEnter += new System.EventHandler(this.menuHover);
+            this.queueMenu.MouseLeave += new System.EventHandler(this.menuLeave);
+            this.queueMenu.MouseHover += new System.EventHandler(this.menuHover);
             // 
             // queueIco
             // 
@@ -289,11 +398,11 @@
             this.musicMenu.Size = new System.Drawing.Size(310, 36);
             this.musicMenu.TabIndex = 1;
             this.musicMenu.UnderlinedStyle = false;
-            this.musicMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseClick);
-            this.musicMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseDown);
-            this.musicMenu.MouseEnter += new System.EventHandler(this.homeMenu_MouseHover);
-            this.musicMenu.MouseLeave += new System.EventHandler(this.homeMenu_MouseLeave);
-            this.musicMenu.MouseHover += new System.EventHandler(this.homeMenu_MouseHover);
+            this.musicMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.redLine);
+            this.musicMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuChoice);
+            this.musicMenu.MouseEnter += new System.EventHandler(this.menuHover);
+            this.musicMenu.MouseLeave += new System.EventHandler(this.menuLeave);
+            this.musicMenu.MouseHover += new System.EventHandler(this.menuHover);
             // 
             // musicIco
             // 
@@ -340,11 +449,12 @@
             this.homeMenu.Size = new System.Drawing.Size(310, 36);
             this.homeMenu.TabIndex = 1;
             this.homeMenu.UnderlinedStyle = false;
-            this.homeMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseClick);
-            this.homeMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.homeMenu_MouseDown);
-            this.homeMenu.MouseEnter += new System.EventHandler(this.homeMenu_MouseHover);
-            this.homeMenu.MouseLeave += new System.EventHandler(this.homeMenu_MouseLeave);
-            this.homeMenu.MouseHover += new System.EventHandler(this.homeMenu_MouseHover);
+            this.homeMenu.Enter += new System.EventHandler(this.searchText_Enter);
+            this.homeMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.redLine);
+            this.homeMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuChoice);
+            this.homeMenu.MouseEnter += new System.EventHandler(this.menuHover);
+            this.homeMenu.MouseLeave += new System.EventHandler(this.menuLeave);
+            this.homeMenu.MouseHover += new System.EventHandler(this.menuHover);
             // 
             // homeIco
             // 
@@ -377,110 +487,6 @@
             this.homeTxt.TabIndex = 12;
             this.homeTxt.Text = "Home";
             // 
-            // play
-            // 
-            this.play.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.play.AutoScroll = true;
-            this.play.AutoSize = true;
-            this.play.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.play.Location = new System.Drawing.Point(0, 522);
-            this.play.Margin = new System.Windows.Forms.Padding(0);
-            this.play.Name = "play";
-            this.play.Size = new System.Drawing.Size(1119, 121);
-            this.play.TabIndex = 2;
-            // 
-            // trackArea
-            // 
-            this.trackArea.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackArea.AutoScroll = true;
-            this.trackArea.AutoSize = true;
-            this.trackArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.trackArea.Controls.Add(this.panel2);
-            this.trackArea.Controls.Add(this.minimum);
-            this.trackArea.Controls.Add(this.fullSreen);
-            this.trackArea.Controls.Add(this.exit);
-            this.trackArea.Location = new System.Drawing.Point(319, 0);
-            this.trackArea.Margin = new System.Windows.Forms.Padding(0);
-            this.trackArea.Name = "trackArea";
-            this.trackArea.Size = new System.Drawing.Size(800, 522);
-            this.trackArea.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(5, 63);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(782, 436);
-            this.panel2.TabIndex = 11;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "label1";
-            // 
-            // minimum
-            // 
-            this.minimum.FlatAppearance.BorderSize = 0;
-            this.minimum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.minimum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.minimum.ForeColor = System.Drawing.Color.Black;
-            this.minimum.Location = new System.Drawing.Point(668, 1);
-            this.minimum.Margin = new System.Windows.Forms.Padding(0);
-            this.minimum.MaximumSize = new System.Drawing.Size(44, 30);
-            this.minimum.MinimumSize = new System.Drawing.Size(44, 30);
-            this.minimum.Name = "minimum";
-            this.minimum.Size = new System.Drawing.Size(44, 30);
-            this.minimum.TabIndex = 10;
-            this.minimum.Text = "-";
-            this.minimum.UseVisualStyleBackColor = true;
-            this.minimum.Click += new System.EventHandler(this.minimum_Click);
-            this.minimum.MouseEnter += new System.EventHandler(this.minimum_MouseHover);
-            this.minimum.MouseLeave += new System.EventHandler(this.exit_MouseLeave);
-            this.minimum.MouseHover += new System.EventHandler(this.minimum_MouseHover);
-            // 
-            // fullSreen
-            // 
-            this.fullSreen.FlatAppearance.BorderSize = 0;
-            this.fullSreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fullSreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.fullSreen.ForeColor = System.Drawing.Color.Black;
-            this.fullSreen.Location = new System.Drawing.Point(712, 0);
-            this.fullSreen.Margin = new System.Windows.Forms.Padding(0);
-            this.fullSreen.MaximumSize = new System.Drawing.Size(44, 30);
-            this.fullSreen.MinimumSize = new System.Drawing.Size(44, 30);
-            this.fullSreen.Name = "fullSreen";
-            this.fullSreen.Size = new System.Drawing.Size(44, 30);
-            this.fullSreen.TabIndex = 9;
-            this.fullSreen.Text = "\t▢";
-            this.fullSreen.UseVisualStyleBackColor = true;
-            this.fullSreen.MouseEnter += new System.EventHandler(this.fullSreen_MouseEnter);
-            this.fullSreen.MouseLeave += new System.EventHandler(this.exit_MouseLeave);
-            this.fullSreen.MouseHover += new System.EventHandler(this.fullSreen_MouseEnter);
-            // 
-            // exit
-            // 
-            this.exit.FlatAppearance.BorderSize = 0;
-            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.exit.ForeColor = System.Drawing.Color.Black;
-            this.exit.Location = new System.Drawing.Point(756, 0);
-            this.exit.Margin = new System.Windows.Forms.Padding(0);
-            this.exit.MaximumSize = new System.Drawing.Size(44, 30);
-            this.exit.MinimumSize = new System.Drawing.Size(44, 30);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(44, 30);
-            this.exit.TabIndex = 7;
-            this.exit.Text = "X";
-            this.exit.UseVisualStyleBackColor = true;
-            this.exit.Click += new System.EventHandler(this.Exit_Click);
-            this.exit.MouseEnter += new System.EventHandler(this.exit_MouseHover);
-            this.exit.MouseLeave += new System.EventHandler(this.exit_MouseLeave);
-            this.exit.MouseHover += new System.EventHandler(this.exit_MouseHover);
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -499,10 +505,13 @@
             this.Text = "Home";
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.trackArea.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.settingMenu.ResumeLayout(false);
             this.settingMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.settingIco.Properties)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.playlistsMenu.ResumeLayout(false);
             this.playlistsMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.playlistIco.Properties)).EndInit();
@@ -515,9 +524,6 @@
             this.homeMenu.ResumeLayout(false);
             this.homeMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.homeIco.Properties)).EndInit();
-            this.trackArea.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -544,11 +550,11 @@
         private PanelRounded settingMenu;
         private DevExpress.XtraEditors.PictureEdit settingIco;
         private DevExpress.XtraEditors.LabelControl settingTxt;
-        private System.Windows.Forms.TextBox searchText;
         private PanelRounded homeMenu;
         private DevExpress.XtraEditors.PictureEdit homeIco;
         private DevExpress.XtraEditors.LabelControl homeTxt;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
+        private customControl.customTextbox searchText;
     }
 }

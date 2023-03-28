@@ -12,15 +12,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Reflection.Emit;
+using Music_media.customControl;
+using Music_media.Menu_Choice;
+using DevExpress.XtraBars.Controls;
+using DevExpress.Xpo.DB;
+
 namespace Music_media
 {
     public partial class Home : Form
     {
         //Menu choice
-        int menuCheck = 0;
-        Pen redPen = new Pen(Color.FromArgb(208, 63, 10), 3);
-        Pen greyPen = new Pen(Color.FromArgb(243, 243, 243), 3);
-        Graphics grh;
+        Control choiced = new Control(); //Save before of choice 
 
         public Home()
         {
@@ -75,179 +77,35 @@ namespace Music_media
             int nWidthEllipse, // height of ellipse
             int nHeightEllipse // width of ellipse
         );
-
         
-            //this.homeMenu.Click += new System.EventHandler(this.homeMenu_Click);
-            //this.homeMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintLine);
         //Lựa chọn menu 
-        private void homeMenu_MouseDown(object sender, MouseEventArgs e)
-        {
-            Control pn = (Control)sender;
-            grh = pn.CreateGraphics();
-            if (pn.Name == "homeMenu" || pn.Name == "homeTxt" || pn.Name == "homeIco")
-            {
-                if (menuCheck != 1)
-                {
-                    grh.DrawLine(greyPen, 4, 28, 4, 8);
-                    menuChecked(menuCheck);
-                    pn.BackColor = Color.FromArgb(230, 230, 230);
-                }
-                menuCheck = 1;
-            }
-                
-            else if (pn.Name == "musicMenu" || pn.Name == "musicTxt" || pn.Name == "musicIco")
-            {
-                if (menuCheck != 2)
-                {
-                    grh.DrawLine(greyPen, 4, 28, 4, 8);
-                    menuChecked(menuCheck);
-                    pn.BackColor = Color.FromArgb(230, 230, 230);
-                }
-                menuCheck = 2;
-            }
-            else if (pn.Name == "queueTxt" || pn.Name == "queueIco" || pn.Name == "queueMenu")
-            {
-                if (menuCheck != 3)
-                {
-                    grh.DrawLine(greyPen, 4, 28, 4, 8);
-                    menuChecked(menuCheck);
-                    pn.BackColor = Color.FromArgb(230, 230, 230);
-                }
-                menuCheck = 3;
-            }
-            else if (pn.Name == "playlistsMenu" || pn.Name == "playlistsTxt" || pn.Name == "playlistIco")
-            {
-                if (menuCheck != 4)
-                {
-                    grh.DrawLine(greyPen, 4, 28, 4, 8);
-                    menuChecked(menuCheck);
-                    pn.BackColor = Color.FromArgb(230, 230, 230);
-                }
-                menuCheck = 4;
-            }
-            else if (pn.Name == "settingMenu" || pn.Name == "settingTxt" || pn.Name == "settingIco")
-            {
-                if (menuCheck != 5)
-                {
-                    grh.DrawLine(greyPen, 4, 28, 4, 8);
-                    menuChecked(menuCheck);
-                    pn.BackColor = Color.FromArgb(230, 230, 230);
-                }
-                menuCheck = 5;
-            }
 
+        private void menuChoice(object sender, MouseEventArgs e)
+        {
+            MenuChoice.menu(sender, e, ref choiced);
         }
-
-
-        private void homeMenu_MouseClick(object sender, MouseEventArgs e)
+        private void redLine(object sender, EventArgs e)
         {
-            Control pn = (Control)sender;
-            grh = pn.CreateGraphics();
-            grh.DrawLine(redPen, 4, 28, 4, 8);
+            MenuChoice.DrawLineRed(sender);
         }
-        private void menuChecked(int menuCheck)
+        private void menuHover(object sender, EventArgs e)
         {
-            if (menuCheck == 1)
-            {
-                homeMenu.BackColor = Color.FromArgb(243, 243, 243);
-            }
-            else if (menuCheck == 2)
-            {
-                musicMenu.BackColor = Color.FromArgb(243, 243, 243);
-            }
-            else if (menuCheck == 3)
-            {
-                queueMenu.BackColor = Color.FromArgb(243, 243, 243);
-            }
-            else if (menuCheck == 4)
-            {
-                playlistsMenu.BackColor = Color.FromArgb(243, 243, 243);
-            }
-            else if (menuCheck == 5)
-            {
-                settingMenu.BackColor = Color.FromArgb(243, 243, 243);
-            }
+            MenuChoice.menuEvent(sender, e, ref choiced, Color.FromArgb(237,237,237));
         }
-
-        private void homeMenu_MouseHover(object sender, EventArgs e)
+        private void menuLeave(object sender, EventArgs e)
         {
-            Control pn = (Control)sender;
-            if (pn.Name == "homeMenu" || pn.Name == "homeTxt" || pn.Name == "homeIco")
-            {
-                if (menuCheck != 1)
-                {
-                    pn.BackColor = Color.FromArgb(237, 237, 237);
-                }
-            }
-
-            else if (pn.Name == "musicMenu" || pn.Name == "musicTxt" || pn.Name == "musicIco")
-            {
-                if (menuCheck != 2)
-                {
-                    pn.BackColor = Color.FromArgb(237, 237, 237);
-                }
-            }
-            else if (pn.Name == "queueTxt" || pn.Name == "queueIco" || pn.Name == "queueMenu")
-            {
-                if (menuCheck != 3)
-                {
-                    pn.BackColor = Color.FromArgb(237, 237, 237);
-                }
-            }
-            else if (pn.Name == "playlistsMenu" || pn.Name == "playlistsTxt" || pn.Name == "playlistIco")
-            {
-                if (menuCheck != 4)
-                {
-                    pn.BackColor = Color.FromArgb(237, 237, 237);
-                }
-            }
-            else if (pn.Name == "settingMenu" || pn.Name == "settingTxt" || pn.Name == "settingIco")
-            {
-                if (menuCheck != 5)
-                {
-                    pn.BackColor = Color.FromArgb(237, 237, 237);
-                }
-            }
+            MenuChoice.menuEvent(sender, e, ref choiced, Color.FromArgb(243,243,243));
         }
-        private void homeMenu_MouseLeave(object sender, EventArgs e)
+        private void simpleButton1_Click(object sender, EventArgs e)
         {
-            Control pn = (Control)sender;
-            if (pn.Name == "homeMenu" || pn.Name == "homeTxt" || pn.Name == "homeIco")
-            {
-                if (menuCheck != 1)
-                {
-                    pn.BackColor = Color.FromArgb(243, 243, 243);
-                }
-            }
-
-            else if (pn.Name == "musicMenu" || pn.Name == "musicTxt" || pn.Name == "musicIco")
-            {
-                if (menuCheck != 2)
-                {
-                    pn.BackColor = Color.FromArgb(243, 243, 243);
-                }
-            }
-            else if (pn.Name == "queueTxt" || pn.Name == "queueIco" || pn.Name == "queueMenu")
-            {
-                if (menuCheck != 3)
-                {
-                    pn.BackColor = Color.FromArgb(243, 243, 243);
-                }
-            }
-            else if (pn.Name == "playlistsMenu" || pn.Name == "playlistsTxt" || pn.Name == "playlistIco")
-            {
-                if (menuCheck != 4)
-                {
-                    pn.BackColor = Color.FromArgb(243, 243, 243);
-                }
-            }
-            else if (pn.Name == "settingMenu" || pn.Name == "settingTxt" || pn.Name == "settingIco")
-            {
-                if (menuCheck != 5)
-                {
-                    pn.BackColor = Color.FromArgb(243, 243, 243);
-                }
-            }
+            
+        }
+        private void searchText_Enter(object sender, EventArgs e)
+        {
+            customTextbox ctr = (customTextbox)sender;
+            ctr.BorderColor = Color.Red;
+            ctr.Invalidate();
+            ctr.Refresh();
         }
 
         /*  private void PaintLine(object sender, PaintEventArgs e)

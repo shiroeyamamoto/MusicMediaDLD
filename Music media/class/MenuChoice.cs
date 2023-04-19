@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Drawing;
-using System.ComponentModel;
+using Music_media;
+using DevExpress.XtraTab;
+using System.Collections.Generic;
 
 namespace Music_media.Menu_Choice
 {
@@ -12,14 +14,18 @@ namespace Music_media.Menu_Choice
         {
             ctr.BackColor = color;
         }
-        public static void DrawLineRed(object sender)
+        public List<XtraTabPage> listPage(List<XtraTabPage> listPage)
+        {
+            return listPage;
+        }
+        public static void DrawLineRed(object sender, MouseEventArgs e)
         {
             Control pn = (Control)sender;
             Graphics grh = pn.CreateGraphics();
             Pen redPen = new Pen(Color.FromArgb(208, 63, 10), 3);
             grh.DrawLine(redPen, 4, 28, 4, 8);
         }
-        public static void menu(object sender, MouseEventArgs e, ref Control choiced)
+        public static void menu(object sender, MouseEventArgs e, ref Control choiced, Form frm, List<XtraTabPage> listPage)
         {
             Graphics grh;
             Pen greyPen = new Pen(Color.FromArgb(243, 243, 243), 3);
@@ -33,6 +39,8 @@ namespace Music_media.Menu_Choice
                     backcolor(choiced, Color.FromArgb(243, 243, 243));
                     pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
+                HomeMenu.homeChoice(frm, listPage, 0);
+                
             }
 
             else if (pn.Name == "musicMenu" || pn.Name == "musicTxt" || pn.Name == "musicIco")
@@ -43,6 +51,7 @@ namespace Music_media.Menu_Choice
                     backcolor(choiced, Color.FromArgb(243, 243, 243));
                     pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
+                HomeMenu.homeChoice(frm, listPage, 1);
             }
             else if (pn.Name == "queueTxt" || pn.Name == "queueIco" || pn.Name == "queueMenu")
             {
@@ -52,6 +61,7 @@ namespace Music_media.Menu_Choice
                     backcolor(choiced, Color.FromArgb(243, 243, 243));
                     pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
+                HomeMenu.homeChoice(frm, listPage, 2);
             }
             else if (pn.Name == "playlistsMenu" || pn.Name == "playlistsTxt" || pn.Name == "playlistIco")
             {
@@ -61,6 +71,7 @@ namespace Music_media.Menu_Choice
                     backcolor(choiced, Color.FromArgb(243, 243, 243));
                     pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
+                HomeMenu.homeChoice(frm, listPage, 3);
             }
             else if (pn.Name == "settingMenu" || pn.Name == "settingTxt" || pn.Name == "settingIco")
             {
@@ -70,6 +81,7 @@ namespace Music_media.Menu_Choice
                     backcolor(choiced, Color.FromArgb(243, 243, 243));
                     pn.BackColor = Color.FromArgb(230, 230, 230);
                 }
+                HomeMenu.homeChoice(frm, listPage, 4);
             }
             choiced = pn;
         }

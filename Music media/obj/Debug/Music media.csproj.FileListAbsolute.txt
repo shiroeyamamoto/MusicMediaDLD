@@ -114,3 +114,41 @@ C:\Users\ACER\OneDrive\Máy tính\Music media Copt\MusicMediaDLD\Music media\obj
 C:\Users\ACER\OneDrive\Máy tính\Music media Copt\MusicMediaDLD\Music media\obj\Debug\Music media.csproj.CopyComplete
 C:\Users\ACER\OneDrive\Máy tính\Music media Copt\MusicMediaDLD\Music media\obj\Debug\Music media.exe
 C:\Users\ACER\OneDrive\Máy tính\Music media Copt\MusicMediaDLD\Music media\obj\Debug\Music media.pdb
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\Interop.WMPLib.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\obj\Debug\Interop.WMPLib.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\obj\Debug\Music media.csproj.ResolveComReference.cache
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.DataAccess.v22.2.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.DataAccess.v22.2.UI.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.DataVisualization.v22.2.Core.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.Spreadsheet.v22.2.Core.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.Utils.v22.2.UI.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.XtraCharts.v22.2.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.XtraNavBar.v22.2.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.XtraRichEdit.v22.2.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.XtraSpreadsheet.v22.2.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.XtraTreeMap.v22.2.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.Xpo.v22.2.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.CodeParser.v22.2.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.XtraDiagram.v22.2.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.Diagram.v22.2.Core.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.XtraVerticalGrid.v22.2.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.Charts.v22.2.Core.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.Images.v22.2.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.TreeMap.v22.2.Core.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.DataAccess.v22.2.xml
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.DataAccess.v22.2.UI.xml
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.Spreadsheet.v22.2.Core.xml
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.Utils.v22.2.UI.xml
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.XtraCharts.v22.2.xml
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.XtraNavBar.v22.2.xml
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.XtraRichEdit.v22.2.xml
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.XtraSpreadsheet.v22.2.xml
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.XtraTreeMap.v22.2.xml
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.Xpo.v22.2.xml
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.XtraDiagram.v22.2.xml
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.Diagram.v22.2.Core.xml
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.XtraVerticalGrid.v22.2.xml
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.Charts.v22.2.Core.xml
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.TreeMap.v22.2.Core.xml

@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Music_media
 {
-    public class PanelRounded : System.Windows.Forms.Panel
+    public class PanelRounded : Panel
     {
-        private System.Windows.Forms.Panel panel;
+        private Panel panel;
 
         private Color borderColor = Color.MediumSlateBlue;
         private Color borderFocusColor = Color.HotPink;

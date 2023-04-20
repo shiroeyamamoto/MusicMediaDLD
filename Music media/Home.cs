@@ -14,9 +14,11 @@ using System.IO;
 using System.Reflection.Emit;
 using Music_media.customControl;
 using Music_media.Menu_Choice;
-using DevExpress.XtraBars.Controls;
-using DevExpress.Xpo.DB;
 using DevExpress.XtraTab;
+using NAudio.Wave;
+using TagLib;
+using NAudio.Wave.SampleProviders;
+using DevExpress.Office.Import.OpenXml;
 
 namespace Music_media
 {
@@ -25,8 +27,7 @@ namespace Music_media
         //Menu choice
         Control choiced = new Control(); //Save before of choice 
         List<XtraTabPage> listTabPages = new List<XtraTabPage>();
-
-
+        
         public Home()
         {
             InitializeComponent();
@@ -41,15 +42,17 @@ namespace Music_media
             listTabPages.Add(playlistsTab);
             listTabPages.Add(settingTab);
             listTabPages.Add(noneTab);
-
             menuControl.SelectedTabPage = noneTab;
-            //menuControl.BackColor = Color.Black;
 
-            //Remove TabPage Menu
-            /*menuControl.TabPages.Remove(homeTab);
-            menuControl.TabPages.Remove(musicTab);
-            menuControl.TabPages.Remove(queueTab);
-            menuControl.TabPages.Remove(playlistsTab);*/
+
+            /*var file = TagLib.File.Create(@"C:\Users\ACER\Music\Akon - Lonely.mp3");
+            TimeSpan duration = file.Properties.Duration;
+
+            foreach (string page in file.Tag.Genres)
+            {
+                MessageBox.Show(page);
+            }*/
+            
 
         }
         //Form function
@@ -128,11 +131,71 @@ namespace Music_media
             ctr.Refresh();
         }
 
-        void button1_Click(XtraTabPage homeTab)
+        //From move
+        Point MouseDownLocation;
+        private void FormMoveMove(object sender, MouseEventArgs e)
         {
-            menuControl.TabPages.Insert(0, homeTab);
+            Control ctr = (Control)sender;
+            if (e.Button == MouseButtons.Left)
+            {
+                ctr.Left = e.X + ctr.Left - MouseDownLocation.X;
+                ctr.Top = e.Y + ctr.Top - MouseDownLocation.Y;
+                this.Left += ctr.Left;
+                this.Top += ctr.Top;
+            }
+        }
+        private void FormMoveDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                MouseDownLocation = e.Location;
+            }
         }
 
-
+        //test Naudio
+        private WaveOut outputDevice;
+        private AudioFileReader audioFile;
+        int musicOn= 0;
+        bool turn = false;
+        private void OnButtonPlayClick(object sender, EventArgs args)
+        {
+                if (!turn)
+                {
+                    if (outputDevice == null)
+                    {
+                        outputDevice = new WaveOut();
+                        outputDevice.PlaybackStopped += OnPlaybackStopped;
+                    }
+                    if (audioFile == null)
+                    {
+                        audioFile = new AudioFileReader(@"C:\Users\ACER\Downloads\NeuLaAnh-TheMen-2729808.mp3");
+                    outputDevice.Init(audioFile);
+                    }
+                    outputDevice.Play();
+                    musicOn = 1;
+                    turn = true;
+                }else
+                if (turn)
+                {
+                    turn = false;
+                    if (audioFile == null)
+                        OnButtonPlayClick(sender, args);
+                    outputDevice.Pause();
+                    
+                }
+                Mp3FileReader a = new Mp3FileReader(@"C:\Users\ACER\Downloads\NeuLaAnh-TheMen-2729808.mp3");
+            
+        }
+        private void OnPlaybackStopped(object sender, StoppedEventArgs args)
+        {
+            outputDevice.Dispose();
+            outputDevice = null;
+            audioFile.Dispose();
+            audioFile = null;
+        }
+        private void test(object sender, EventArgs args)
+        {
+            
+        }
     }
 }

@@ -152,3 +152,6 @@ C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.D
 C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.XtraVerticalGrid.v22.2.xml
 C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.Charts.v22.2.Core.xml
 C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.TreeMap.v22.2.Core.xml
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\policy.2.0.taglib-sharp.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\taglib-sharp.dll
+C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\policy.2.0.taglib-sharp.config

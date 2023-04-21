@@ -19,6 +19,9 @@ using NAudio.Wave;
 using TagLib;
 using NAudio.Wave.SampleProviders;
 using DevExpress.Office.Import.OpenXml;
+using System.Data.SqlClient;
+using System.Threading;
+using NAudio.MediaFoundation;
 
 namespace Music_media
 {
@@ -42,7 +45,7 @@ namespace Music_media
             listTabPages.Add(playlistsTab);
             listTabPages.Add(settingTab);
             listTabPages.Add(noneTab);
-            menuControl.SelectedTabPage = noneTab;
+            menuControl.SelectedTabPage = homeTab;
 
 
             /*var file = TagLib.File.Create(@"C:\Users\ACER\Music\Akon - Lonely.mp3");
@@ -152,7 +155,7 @@ namespace Music_media
             }
         }
 
-        //test Naudio
+        //test Naudio with mp3
         private WaveOut outputDevice;
         private AudioFileReader audioFile;
         int musicOn= 0;
@@ -168,7 +171,7 @@ namespace Music_media
                     }
                     if (audioFile == null)
                     {
-                        audioFile = new AudioFileReader(@"C:\Users\ACER\Downloads\NeuLaAnh-TheMen-2729808.mp3");
+                        audioFile = new AudioFileReader(@"C:\Users\ACER\Music\Girls Like You - Maroon 5.m4a");
                     outputDevice.Init(audioFile);
                     }
                     outputDevice.Play();
@@ -183,7 +186,8 @@ namespace Music_media
                     outputDevice.Pause();
                     
                 }
-                Mp3FileReader a = new Mp3FileReader(@"C:\Users\ACER\Downloads\NeuLaAnh-TheMen-2729808.mp3");
+                Mp3FileReader a = new Mp3FileReader(@"C:\Users\ACER\Music\G.E.M. - 來自天堂的魔鬼.mp3");
+                test();
             
         }
         private void OnPlaybackStopped(object sender, StoppedEventArgs args)
@@ -193,9 +197,25 @@ namespace Music_media
             audioFile.Dispose();
             audioFile = null;
         }
-        private void test(object sender, EventArgs args)
+        //Test audio with url
+
+        private void buttonPlayUrl(object sender, EventArgs args)
         {
-            
+
+        }
+        //Test database save file mp3
+        private void test()
+        {
+            TagLib.File tagFile = TagLib.File.Create(@"C:\Users\ACER\Music\Girls Like You - Maroon 5.m4a");
+            AudioFileReader reader = new AudioFileReader(@"C:\Users\ACER\Music\Girls Like You - Maroon 5.m4a");
+            TimeSpan duration = reader.TotalTime;
+            string artist = tagFile.Tag.Artists[0];
+            string album = tagFile.Tag.Album;
+            string title = tagFile.Tag.Title;
+            string genre = tagFile.Tag.FirstGenre;
+            string lyrics = tagFile.Tag.Lyrics;
+            uint year = tagFile.Tag.Year;
+            MessageBox.Show(title + ",\n " + artist + ",\n " + album + ",\n " + genre + ",\n " + duration + ",\n " + lyrics + ",\n " + year);
         }
     }
 }

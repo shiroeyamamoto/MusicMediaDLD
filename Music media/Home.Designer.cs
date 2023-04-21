@@ -78,6 +78,11 @@
             this.minimum = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuControl = new DevExpress.XtraTab.XtraTabControl();
+            this.musicTab = new DevExpress.XtraTab.XtraTabPage();
+            this.btnPlayAll = new Music_media.PanelRounded();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.homeTab = new DevExpress.XtraTab.XtraTabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.item1 = new Music_media.PanelRounded();
@@ -90,9 +95,6 @@
             this.nameItem1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.titleName = new DevExpress.XtraEditors.LabelControl();
-            this.musicTab = new DevExpress.XtraTab.XtraTabPage();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.queueTab = new DevExpress.XtraTab.XtraTabPage();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
@@ -143,13 +145,15 @@
             this.trackArea.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuControl)).BeginInit();
             this.menuControl.SuspendLayout();
+            this.musicTab.SuspendLayout();
+            this.btnPlayAll.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             this.homeTab.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.item1.SuspendLayout();
             this.panelRounded5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureItem1.Properties)).BeginInit();
-            this.musicTab.SuspendLayout();
             this.queueTab.SuspendLayout();
             this.playlistsTab.SuspendLayout();
             this.settingTab.SuspendLayout();
@@ -1003,7 +1007,7 @@
             this.menuControl.LookAndFeel.SkinName = "VS2010";
             this.menuControl.LookAndFeel.UseDefaultLookAndFeel = false;
             this.menuControl.Name = "menuControl";
-            this.menuControl.SelectedTabPage = this.homeTab;
+            this.menuControl.SelectedTabPage = this.musicTab;
             this.menuControl.ShowTabHeader = DevExpress.Utils.DefaultBoolean.False;
             this.menuControl.Size = new System.Drawing.Size(740, 488);
             this.menuControl.TabIndex = 15;
@@ -1014,6 +1018,80 @@
             this.playlistsTab,
             this.noneTab,
             this.settingTab});
+            // 
+            // musicTab
+            // 
+            this.musicTab.Controls.Add(this.btnPlayAll);
+            this.musicTab.Controls.Add(this.labelControl7);
+            this.musicTab.Name = "musicTab";
+            this.musicTab.Size = new System.Drawing.Size(738, 478);
+            this.musicTab.Text = "Music";
+            // 
+            // btnPlayAll
+            // 
+            this.btnPlayAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(81)))), ((int)(((byte)(34)))));
+            this.btnPlayAll.BorderColor = System.Drawing.Color.Transparent;
+            this.btnPlayAll.BorderFocusColor = System.Drawing.Color.Transparent;
+            this.btnPlayAll.BorderRadius = 5;
+            this.btnPlayAll.BorderSize = 2;
+            this.btnPlayAll.Controls.Add(this.labelControl12);
+            this.btnPlayAll.Controls.Add(this.pictureEdit2);
+            this.btnPlayAll.Location = new System.Drawing.Point(0, 75);
+            this.btnPlayAll.Margin = new System.Windows.Forms.Padding(0);
+            this.btnPlayAll.Name = "btnPlayAll";
+            this.btnPlayAll.Size = new System.Drawing.Size(145, 32);
+            this.btnPlayAll.TabIndex = 18;
+            this.btnPlayAll.UnderlinedStyle = false;
+            // 
+            // labelControl12
+            // 
+            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl12.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.labelControl12.Appearance.Options.UseFont = true;
+            this.labelControl12.Appearance.Options.UseForeColor = true;
+            this.labelControl12.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl12.Enabled = false;
+            this.labelControl12.Location = new System.Drawing.Point(42, 8);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(92, 16);
+            this.labelControl12.TabIndex = 16;
+            this.labelControl12.Text = "Shuffle and play";
+            // 
+            // pictureEdit2
+            // 
+            this.pictureEdit2.EditValue = global::Music_media.Properties.Resources.randomwhite;
+            this.pictureEdit2.Enabled = false;
+            this.pictureEdit2.Location = new System.Drawing.Point(14, 8);
+            this.pictureEdit2.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureEdit2.Name = "pictureEdit2";
+            this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit2.Properties.Appearance.Options.UseForeColor = true;
+            this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit2.ShowToolTips = false;
+            this.pictureEdit2.Size = new System.Drawing.Size(16, 16);
+            this.pictureEdit2.TabIndex = 15;
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl7.Appearance.Options.UseBackColor = true;
+            this.labelControl7.Appearance.Options.UseFont = true;
+            this.labelControl7.Appearance.Options.UseForeColor = true;
+            this.labelControl7.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
+            this.labelControl7.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl7.Enabled = false;
+            this.labelControl7.Location = new System.Drawing.Point(0, 0);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(0);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(107, 45);
+            this.labelControl7.TabIndex = 17;
+            this.labelControl7.Text = "Music";
             // 
             // homeTab
             // 
@@ -1188,45 +1266,6 @@
             this.titleName.Size = new System.Drawing.Size(108, 45);
             this.titleName.TabIndex = 16;
             this.titleName.Text = "Home";
-            // 
-            // musicTab
-            // 
-            this.musicTab.Controls.Add(this.labelControl12);
-            this.musicTab.Controls.Add(this.labelControl7);
-            this.musicTab.Name = "musicTab";
-            this.musicTab.Size = new System.Drawing.Size(738, 478);
-            this.musicTab.Text = "Music";
-            // 
-            // labelControl12
-            // 
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl12.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Appearance.Options.UseForeColor = true;
-            this.labelControl12.Enabled = false;
-            this.labelControl12.Location = new System.Drawing.Point(135, 161);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(92, 23);
-            this.labelControl12.TabIndex = 18;
-            this.labelControl12.Text = "1 con chim";
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl7.Appearance.Options.UseBackColor = true;
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Appearance.Options.UseForeColor = true;
-            this.labelControl7.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
-            this.labelControl7.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl7.Enabled = false;
-            this.labelControl7.Location = new System.Drawing.Point(0, 0);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(0);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(107, 45);
-            this.labelControl7.TabIndex = 17;
-            this.labelControl7.Text = "Music";
             // 
             // queueTab
             // 
@@ -1495,6 +1534,10 @@
             this.trackArea.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.menuControl)).EndInit();
             this.menuControl.ResumeLayout(false);
+            this.musicTab.ResumeLayout(false);
+            this.musicTab.PerformLayout();
+            this.btnPlayAll.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             this.homeTab.ResumeLayout(false);
             this.homeTab.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -1504,8 +1547,6 @@
             this.panelRounded5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureItem1.Properties)).EndInit();
-            this.musicTab.ResumeLayout(false);
-            this.musicTab.PerformLayout();
             this.queueTab.ResumeLayout(false);
             this.queueTab.PerformLayout();
             this.playlistsTab.ResumeLayout(false);
@@ -1581,7 +1622,6 @@
         private DevExpress.XtraTab.XtraTabPage settingTab;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.LabelControl labelControl15;
-        private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private System.Windows.Forms.Panel panel2;
@@ -1598,5 +1638,8 @@
         private DevExpress.XtraEditors.LabelControl artistItem1;
         private DevExpress.XtraEditors.PictureEdit pictureItem1;
         private DevExpress.XtraEditors.LabelControl nameItem1;
+        private PanelRounded btnPlayAll;
+        private DevExpress.XtraEditors.LabelControl labelControl12;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit2;
     }
 }

@@ -83,6 +83,16 @@ namespace Music_media.Menu_Choice
                 }
                 HomeMenu.homeChoice(frm, listPage, 4);
             }
+            else if (pn.Name == "lbAccount" || pn.Name == "panelAccount")
+            {
+                if (choiced.Name != "panelAccount")
+                {
+                    grh.DrawLine(greyPen, 4, 28, 4, 8);
+                    backcolor(choiced, Color.FromArgb(243, 243, 243));
+                    pn.BackColor = Color.FromArgb(230, 230, 230);
+                }
+                HomeMenu.homeChoice(frm, listPage, 6);
+            }
             choiced = pn;
         }
         public static void menuEvent(object sender, EventArgs e, ref Control choiced, Color color)
@@ -124,6 +134,7 @@ namespace Music_media.Menu_Choice
                     pn.BackColor = color;
                 }
             }
+            
         }
 
     }

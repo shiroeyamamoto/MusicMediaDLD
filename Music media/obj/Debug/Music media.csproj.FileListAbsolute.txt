@@ -155,3 +155,106 @@ C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.T
 C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\policy.2.0.taglib-sharp.dll
 C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\taglib-sharp.dll
 C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\policy.2.0.taglib-sharp.config
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\Music media.exe.config
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\Music media.exe
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\Music media.pdb
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Data.Desktop.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Data.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.DataAccess.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.DataAccess.v22.2.UI.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.DataVisualization.v22.2.Core.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Drawing.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Office.v22.2.Core.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Printing.v22.2.Core.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.RichEdit.v22.2.Core.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Spreadsheet.v22.2.Core.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Utils.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Utils.v22.2.UI.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraBars.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraCharts.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraEditors.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraGrid.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraLayout.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraNavBar.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraPrinting.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraRichEdit.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraSpreadsheet.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraTreeList.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraTreeMap.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\EntityFramework.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\NAudio.Asio.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\NAudio.Core.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\NAudio.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\NAudio.Midi.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\NAudio.Wasapi.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\NAudio.WinForms.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\NAudio.WinMM.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\policy.2.0.taglib-sharp.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\System.Security.AccessControl.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\taglib-sharp.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Xpo.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.CodeParser.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraDiagram.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Diagram.v22.2.Core.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Sparkline.v22.2.Core.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraVerticalGrid.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Charts.v22.2.Core.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Images.v22.2.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.TreeMap.v22.2.Core.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Data.v22.2.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.DataAccess.v22.2.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.DataAccess.v22.2.UI.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Office.v22.2.Core.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Printing.v22.2.Core.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.RichEdit.v22.2.Core.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Spreadsheet.v22.2.Core.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Utils.v22.2.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Utils.v22.2.UI.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraBars.v22.2.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraCharts.v22.2.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraEditors.v22.2.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraGrid.v22.2.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraLayout.v22.2.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraNavBar.v22.2.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraPrinting.v22.2.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraRichEdit.v22.2.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraSpreadsheet.v22.2.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraTreeList.v22.2.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraTreeMap.v22.2.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\EntityFramework.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\NAudio.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\System.Security.AccessControl.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Xpo.v22.2.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraDiagram.v22.2.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Diagram.v22.2.Core.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Sparkline.v22.2.Core.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraVerticalGrid.v22.2.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Charts.v22.2.Core.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.TreeMap.v22.2.Core.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\policy.2.0.taglib-sharp.config
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\Interop.WMPLib.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Music media.csproj.AssemblyReference.cache
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Music media.csproj.SuggestedBindingRedirects.cache
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Interop.WMPLib.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Music media.csproj.ResolveComReference.cache
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Music_media.Home.resources
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Music_media.Properties.Resources.resources
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Music media.csproj.GenerateResource.cache
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Music media.exe.licenses
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Music media.csproj.CoreCompileInputs.cache
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Music media.csproj.CopyComplete
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Music media.exe
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Music media.pdb

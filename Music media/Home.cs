@@ -22,6 +22,10 @@ using DevExpress.Office.Import.OpenXml;
 using System.Data.SqlClient;
 using System.Threading;
 using NAudio.MediaFoundation;
+using DevExpress.XtraBars.Docking;
+using static DevExpress.XtraEditors.Mask.MaskSettings;
+using Music_media.EntityModel;
+using DevExpress.Utils.Extensions;
 
 namespace Music_media
 {
@@ -30,7 +34,7 @@ namespace Music_media
         //Menu choice
         Control choiced = new Control(); //Save before of choice 
         List<XtraTabPage> listTabPages = new List<XtraTabPage>();
-        
+        MusicMediaDLDEntities1 _db = new MusicMediaDLDEntities1();
         public Home()
         {
             InitializeComponent();
@@ -38,12 +42,15 @@ namespace Music_media
 
 
             //Get TabPage of menuControl
-            
+
             listTabPages.Add(homeTab);
             listTabPages.Add(musicTab);
             listTabPages.Add(queueTab);
             listTabPages.Add(playlistsTab);
             listTabPages.Add(settingTab);
+            listTabPages.Add(tabAccount);
+            listTabPages.Add(tabReg);
+
             listTabPages.Add(noneTab);
             menuControl.SelectedTabPage = homeTab;
 
@@ -55,7 +62,7 @@ namespace Music_media
             {
                 MessageBox.Show(page);
             }*/
-            
+
 
         }
         //Form function
@@ -124,7 +131,7 @@ namespace Music_media
         private void litteButtonLeave(object sender, EventArgs e)
         {
             Control ctr = (Control)sender;
-                MenuChoice.backcolor(ctr, Color.Transparent);
+            MenuChoice.backcolor(ctr, Color.Transparent);
         }
         private void searchText_Enter(object sender, EventArgs e)
         {
@@ -158,37 +165,38 @@ namespace Music_media
         //test Naudio with mp3
         private WaveOut outputDevice;
         private AudioFileReader audioFile;
-        int musicOn= 0;
+        int musicOn = 0;
         bool turn = false;
         private void OnButtonPlayClick(object sender, EventArgs args)
         {
-                if (!turn)
+            if (!turn)
+            {
+                if (outputDevice == null)
                 {
-                    if (outputDevice == null)
-                    {
-                        outputDevice = new WaveOut();
-                        outputDevice.PlaybackStopped += OnPlaybackStopped;
-                    }
-                    if (audioFile == null)
-                    {
-                        audioFile = new AudioFileReader(@"C:\Users\ACER\Music\Girls Like You - Maroon 5.m4a");
-                    outputDevice.Init(audioFile);
-                    }
-                    outputDevice.Play();
-                    musicOn = 1;
-                    turn = true;
-                }else
-                if (turn)
-                {
-                    turn = false;
-                    if (audioFile == null)
-                        OnButtonPlayClick(sender, args);
-                    outputDevice.Pause();
-                    
+                    outputDevice = new WaveOut();
+                    outputDevice.PlaybackStopped += OnPlaybackStopped;
                 }
-                Mp3FileReader a = new Mp3FileReader(@"C:\Users\ACER\Music\G.E.M. - 來自天堂的魔鬼.mp3");
-                test();
-            
+                if (audioFile == null)
+                {
+                    audioFile = new AudioFileReader(@"C:\Users\ACER\Music\Girls Like You - Maroon 5.m4a");
+                    outputDevice.Init(audioFile);
+                }
+                outputDevice.Play();
+                musicOn = 1;
+                turn = true;
+            }
+            else
+            if (turn)
+            {
+                turn = false;
+                if (audioFile == null)
+                    OnButtonPlayClick(sender, args);
+                outputDevice.Pause();
+
+            }
+            Mp3FileReader a = new Mp3FileReader(@"C:\Users\ACER\Music\G.E.M. - 來自天堂的魔鬼.mp3");
+            test();
+
         }
         private void OnPlaybackStopped(object sender, StoppedEventArgs args)
         {
@@ -217,5 +225,132 @@ namespace Music_media
             uint year = tagFile.Tag.Year;
             MessageBox.Show(title + ",\n " + artist + ",\n " + album + ",\n " + genre + ",\n " + duration + ",\n " + lyrics + ",\n " + year);
         }
+
+        private void labelControl19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabAccount_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
+
+        private void panelAccount_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelAccount_Click(object sender, EventArgs e)
+        {
+            // Chuyển đổi sang trang tài khoản (tabAccount)
+            menuControl.SelectedTabPage = tabAccount;
+        }
+
+
+
+        private void panelAccount_MouseHover(object sender, EventArgs e)
+        {
+            ForeColor = Color.Red;
+
+        }
+
+        private void panelAccount_MouseLeave(object sender, EventArgs e)
+        {
+            ForeColor = Color.Black;
+        }
+
+        private void labelControl19_Click_1(object sender, EventArgs e)
+        {
+            ForeColor = Color.Black;
+        }
+
+        private void menu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+            menuControl.SelectedTabPage = tabReg;
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+
+            menuControl.SelectedTabPage = tabAccount;
+        }
+
+        private void btnRegSucces_Click(object sender, EventArgs e)
+
+        {
+            bool ktSdt = sodienthoaihople(this.txtPasswordReg.Text);
+            bool checkUsername  = _db.Users.Any(u => u.UserName == txtUserName.Text);
+
+            DateTime now = DateTime.Today;
+            int age = now.Year - dateNgaySinh.Value.Year;
+            if (string.IsNullOrEmpty(txtHo.Text) || string.IsNullOrEmpty(txtTen.Text) || dateNgaySinh.Value == null || string.IsNullOrEmpty(txtUsernameReg.Text) || string.IsNullOrEmpty(txtPasswordReg.Text) || string.IsNullOrEmpty(txtsdtReg.Text))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin.");
+                return;
+            }
+
+            // Kiểm tra độ dài và định dạng số điện thoại
+            if (!sodienthoaihople(txtsdtReg.Text))
+            {
+                MessageBox.Show("Số điện thoại không hợp lệ.");
+                return;
+            }
+
+            // Kiểm tra độ dài và định dạng username
+            if (checkUsername)
+            {
+                MessageBox.Show("Username đã tồn tại.");
+                return;
+            }
+           
+            if (age < 12)
+            {
+                MessageBox.Show("Bạn phải đủ 12 tuổi để đăng ký.");
+                return;
+            }
+            EntityModel.User newUser = new EntityModel.User()
+            {
+                ho = txtHo.Text,
+                Ten = txtTen.Text,
+                ngaySinh = dateNgaySinh.Value,
+                UserName = txtUsernameReg.Text,
+                Userpassword = txtPasswordReg.Text,
+                Sdt = txtsdtReg.Text,
+                Admin = cbType.Text == "Admin" ? true : false,
+                Coin = 0
+            };
+
+            _db.Users.Add(newUser);
+            _db.SaveChanges();
+            menuControl.SelectedTabPage = tabAccount;
+            MessageBox.Show("Đăng ký thành công!");
+
+        }
+        public bool sodienthoaihople(string sdt)
+        {
+            
+            if (sdt.Length != 10)
+            {
+                return false;
+            }
+            foreach (char c in sdt)
+            {
+                if (!Char.IsDigit(c))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
     }
 }

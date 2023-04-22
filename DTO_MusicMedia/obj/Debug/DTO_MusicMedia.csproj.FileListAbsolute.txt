@@ -1,0 +1,10 @@
+C:\Users\tsmar\OneDrive\MusicMediaDLD\DTO_MusicMedia\obj\Debug\DTO_MusicMedia.csproj.AssemblyReference.cache
+C:\Users\tsmar\OneDrive\MusicMediaDLD\DTO_MusicMedia\obj\Debug\DTO_MusicMedia.csproj.SuggestedBindingRedirects.cache
+C:\Users\tsmar\OneDrive\MusicMediaDLD\DTO_MusicMedia\obj\Debug\DTO_MusicMedia.Properties.Resources.resources
+C:\Users\tsmar\OneDrive\MusicMediaDLD\DTO_MusicMedia\obj\Debug\DTO_MusicMedia.csproj.GenerateResource.cache
+C:\Users\tsmar\OneDrive\MusicMediaDLD\DTO_MusicMedia\obj\Debug\DTO_MusicMedia.csproj.CoreCompileInputs.cache
+C:\Users\tsmar\OneDrive\MusicMediaDLD\DTO_MusicMedia\bin\Debug\DTO_MusicMedia.exe.config
+C:\Users\tsmar\OneDrive\MusicMediaDLD\DTO_MusicMedia\bin\Debug\DTO_MusicMedia.exe
+C:\Users\tsmar\OneDrive\MusicMediaDLD\DTO_MusicMedia\bin\Debug\DTO_MusicMedia.pdb
+C:\Users\tsmar\OneDrive\MusicMediaDLD\DTO_MusicMedia\obj\Debug\DTO_MusicMedia.exe
+C:\Users\tsmar\OneDrive\MusicMediaDLD\DTO_MusicMedia\obj\Debug\DTO_MusicMedia.pdb

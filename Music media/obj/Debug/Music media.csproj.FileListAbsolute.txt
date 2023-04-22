@@ -155,3 +155,48 @@ C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\DevExpress.T
 C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\policy.2.0.taglib-sharp.dll
 C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\taglib-sharp.dll
 C:\Users\ACER\OneDrive\Máy tính\Music media\Music media\bin\Debug\policy.2.0.taglib-sharp.config
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\obj\Debug\Music media.csproj.AssemblyReference.cache
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\obj\Debug\Music media.csproj.SuggestedBindingRedirects.cache
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\obj\Debug\Interop.WMPLib.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\obj\Debug\Music media.csproj.ResolveComReference.cache
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\obj\Debug\Music_media.Home.resources
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\obj\Debug\Music_media.Properties.Resources.resources
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\obj\Debug\Music media.csproj.GenerateResource.cache
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\obj\Debug\Music media.exe.licenses
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\obj\Debug\Music media.exe
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\obj\Debug\Music media.pdb
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\Music media.exe.config
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\Music media.exe
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\Music media.pdb
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\NAudio.Asio.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\NAudio.Core.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\NAudio.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\NAudio.Midi.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\NAudio.Wasapi.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\NAudio.WinForms.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\NAudio.WinMM.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\policy.2.0.taglib-sharp.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\System.Security.AccessControl.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\taglib-sharp.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\NAudio.xml
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\System.Security.AccessControl.xml
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\policy.2.0.taglib-sharp.config
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\Interop.WMPLib.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\obj\Debug\Music media.csproj.CoreCompileInputs.cache
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\obj\Debug\Music media.csproj.CopyComplete
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\BUS_MusicMedia.exe
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\DTO_MusicMedia.exe
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\BUS_MusicMedia.pdb
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\BUS_MusicMedia.exe.config
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\DTO_MusicMedia.pdb
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\DTO_MusicMedia.exe.config
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\EntityFramework.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\EntityFramework.xml
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\EntityFramework.SqlServer.xml

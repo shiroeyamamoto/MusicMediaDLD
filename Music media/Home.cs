@@ -65,6 +65,18 @@ namespace Music_media
 
 
         }
+        private void Home_Load(object sender, EventArgs e)
+        {
+            this.txtUserName.Text = "conduongmau";
+            this.txtUserPass.Text = "test";
+            this.txtHo.Text = "le";
+            this.txtTen.Text = "le";
+            this.txtUsernameReg.Text = "conduongmau";
+            this.txtPasswordReg.Text = "test";
+            this.txtsdtReg.Text = "0839996965";
+            this.cbType.SelectedIndex = 0;
+            this.dateNgaySinh.Value = new DateTime(2002, 09, 18);
+        }
         //Form function
         private void Exit_Click(object sender, EventArgs e)
         {
@@ -275,6 +287,7 @@ namespace Music_media
         private void btnSignup_Click(object sender, EventArgs e)
         {
             menuControl.SelectedTabPage = tabReg;
+
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -283,28 +296,39 @@ namespace Music_media
             menuControl.SelectedTabPage = tabAccount;
         }
 
+        // Tại đây xử lí đăng kí 
         private void btnRegSucces_Click(object sender, EventArgs e)
 
         {
+            String chuoiKhongHopLe = "!,@,#,$,%,^,&,*,(,),>,<,?,INSERT,UPDATE,DELETE,SELECT";
             bool ktSdt = sodienthoaihople(this.txtPasswordReg.Text);
-            bool checkUsername  = _db.Users.Any(u => u.UserName == txtUserName.Text);
-
+            bool checkUsername  = _db.Users.Any(u => u.UserName.Equals(txtUsernameReg.Text));
             DateTime now = DateTime.Today;
             int age = now.Year - dateNgaySinh.Value.Year;
+            List<string> danhSachPhanTu = chuoiKhongHopLe.Split(',').ToList();
+
+            if (danhSachPhanTu.Any(p => txtHo.Text.Contains(p) || txtTen.Text.Contains(p) || txtUsernameReg.Text.Contains(p)))
+            {
+                MessageBox.Show("Thông tin không hợp lệ, vui lòng không nhập các ký tự đặc biệt hoặc từ khóa trong danh sách!");
+                return;
+            }
             if (string.IsNullOrEmpty(txtHo.Text) || string.IsNullOrEmpty(txtTen.Text) || dateNgaySinh.Value == null || string.IsNullOrEmpty(txtUsernameReg.Text) || string.IsNullOrEmpty(txtPasswordReg.Text) || string.IsNullOrEmpty(txtsdtReg.Text))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin.");
                 return;
             }
-
-            // Kiểm tra độ dài và định dạng số điện thoại
+            if (txtHo.Text.Contains(chuoiKhongHopLe)) {
+                MessageBox.Show("Thông tin khong hợp lệ.");
+                return;
+            };
+       
             if (!sodienthoaihople(txtsdtReg.Text))
             {
                 MessageBox.Show("Số điện thoại không hợp lệ.");
                 return;
             }
 
-            // Kiểm tra độ dài và định dạng username
+ 
             if (checkUsername)
             {
                 MessageBox.Show("Username đã tồn tại.");
@@ -352,5 +376,27 @@ namespace Music_media
             return true;
         }
 
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtUserName.Text) || string.IsNullOrEmpty(txtUserPass.Text))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin.");
+                return;
+            }
+
+
+            bool checkUsername = _db.Users.Any(u => u.UserName.Equals(txtUserName.Text));
+            bool checkPass = _db.Users.Any(u => u.Userpassword.Equals(txtUserPass.Text));
+            if (checkUsername && checkPass)
+            {
+                MessageBox.Show("Login success");
+                menuControl.SelectedTabPage = playlistsTab;
+            }
+            else
+            {
+                MessageBox.Show("Login Fail");
+                return;
+            }
+        }
     }
 }

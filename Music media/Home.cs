@@ -98,6 +98,26 @@ namespace Music_media
             int nWidthEllipse, // height of ellipse
             int nHeightEllipse // width of ellipse
         );
+        //Form move
+        Point mouseLocation;
+        private void FormMoveMove(object sender, MouseEventArgs e)
+        {
+            Control ctr = (Control)sender;
+            if (e.Button == MouseButtons.Left)
+            {
+                ctr.Left = e.X + ctr.Left - mouseLocation.X;
+                ctr.Top = e.Y + ctr.Top - mouseLocation.Y;
+                this.Left += ctr.Left;
+                this.Top += ctr.Top;
+            }
+        }
+        private void FormMoveDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                mouseLocation = e.Location;
+            }
+        }
         //Menu function 
         private void menuChoice(object sender, MouseEventArgs e)
         {
@@ -136,7 +156,7 @@ namespace Music_media
 
         //From move
         Point MouseDownLocation;
-        private void FormMoveMove(object sender, MouseEventArgs e)
+        private void FormMMove(object sender, MouseEventArgs e)
         {
             Control ctr = (Control)sender;
             if (e.Button == MouseButtons.Left)
@@ -147,7 +167,7 @@ namespace Music_media
                 this.Top += ctr.Top;
             }
         }
-        private void FormMoveDown(object sender, MouseEventArgs e)
+        private void FormMDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
@@ -217,5 +237,44 @@ namespace Music_media
             uint year = tagFile.Tag.Year;
             MessageBox.Show(title + ",\n " + artist + ",\n " + album + ",\n " + genre + ",\n " + duration + ",\n " + lyrics + ",\n " + year);
         }
+        //HomeControl
+
+        //MusicControl
+        private void hoverItem(object sender, EventArgs args)
+        {
+            Control control = (Control)sender;
+            control.BackColor = Color.FromArgb(240, 240, 240);
+        }
+        private void hoverLeaveItem(object sender, EventArgs args)
+        {
+            Control control = (Control)sender;
+            control.BackColor = Color.FromArgb(249, 249, 249);
+        }
+
+        private void childItem_MouseHover(object sender, EventArgs e)
+        {
+            Control control = (Control)sender;
+            control.BackColor = Color.FromArgb(232, 232, 232);
+            control.Parent.BackColor = Color.FromArgb(240, 240, 240);
+            foreach (Control chirl in control.Controls)
+            {
+                chirl.ForeColor = Color.FromArgb(212, 81, 34);
+            }
+        }
+        private void childItem_MouseLeave(object sender, EventArgs e)
+        {
+            Control control = (Control)sender;
+            control.BackColor = Color.Transparent;
+            control.Parent.BackColor = Color.Transparent;
+            foreach (Control chirl in control.Controls)
+            {
+                chirl.ForeColor = Color.FromArgb(25, 25, 25);
+            }
+        }
+
+
+        //QueueControl
+
+        //PlaylistsControl
     }
 }

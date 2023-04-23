@@ -8,6 +8,6 @@ namespace BUS_MusicMedia
 {
     class BUS_User
     {
-        DAL_User
+        //DAL_User
     }
 }

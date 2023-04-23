@@ -16,3 +16,21 @@ C:\Users\tsmar\OneDrive\MusicMediaDLD\DAL_MusicMedia\bin\Debug\EntityFramework.d
 C:\Users\tsmar\OneDrive\MusicMediaDLD\DAL_MusicMedia\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\tsmar\OneDrive\MusicMediaDLD\DAL_MusicMedia\bin\Debug\EntityFramework.xml
 C:\Users\tsmar\OneDrive\MusicMediaDLD\DAL_MusicMedia\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ACER\OneDrive\Máy tính\Copy Music Media\MusicMediaDLD\DAL_MusicMedia\bin\Debug\DAL_MusicMedia.exe.config
+C:\Users\ACER\OneDrive\Máy tính\Copy Music Media\MusicMediaDLD\DAL_MusicMedia\bin\Debug\DAL_MusicMedia.exe
+C:\Users\ACER\OneDrive\Máy tính\Copy Music Media\MusicMediaDLD\DAL_MusicMedia\bin\Debug\DAL_MusicMedia.pdb
+C:\Users\ACER\OneDrive\Máy tính\Copy Music Media\MusicMediaDLD\DAL_MusicMedia\bin\Debug\DTO_MusicMedia.exe
+C:\Users\ACER\OneDrive\Máy tính\Copy Music Media\MusicMediaDLD\DAL_MusicMedia\bin\Debug\EntityFramework.dll
+C:\Users\ACER\OneDrive\Máy tính\Copy Music Media\MusicMediaDLD\DAL_MusicMedia\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ACER\OneDrive\Máy tính\Copy Music Media\MusicMediaDLD\DAL_MusicMedia\bin\Debug\DTO_MusicMedia.pdb
+C:\Users\ACER\OneDrive\Máy tính\Copy Music Media\MusicMediaDLD\DAL_MusicMedia\bin\Debug\DTO_MusicMedia.exe.config
+C:\Users\ACER\OneDrive\Máy tính\Copy Music Media\MusicMediaDLD\DAL_MusicMedia\bin\Debug\EntityFramework.xml
+C:\Users\ACER\OneDrive\Máy tính\Copy Music Media\MusicMediaDLD\DAL_MusicMedia\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ACER\OneDrive\Máy tính\Copy Music Media\MusicMediaDLD\DAL_MusicMedia\obj\Debug\DAL_MusicMedia.csproj.AssemblyReference.cache
+C:\Users\ACER\OneDrive\Máy tính\Copy Music Media\MusicMediaDLD\DAL_MusicMedia\obj\Debug\DAL_MusicMedia.csproj.SuggestedBindingRedirects.cache
+C:\Users\ACER\OneDrive\Máy tính\Copy Music Media\MusicMediaDLD\DAL_MusicMedia\obj\Debug\DAL_MusicMedia.Properties.Resources.resources
+C:\Users\ACER\OneDrive\Máy tính\Copy Music Media\MusicMediaDLD\DAL_MusicMedia\obj\Debug\DAL_MusicMedia.csproj.GenerateResource.cache
+C:\Users\ACER\OneDrive\Máy tính\Copy Music Media\MusicMediaDLD\DAL_MusicMedia\obj\Debug\DAL_MusicMedia.csproj.CoreCompileInputs.cache
+C:\Users\ACER\OneDrive\Máy tính\Copy Music Media\MusicMediaDLD\DAL_MusicMedia\obj\Debug\DAL_MusicMedia.csproj.CopyComplete
+C:\Users\ACER\OneDrive\Máy tính\Copy Music Media\MusicMediaDLD\DAL_MusicMedia\obj\Debug\DAL_MusicMedia.exe
+C:\Users\ACER\OneDrive\Máy tính\Copy Music Media\MusicMediaDLD\DAL_MusicMedia\obj\Debug\DAL_MusicMedia.pdb

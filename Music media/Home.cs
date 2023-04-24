@@ -415,6 +415,14 @@ namespace Music_media
             menuControl.SelectedTabPage = tabLogin;
         }
 
-       
+        private void btnLibOnMydestop_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog dialog = new FolderBrowserDialog();
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                // Thư mục đã chọn
+                string selectedPath = dialog.SelectedPath;
+            }
+        }
     }
 }

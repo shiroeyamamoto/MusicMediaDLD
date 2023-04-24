@@ -217,5 +217,10 @@ namespace Music_media
             uint year = tagFile.Tag.Year;
             MessageBox.Show(title + ",\n " + artist + ",\n " + album + ",\n " + genre + ",\n " + duration + ",\n " + lyrics + ",\n " + year);
         }
+
+        private void menuControl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

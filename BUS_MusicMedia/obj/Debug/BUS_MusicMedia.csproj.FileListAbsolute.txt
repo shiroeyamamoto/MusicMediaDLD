@@ -15,3 +15,5 @@ C:\Users\tsmar\OneDrive\MusicMediaDLD\BUS_MusicMedia\bin\Debug\DTO_MusicMedia.ex
 C:\Users\tsmar\OneDrive\MusicMediaDLD\BUS_MusicMedia\obj\Debug\BUS_MusicMedia.csproj.CopyComplete
 C:\Users\tsmar\OneDrive\MusicMediaDLD\BUS_MusicMedia\obj\Debug\BUS_MusicMedia.exe
 C:\Users\tsmar\OneDrive\MusicMediaDLD\BUS_MusicMedia\obj\Debug\BUS_MusicMedia.pdb
+C:\Users\tsmar\OneDrive\MusicMediaDLD\BUS_MusicMedia\bin\Debug\EntityFramework.dll
+C:\Users\tsmar\OneDrive\MusicMediaDLD\BUS_MusicMedia\bin\Debug\EntityFramework.xml

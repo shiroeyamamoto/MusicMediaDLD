@@ -147,7 +147,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="MusicmediaDLDEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="MusicmediaDLDEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Albums" EntityType="Self.Album" />
     <EntitySet Name="Artists" EntityType="Self.Artist" />
     <EntitySet Name="Playlists" EntityType="Self.Playlist" />

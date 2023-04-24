@@ -200,3 +200,6 @@ C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\EntityFramework.dll
 C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\EntityFramework.xml
 C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\DAL_MusicMedia.exe
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\DAL_MusicMedia.pdb
+C:\Users\tsmar\OneDrive\MusicMediaDLD\Music media\bin\Debug\DAL_MusicMedia.exe.config

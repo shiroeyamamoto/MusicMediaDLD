@@ -23,6 +23,7 @@ using System.Data.SqlClient;
 using System.Threading;
 using NAudio.MediaFoundation;
 using Music_media.khoabeoenti;
+using System.Windows.Media;
 
 namespace Music_media
 {
@@ -31,7 +32,7 @@ namespace Music_media
         //Menu choice
         Control choiced = new Control(); //Save before of choice 
         List<XtraTabPage> listTabPages = new List<XtraTabPage>();
-        
+        public static MediaPlayer mediaPlayer = new MediaPlayer();
         public Home()
         {
             InitializeComponent();
@@ -60,6 +61,9 @@ namespace Music_media
             }*/
 
 
+            // Tạo nút
+
+
         }
         //Form function
         private void Exit_Click(object sender, EventArgs e)
@@ -68,19 +72,19 @@ namespace Music_media
         }
         private void exit_MouseHover(object sender, EventArgs e)
         {
-            exit.BackColor = Color.FromArgb(196, 43, 28);
-            exit.ForeColor = Color.FromArgb(248, 228, 227);
+            exit.BackColor = System.Drawing.Color.FromArgb(196, 43, 28);
+            exit.ForeColor = System.Drawing.Color.FromArgb(248, 228, 227);
         }
         private void exit_MouseLeave(object sender, EventArgs e)
         {
-            exit.BackColor = Color.FromArgb(249, 249, 249);
-            exit.ForeColor = Color.FromArgb(0, 0, 0);
-            minimum.BackColor = Color.FromArgb(249, 249, 249);
-            fullSreen.BackColor = Color.FromArgb(249, 249, 249);
+            exit.BackColor = System.Drawing.Color.FromArgb(249, 249, 249);
+            exit.ForeColor = System.Drawing.Color.FromArgb(0, 0, 0);
+            minimum.BackColor = System.Drawing.Color.FromArgb(249, 249, 249);
+            fullSreen.BackColor = System.Drawing.Color.FromArgb(249, 249, 249);
         }
         private void minimum_MouseHover(object sender, EventArgs e)
         {
-            minimum.BackColor = Color.FromArgb(233, 233, 233);
+            minimum.BackColor = System.Drawing.Color.FromArgb(233, 233, 233);
         }
         private void minimum_Click(object sender, EventArgs e)
         {
@@ -88,7 +92,7 @@ namespace Music_media
         }
         private void fullSreen_MouseEnter(object sender, EventArgs e)
         {
-            fullSreen.BackColor = Color.FromArgb(233, 233, 233);
+            fullSreen.BackColor = System.Drawing.Color.FromArgb(233, 233, 233);
         }
         //border rounded forms: https://www.dideo.ir/v/yt/LE3y5a0G4JA/windows-form-rounded-corners-in-c%23-%7C%7C-form-border
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -132,27 +136,27 @@ namespace Music_media
         }
         private void menuHover(object sender, EventArgs e)
         {
-            MenuChoice.menuEvent(sender, e, ref choiced, Color.FromArgb(237, 237, 237));
+            MenuChoice.menuEvent(sender, e, ref choiced, System.Drawing.Color.FromArgb(237, 237, 237));
         }
         private void menuLeave(object sender, EventArgs e)
         {
-            MenuChoice.menuEvent(sender, e, ref choiced, Color.FromArgb(243, 243, 243));
+            MenuChoice.menuEvent(sender, e, ref choiced, System.Drawing.Color.FromArgb(243, 243, 243));
         }
         //setup button
         private void litteButtonHover(object sender, EventArgs e)
         {
             Control ctr = (Control)sender;
-            MenuChoice.backcolor(ctr, Color.FromArgb(234, 234, 234));
+            MenuChoice.backcolor(ctr, System.Drawing.Color.FromArgb(234, 234, 234));
         }
         private void litteButtonLeave(object sender, EventArgs e)
         {
             Control ctr = (Control)sender;
-                MenuChoice.backcolor(ctr, Color.Transparent);
+            MenuChoice.backcolor(ctr, System.Drawing.Color.Transparent);
         }
         private void searchText_Enter(object sender, EventArgs e)
         {
             customTextbox ctr = (customTextbox)sender;
-            ctr.BorderColor = Color.Red;
+            ctr.BorderColor = System.Drawing.Color.Red;
             ctr.Invalidate();
             ctr.Refresh();
         }
@@ -181,38 +185,40 @@ namespace Music_media
         //test Naudio with mp3
         private WaveOut outputDevice;
         private AudioFileReader audioFile;
-        int musicOn= 0;
+        int musicOn = 0;
         bool turn = false;
-        private void OnButtonPlayClick(object sender, EventArgs args)
-        {
-                if (!turn)
-                {
-                    if (outputDevice == null)
-                    {
-                        outputDevice = new WaveOut();
-                        outputDevice.PlaybackStopped += OnPlaybackStopped;
-                    }
-                    if (audioFile == null)
-                    {
-                        audioFile = new AudioFileReader(@"C:\Users\ACER\Music\Girls Like You - Maroon 5.m4a");
-                    outputDevice.Init(audioFile);
-                    }
-                    outputDevice.Play();
-                    musicOn = 1;
-                    turn = true;
-                }else
-                if (turn)
-                {
-                    turn = false;
-                    if (audioFile == null)
-                        OnButtonPlayClick(sender, args);
-                    outputDevice.Pause();
-                    
-                }
-                Mp3FileReader a = new Mp3FileReader(@"C:\Users\ACER\Music\G.E.M. - 來自天堂的魔鬼.mp3");
-                test();
-            
-        }
+        //private void onbuttonplayclick(object sender, eventargs args)
+        //{
+        //    if (!turn)
+        //    {
+        //        if (outputdevice == null)
+        //        {
+        //            outputdevice = new waveout();
+        //            outputdevice.playbackstopped += onplaybackstopped;
+        //        }
+        //        if (audiofile == null)
+        //        {
+        //            audiofile = new audiofilereader(@"c:\users\acer\music\girls like you - maroon 5.m4a");
+        //            outputdevice.init(audiofile);
+        //        }
+        //        outputdevice.play();
+        //        musicon = 1;
+        //        turn = true;
+        //    }
+        //    else
+        //    if (turn)
+        //    {
+        //        turn = false;
+        //        if (audiofile == null)
+        //            onbuttonplayclick(sender, args);
+        //        outputdevice.pause();
+
+        //    }
+        //    mp3filereader a = new mp3filereader(@"c:\users\acer\music\g.e.m. - 來自天堂的魔鬼.mp3");
+        //    test();
+
+        //}
+       
         private void OnPlaybackStopped(object sender, StoppedEventArgs args)
         {
             outputDevice.Dispose();
@@ -243,46 +249,38 @@ namespace Music_media
         //HomeControl
         private void Home_Load(object sender, EventArgs e)
         {
-            this.txtUserName.Text = "conduongmau";
-            this.txtUserPass.Text = "test";
-            this.txtHo.Text = "le";
-            this.txtTen.Text = "le";
-            this.txtUsernameReg.Text = "conduongmau";
-            this.txtPasswordReg.Text = "test";
-            this.txtsdtReg.Text = "0839996965";
-            this.cbType.SelectedIndex = 0;
-            this.dateNgaySinh.Value = new DateTime(2002, 09, 18);
+
         }
         //MusicControl
         private void hoverItem(object sender, EventArgs args)
         {
             Control control = (Control)sender;
-            control.BackColor = Color.FromArgb(240, 240, 240);
+            control.BackColor = System.Drawing.Color.FromArgb(240, 240, 240);
         }
         private void hoverLeaveItem(object sender, EventArgs args)
         {
             Control control = (Control)sender;
-            control.BackColor = Color.FromArgb(249, 249, 249);
+            control.BackColor = System.Drawing.Color.FromArgb(249, 249, 249);
         }
 
         private void childItem_MouseHover(object sender, EventArgs e)
         {
             Control control = (Control)sender;
-            control.BackColor = Color.FromArgb(232, 232, 232);
-            control.Parent.BackColor = Color.FromArgb(240, 240, 240);
+            control.BackColor = System.Drawing.Color.FromArgb(232, 232, 232);
+            control.Parent.BackColor = System.Drawing.Color.FromArgb(240, 240, 240);
             foreach (Control chirl in control.Controls)
             {
-                chirl.ForeColor = Color.FromArgb(212, 81, 34);
+                chirl.ForeColor = System.Drawing.Color.FromArgb(212, 81, 34);
             }
         }
         private void childItem_MouseLeave(object sender, EventArgs e)
         {
             Control control = (Control)sender;
-            control.BackColor = Color.Transparent;
-            control.Parent.BackColor = Color.Transparent;
+            control.BackColor = System.Drawing.Color.Transparent;
+            control.Parent.BackColor = System.Drawing.Color.Transparent;
             foreach (Control chirl in control.Controls)
             {
-                chirl.ForeColor = Color.FromArgb(25, 25, 25);
+                chirl.ForeColor = System.Drawing.Color.FromArgb(25, 25, 25);
             }
         }
 
@@ -319,7 +317,7 @@ namespace Music_media
         private void btnRegSucces_Click(object sender, EventArgs e)
 
         {
-            using (var _db = new khoabeoenti.MusicMediaDLDEntities())
+            using (var _db = new Music_media.khoabeoenti.MusicMediaDLDEntities())
             {
                 String chuoiKhongHopLe = "!,@,#,$,%,^,&,*,(,),>,<,?,INSERT,UPDATE,DELETE,SELECT";
                 bool ktSdt = sodienthoaihople(this.txtPasswordReg.Text);
@@ -414,15 +412,211 @@ namespace Music_media
 
             menuControl.SelectedTabPage = tabLogin;
         }
-
-        private void btnLibOnMydestop_Click(object sender, EventArgs e)
+        private void BtnOpenFolder_Click(object sender, EventArgs e)
         {
-            FolderBrowserDialog dialog = new FolderBrowserDialog();
-            if (dialog.ShowDialog() == DialogResult.OK)
+            using (var dialog = new FolderBrowserDialog())
             {
-                // Thư mục đã chọn
-                string selectedPath = dialog.SelectedPath;
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    //lay duong dan
+                    string folderPath = dialog.SelectedPath;
+
+                    /// tai cac thuoc tinh cua track 
+
+                    List<Track> songs = LoadTrackFromFile(folderPath);
+
+
+                    // Hiển thị danh sách các bài hát trên DataGridView
+                    dtgTrack.DataSource = songs;
+                }
             }
+        }
+        private List<Track> LoadTrackFromFile(string folderPath)
+        {
+            List<Track> songs = new List<Track>();
+
+
+
+            var files = Directory.GetFiles(folderPath, "*.mp3", SearchOption.AllDirectories);
+            int i = 0;
+            foreach (var file in files)
+            {
+                try
+                {
+
+                    TagLib.File tagFile = TagLib.File.Create(file);
+
+                    Track track = new Track
+                    {
+                        TrackID = ++i,
+                        TrackName = tagFile.Tag.Title,
+
+                        TrackLength = (int?)tagFile.Properties.Duration.TotalSeconds,
+                        Track_path = file
+                    };
+
+                    if (tagFile.Tag.Genres.Length > 0)
+                    {
+                        foreach (string genre in tagFile.Tag.Genres)
+                        {
+                            track.TrackGenre += genre + ", ";
+                        }
+                        track.TrackGenre = track.TrackGenre.TrimEnd(',', ' '); // Loại bỏ dấu phẩy và khoảng trắng cuối cùng
+                    }
+
+                    songs.Add(track);
+                }
+                catch (Exception ex)
+                {
+
+                }
+            }
+
+            return songs;
+        }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == dtgTrack.Columns["DeleteButtonColumn"].Index && e.RowIndex >= 0)
+            {
+                var result = MessageBox.Show("Bạn có chắc chắn muốn xóa bài hát này không?", "Xóa bài hát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    var trackPath = dtgTrack.Rows[e.RowIndex].Cells["Track_path"].Value.ToString();
+                    using (var _db = new Music_media.khoabeoenti.MusicMediaDLDEntities())
+                    {
+                        var trackToRemove = _db.Tracks.FirstOrDefault(x => x.Track_path == trackPath);
+                        if (trackToRemove != null)
+                        {
+                            _db.Tracks.Remove(trackToRemove);
+                            _db.SaveChanges();
+                        }
+                    }
+                }
+            }
+            if (dtgTrack.Columns[e.ColumnIndex].Name == "playMusicdtg")
+            {
+                MessageBox.Show("123");
+                // Lấy đường dẫn đến file nhạc
+                string TrackPath = dtgTrack.Rows[e.RowIndex].Cells["Track_path"].Value.ToString();
+                string TrackLength = dtgTrack.Rows[e.RowIndex].Cells["TrackLength"].Value.ToString();
+                TimeSpan timeSpan = TimeSpan.FromSeconds(int.Parse(TrackLength));
+                endTime.Text = timeSpan.ToString(@"mm\:ss");
+                playBar.Maximum = Convert.ToInt32(TrackLength);
+                PlayMp3(TrackPath, playBar, timer1);
+
+            }
+        }
+        /// pHÁT NHẠC TẠI ĐÂY BÂY PHẢI CÓ ĐỦ 3 THÔNG SỐ
+        public static void PlayMp3(string filePath, ProgressBar progressBar, System.Windows.Forms.Timer playbackTimer)
+        {
+            mediaPlayer.Stop();
+            mediaPlayer.Open(new Uri(filePath));
+            mediaPlayer.Play();
+
+            playbackTimer.Interval = 1000;
+            playbackTimer.Tick += (sender, args) =>
+            {
+                progressBar.Value = (int)mediaPlayer.Position.TotalSeconds;
+              
+            };
+            playbackTimer.Start();
+
+           
+            mediaPlayer.MediaEnded += (sender, args) =>
+            {
+                playbackTimer.Stop();
+                progressBar.Value = 0;
+               
+            };
+        }
+
+
+        private void playBar_MouseUp(object sender, MouseEventArgs e)
+        {
+            int newPosition = (int)(((float)e.X / (float)playBar.Width) * playBar.Maximum);
+            mediaPlayer.Position = TimeSpan.FromSeconds(newPosition);
+        }
+        private List<Track> selectedTracks = new List<Track>();
+
+        private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+              
+                if (dtgTrack.Columns[e.ColumnIndex].Name == "SelectTrack")
+                {
+                  
+                    bool isChecked = (bool)dtgTrack.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
+                    string trackPath = dtgTrack.Rows[e.RowIndex].Cells["Track_path"].Value.ToString();
+                    String trackName = dtgTrack.Rows[e.RowIndex].Cells["TrackName"].Value.ToString();
+                    int trackLength = Convert.ToInt32(dtgTrack.Rows[e.RowIndex].Cells["TrackLength"].Value.ToString());
+                    String trackGenre = dtgTrack.Rows[e.RowIndex].Cells["TrackGenre"].Value.ToString();
+                    khoabeoenti.Track trackdtg = new khoabeoenti.Track();
+
+                    if (isChecked)
+                    {   
+                        using (var _db = new Music_media.khoabeoenti.MusicMediaDLDEntities())
+                        {
+                            trackdtg.Track_path = trackPath;
+                            trackdtg.TrackName = trackName;
+                            trackdtg.TrackLength = trackLength;
+                            trackdtg.TrackGenre = trackGenre;
+                            _db.Tracks.Add(trackdtg);
+                            _db.SaveChanges();
+                        }
+                    }
+                    else
+                    {
+                        using (var _db = new Music_media.khoabeoenti.MusicMediaDLDEntities())
+                        {
+                            var trackToRemove = _db.Tracks.FirstOrDefault(x => x.Track_path == trackPath);
+                            if (trackToRemove != null)
+                            {
+                                _db.Tracks.Remove(trackToRemove);
+                                _db.SaveChanges();
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        private void btnLibOndb_Click(object sender, EventArgs e)
+        {
+            var deleteButtonColumn = new DataGridViewButtonColumn();
+            deleteButtonColumn.Name = "DeleteButtonColumn";
+            deleteButtonColumn.Text = "Xóa";
+            deleteButtonColumn.UseColumnTextForButtonValue = true;
+            dtgTrack.Columns.Add(deleteButtonColumn);
+            using (var _db = new Music_media.khoabeoenti.MusicMediaDLDEntities())
+            {
+               var tracks = _db.Tracks.ToList();
+
+                if (tracks != null)
+                {
+                    dtgTrack.DataSource = tracks;
+                }
+
+            }
+
+        }
+
+        private void dtgTrack_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.ThrowException = false;
+
         }
     }
 }
+
+
+
+
+
+
+
+
+
+

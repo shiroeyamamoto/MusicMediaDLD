@@ -26,6 +26,7 @@ namespace DAL_MusicMedia
         public Nullable<int> TrackLength { get; set; }
         public string TrackGenre { get; set; }
         public Nullable<int> AlbumID { get; set; }
+        public string Track_path { get; set; }
     
         public virtual Album Album { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

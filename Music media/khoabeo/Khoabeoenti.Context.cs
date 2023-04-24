@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DAL_MusicMedia
+namespace Music_media.khoabeoenti
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class MusicmediaDLDEntities : DbContext
+    public partial class MusicMediaDLDEntities : DbContext
     {
-        public MusicmediaDLDEntities()
-            : base("name=MusicmediaDLDEntities")
+        public MusicMediaDLDEntities()
+            : base("name=MusicMediaDLDEntities")
         {
         }
     
@@ -28,6 +28,7 @@ namespace DAL_MusicMedia
         public virtual DbSet<Album> Albums { get; set; }
         public virtual DbSet<Artist> Artists { get; set; }
         public virtual DbSet<Playlist> Playlists { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<Track> Tracks { get; set; }
         public virtual DbSet<Track_Artist> Track_Artist { get; set; }
         public virtual DbSet<Track_Playlist> Track_Playlist { get; set; }

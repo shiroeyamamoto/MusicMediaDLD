@@ -22,6 +22,7 @@ using DevExpress.Office.Import.OpenXml;
 using System.Data.SqlClient;
 using System.Threading;
 using NAudio.MediaFoundation;
+using Music_media.khoabeoenti;
 
 namespace Music_media
 {
@@ -38,15 +39,17 @@ namespace Music_media
 
 
             //Get TabPage of menuControl
-            
+
             listTabPages.Add(homeTab);
             listTabPages.Add(musicTab);
             listTabPages.Add(queueTab);
             listTabPages.Add(playlistsTab);
             listTabPages.Add(settingTab);
+            listTabPages.Add(tabLogin);
+            listTabPages.Add(tabReg);
+
             listTabPages.Add(noneTab);
             menuControl.SelectedTabPage = homeTab;
-
 
             /*var file = TagLib.File.Create(@"C:\Users\ACER\Music\Akon - Lonely.mp3");
             TimeSpan duration = file.Properties.Duration;
@@ -55,7 +58,7 @@ namespace Music_media
             {
                 MessageBox.Show(page);
             }*/
-            
+
 
         }
         //Form function
@@ -238,7 +241,18 @@ namespace Music_media
             MessageBox.Show(title + ",\n " + artist + ",\n " + album + ",\n " + genre + ",\n " + duration + ",\n " + lyrics + ",\n " + year);
         }
         //HomeControl
-
+        private void Home_Load(object sender, EventArgs e)
+        {
+            this.txtUserName.Text = "conduongmau";
+            this.txtUserPass.Text = "test";
+            this.txtHo.Text = "le";
+            this.txtTen.Text = "le";
+            this.txtUsernameReg.Text = "conduongmau";
+            this.txtPasswordReg.Text = "test";
+            this.txtsdtReg.Text = "0839996965";
+            this.cbType.SelectedIndex = 0;
+            this.dateNgaySinh.Value = new DateTime(2002, 09, 18);
+        }
         //MusicControl
         private void hoverItem(object sender, EventArgs args)
         {
@@ -272,9 +286,135 @@ namespace Music_media
             }
         }
 
+        private void panelAccount_Click(object sender, EventArgs e)
+        {
+            // Chuyển đổi sang trang tài khoản (tabAccount)
+            menuControl.SelectedTabPage = tabLogin;
+        }
 
-        //QueueControl
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            using (var context = new MusicMediaDLDEntities())
+            {
+                if (string.IsNullOrEmpty(txtUserName.Text) || string.IsNullOrEmpty(txtUserPass.Text))
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin.");
+                    return;
+                }
 
-        //PlaylistsControl
+                bool checkUsername = context.Users.Any(u => u.UserName.Equals(txtUserName.Text));
+                bool checkPass = context.Users.Any(u => u.Userpassword.Equals(txtUserPass.Text));
+                if (checkUsername && checkPass)
+                {
+                    MessageBox.Show("Login success");
+                    menuControl.SelectedTabPage = playlistsTab;
+                }
+                else
+                {
+                    MessageBox.Show("Login Fail");
+                    return;
+                }
+            }
+        }
+        private void btnRegSucces_Click(object sender, EventArgs e)
+
+        {
+            using (var _db = new khoabeoenti.MusicMediaDLDEntities())
+            {
+                String chuoiKhongHopLe = "!,@,#,$,%,^,&,*,(,),>,<,?,INSERT,UPDATE,DELETE,SELECT";
+                bool ktSdt = sodienthoaihople(this.txtPasswordReg.Text);
+                bool checkUsername = _db.Users.Any(u => u.UserName.Equals(txtUsernameReg.Text));
+                DateTime now = DateTime.Today;
+                int age = now.Year - dateNgaySinh.Value.Year;
+                List<string> danhSachPhanTu = chuoiKhongHopLe.Split(',').ToList();
+
+                if (danhSachPhanTu.Any(p => txtHo.Text.Contains(p) || txtTen.Text.Contains(p) || txtUsernameReg.Text.Contains(p)))
+                {
+                    MessageBox.Show("Thông tin không hợp lệ, vui lòng không nhập các ký tự đặc biệt hoặc từ khóa trong danh sách!");
+                    return;
+                }
+                if (string.IsNullOrEmpty(txtHo.Text) || string.IsNullOrEmpty(txtTen.Text) || dateNgaySinh.Value == null || string.IsNullOrEmpty(txtUsernameReg.Text) || string.IsNullOrEmpty(txtPasswordReg.Text) || string.IsNullOrEmpty(txtsdtReg.Text))
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin.");
+                    return;
+                }
+                if (txtHo.Text.Contains(chuoiKhongHopLe))
+                {
+                    MessageBox.Show("Thông tin khong hợp lệ.");
+                    return;
+                };
+
+                if (!sodienthoaihople(txtsdtReg.Text))
+                {
+                    MessageBox.Show("Số điện thoại không hợp lệ.");
+                    return;
+                }
+
+
+                if (checkUsername)
+                {
+                    MessageBox.Show("Username đã tồn tại.");
+                    return;
+                }
+
+                if (age < 12)
+                {
+                    MessageBox.Show("Bạn phải đủ 12 tuổi để đăng ký.");
+                    return;
+                }
+                khoabeoenti.User newUser = new khoabeoenti.User()
+                {
+                    ho = txtHo.Text,
+                    Ten = txtTen.Text,
+                    ngaySinh = dateNgaySinh.Value,
+                    UserName = txtUsernameReg.Text,
+                    Userpassword = txtPasswordReg.Text,
+                    Sdt = txtsdtReg.Text,
+                    Admin = cbType.Text == "Admin" ? true : false,
+                    Coin = 0
+                };
+
+                _db.Users.Add(newUser);
+                _db.SaveChanges();
+                menuControl.SelectedTabPage = tabLogin;
+                MessageBox.Show("Đăng ký thành công!");
+            }
+
+
+        }
+        public bool sodienthoaihople(string sdt)
+        {
+
+            if (sdt.Length != 10)
+            {
+                return false;
+            }
+            foreach (char c in sdt)
+            {
+                if (!Char.IsDigit(c))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+        private void panelAccount_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+            menuControl.SelectedTabPage = tabReg;
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+
+            menuControl.SelectedTabPage = tabLogin;
+        }
+
+       
     }
 }

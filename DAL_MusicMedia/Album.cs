@@ -23,6 +23,7 @@ namespace DAL_MusicMedia
         public int AlbumID { get; set; }
         public string AlbumName { get; set; }
         public Nullable<System.DateTime> ReleaseYear { get; set; }
+        public string Album_path { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Track> Tracks { get; set; }

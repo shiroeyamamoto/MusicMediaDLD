@@ -8,6 +8,7 @@
     <Property Name="AlbumName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="ReleaseYear" Type="DateTime" Precision="0" />
     <NavigationProperty Name="Tracks" Relationship="Self.FK__Track__AlbumID__30F848ED" FromRole="Album" ToRole="Track" />
+    <Property Name="Album_path" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="Artist">
     <Key>
@@ -39,6 +40,7 @@
     <NavigationProperty Name="Album" Relationship="Self.FK__Track__AlbumID__30F848ED" FromRole="Track" ToRole="Album" />
     <NavigationProperty Name="Track_Artist" Relationship="Self.FK__Track_Art__Track__32E0915F" FromRole="Track" ToRole="Track_Artist" />
     <NavigationProperty Name="Track_Playlist" Relationship="Self.FK__Track_Pla__Track__34C8D9D1" FromRole="Track" ToRole="Track_Playlist" />
+    <Property Name="Track_path" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="Track_Artist">
     <Key>
@@ -179,5 +181,16 @@
       <End Role="Track" EntitySet="Tracks" />
       <End Role="Track_Playlist" EntitySet="Track_Playlist" />
     </AssociationSet>
+    <EntitySet Name="sysdiagrams" EntityType="MusicmediaDLDModel.sysdiagram" />
   </EntityContainer>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
 </Schema>

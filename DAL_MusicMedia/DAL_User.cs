@@ -8,12 +8,12 @@ namespace DAL_MusicMedia
 {
     public class DAL_User
     {
-        MusicmediaDLDEntities db;
+        MusicMediaDLDEntities db;
 
         // phuong thuc khoi tao
         public DAL_User()
         {
-            db = new MusicmediaDLDEntities();
+            db = new MusicMediaDLDEntities();
         }
 
         //testing function

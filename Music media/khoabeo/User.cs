@@ -18,7 +18,6 @@ namespace Music_media.khoabeo
         public User()
         {
             this.Playlists = new HashSet<Playlist>();
-            this.Playlists1 = new HashSet<Playlist>();
         }
     
         public int UserID { get; set; }
@@ -33,7 +32,5 @@ namespace Music_media.khoabeo
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Playlist> Playlists { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Playlist> Playlists1 { get; set; }
     }
 }

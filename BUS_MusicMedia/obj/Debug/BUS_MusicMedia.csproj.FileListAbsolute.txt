@@ -84,3 +84,15 @@ C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\
 C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\TagLibSharp.xml
 C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\NAudio.xml
 C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\TagLibSharp.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\NAudio.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\NAudio.Core.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\NAudio.WinMM.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\NAudio.Wasapi.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\TagLibSharp.pdb
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\TagLibSharp.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\NAudio.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\Microsoft.Win32.Registry.xml

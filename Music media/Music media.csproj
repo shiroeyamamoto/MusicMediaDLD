@@ -161,9 +161,6 @@
     <Compile Include="khoabeo\sysdiagram.cs">
       <DependentUpon>Adoentity.tt</DependentUpon>
     </Compile>
-    <Compile Include="khoabeo\TestTable.cs">
-      <DependentUpon>Adoentity.tt</DependentUpon>
-    </Compile>
     <Compile Include="khoabeo\Track.cs">
       <DependentUpon>Adoentity.tt</DependentUpon>
     </Compile>
@@ -315,6 +312,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bin.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="khoabeo\Adoentity.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Adoentity.edmx</DependentUpon>
@@ -325,7 +325,6 @@
       <DependentUpon>Adoentity.edmx</DependentUpon>
       <LastGenOutput>Adoentity.cs</LastGenOutput>
     </Content>
-    <None Include="Resources\bin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

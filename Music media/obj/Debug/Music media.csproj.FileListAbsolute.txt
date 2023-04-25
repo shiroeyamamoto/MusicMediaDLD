@@ -350,7 +350,6 @@ C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\NAudio.Win
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\policy.2.0.taglib-sharp.dll
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\System.Security.AccessControl.dll
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\System.Security.Principal.Windows.dll
-C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\taglib-sharp.dll
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.Xpo.v22.2.dll
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.CodeParser.v22.2.dll
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DevExpress.XtraDiagram.v22.2.dll
@@ -410,7 +409,6 @@ C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Music medi
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Interop.WMPLib.dll
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Music media.csproj.ResolveComReference.cache
-C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Music_media.Home.resources
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Music_media.Properties.Resources.resources
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Music media.csproj.GenerateResource.cache
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Music media.exe.licenses
@@ -532,3 +530,9 @@ C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\Music media\bin
 C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\Music media\bin\Debug\TagLibSharp.dll
 C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\Music media\bin\Debug\TagLibSharp.pdb
 C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\Music media\bin\Debug\TagLibSharp.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\TagLibSharp.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DAL_MusicMedia.exe
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\TagLibSharp.pdb
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\TagLibSharp.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DAL_MusicMedia.pdb
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DAL_MusicMedia.exe.config

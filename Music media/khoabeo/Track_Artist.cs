@@ -19,8 +19,6 @@ namespace Music_media.khoabeo
         public Nullable<int> ArtistID { get; set; }
     
         public virtual Artist Artist { get; set; }
-        public virtual Artist Artist1 { get; set; }
         public virtual Track Track { get; set; }
-        public virtual Track Track1 { get; set; }
     }
 }

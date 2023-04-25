@@ -13,10 +13,10 @@ namespace Music_media.khoabeo
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class MusicMediaDLDEntities : DbContext
+    public partial class MusicMediaDLDEntities1 : DbContext
     {
-        public MusicMediaDLDEntities()
-            : base("name=MusicMediaDLDEntities")
+        public MusicMediaDLDEntities1()
+            : base("name=MusicMediaDLDEntities1")
         {
         }
     
@@ -29,7 +29,6 @@ namespace Music_media.khoabeo
         public virtual DbSet<Artist> Artists { get; set; }
         public virtual DbSet<Playlist> Playlists { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
-        public virtual DbSet<TestTable> TestTables { get; set; }
         public virtual DbSet<Track> Tracks { get; set; }
         public virtual DbSet<Track_Artist> Track_Artist { get; set; }
         public virtual DbSet<Track_Playlist> Track_Playlist { get; set; }

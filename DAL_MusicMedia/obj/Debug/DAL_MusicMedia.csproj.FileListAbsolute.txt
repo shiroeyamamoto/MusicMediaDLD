@@ -87,3 +87,20 @@ C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\DAL_MusicMedia\
 C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\DAL_MusicMedia\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\DAL_MusicMedia\bin\Debug\TagLibSharp.pdb
 C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\DAL_MusicMedia\bin\Debug\TagLibSharp.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DAL_MusicMedia\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DAL_MusicMedia\bin\Debug\NAudio.Asio.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DAL_MusicMedia\bin\Debug\NAudio.Core.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DAL_MusicMedia\bin\Debug\NAudio.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DAL_MusicMedia\bin\Debug\NAudio.Midi.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DAL_MusicMedia\bin\Debug\NAudio.Wasapi.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DAL_MusicMedia\bin\Debug\NAudio.WinForms.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DAL_MusicMedia\bin\Debug\NAudio.WinMM.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DAL_MusicMedia\bin\Debug\System.Security.AccessControl.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DAL_MusicMedia\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DAL_MusicMedia\bin\Debug\TagLibSharp.dll
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DAL_MusicMedia\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DAL_MusicMedia\bin\Debug\NAudio.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DAL_MusicMedia\bin\Debug\System.Security.AccessControl.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DAL_MusicMedia\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DAL_MusicMedia\bin\Debug\TagLibSharp.pdb
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DAL_MusicMedia\bin\Debug\TagLibSharp.xml

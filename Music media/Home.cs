@@ -16,19 +16,16 @@ using Music_media.customControl;
 using Music_media.Menu_Choice;
 using DevExpress.XtraTab;
 using NAudio.Wave;
-using BUS_MusicMedia;
 using TagLib;
 using NAudio.Wave.SampleProviders;
 using DevExpress.Office.Import.OpenXml;
 using System.Data.SqlClient;
 using System.Threading;
 using NAudio.MediaFoundation;
-<<<<<<< HEAD
-//using Music_media.khoabeoenti;
-=======
-using Music_media.khoabeoenti;
+
 using System.Windows.Media;
->>>>>>> 272e8b2bfcce4f42818f763784d46a644aee5176
+using Music_media.khoabeo;
+using BUS_MusicMedia;
 
 namespace Music_media
 {
@@ -55,10 +52,7 @@ namespace Music_media
             listTabPages.Add(tabReg);
 
             listTabPages.Add(noneTab);
-            menuControl.SelectedTabPage = noneTab;
-
-            //BUS_Track.addTrack(@"C:\Users\ACER\Music\Girls Like You - Maroon 5.m4a", dataGridView1);
-            
+            menuControl.SelectedTabPage = homeTab;
 
             /*var file = TagLib.File.Create(@"C:\Users\ACER\Music\Akon - Lonely.mp3");
             TimeSpan duration = file.Properties.Duration;
@@ -298,9 +292,9 @@ namespace Music_media
             menuControl.SelectedTabPage = tabLogin;
         }
 
-        /*private void btnLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            using (var context = new MusicMediaDLDEntities())
+            using (var context = new MusicMediaDLDEntities1())
             {
                 if (string.IsNullOrEmpty(txtUserName.Text) || string.IsNullOrEmpty(txtUserPass.Text))
                 {
@@ -321,11 +315,11 @@ namespace Music_media
                     return;
                 }
             }
-        }*/
-        /*private void btnRegSucces_Click(object sender, EventArgs e)
+        }
+        private void btnRegSucces_Click(object sender, EventArgs e)
 
         {
-            using (var _db = new Music_media.khoabeoenti.MusicMediaDLDEntities())
+            using (var _db = new Music_media.khoabeo.MusicMediaDLDEntities1())
             {
                 String chuoiKhongHopLe = "!,@,#,$,%,^,&,*,(,),>,<,?,INSERT,UPDATE,DELETE,SELECT";
                 bool ktSdt = sodienthoaihople(this.txtPasswordReg.Text);
@@ -368,7 +362,7 @@ namespace Music_media
                     MessageBox.Show("Bạn phải đủ 12 tuổi để đăng ký.");
                     return;
                 }
-                *//*khoabeoenti.User newUser = new khoabeoenti.User()
+                khoabeo.User newUser = new khoabeo.User()
                 {
                     ho = txtHo.Text,
                     Ten = txtTen.Text,
@@ -378,16 +372,16 @@ namespace Music_media
                     Sdt = txtsdtReg.Text,
                     Admin = cbType.Text == "Admin" ? true : false,
                     Coin = 0
-                };*/
-/*
+                };
+
                 _db.Users.Add(newUser);
                 _db.SaveChanges();
                 menuControl.SelectedTabPage = tabLogin;
-                MessageBox.Show("Đăng ký thành công!");*//*
+                MessageBox.Show("Đăng ký thành công!");
             }
 
 
-        }*/
+        }
         public bool sodienthoaihople(string sdt)
         {
 
@@ -434,28 +428,11 @@ namespace Music_media
                     List<Track> songs = LoadTrackFromFile(folderPath);
 
 
-                    // Hiển thị danh sách các bài hát trên DataGridView
+              
                     dtgTrack.DataSource = songs;
                 }
             }
         }
-<<<<<<< HEAD
-
-        private void buttonPlay_Click(object sender, EventArgs e)
-        {
-            //BUS_User.select(dataGridView1, labelControl10);
-        }
-
-        private void themFile(object sender, EventArgs e)
-        {
-            OpenFileDialog file = new OpenFileDialog();
-            file.Filter = "All Media Files|*.mp3;*.flac;*.m4a;";
-            if (file.ShowDialog() == DialogResult.OK)
-            {
-                BUS_Track.addTrack(@file.FileName,dataGridView1);
-            }
-        }
-=======
         private List<Track> LoadTrackFromFile(string folderPath)
         {
             List<Track> songs = new List<Track>();
@@ -507,7 +484,7 @@ namespace Music_media
                 if (result == DialogResult.Yes)
                 {
                     var trackPath = dtgTrack.Rows[e.RowIndex].Cells["Track_path"].Value.ToString();
-                    using (var _db = new Music_media.khoabeoenti.MusicMediaDLDEntities())
+                    using (var _db = new Music_media.khoabeo.MusicMediaDLDEntities1())
                     {
                         var trackToRemove = _db.Tracks.FirstOrDefault(x => x.Track_path == trackPath);
                         if (trackToRemove != null)
@@ -515,12 +492,19 @@ namespace Music_media
                             _db.Tracks.Remove(trackToRemove);
                             _db.SaveChanges();
                         }
+                        ///KHOABEO LOAD LẠI 
+                        var tracks = _db.Tracks.ToList();
+                        dtgTrack.DataSource = tracks;
+
+
+
                     }
+
                 }
             }
             if (dtgTrack.Columns[e.ColumnIndex].Name == "playMusicdtg")
             {
-                MessageBox.Show("123");
+               
                 // Lấy đường dẫn đến file nhạc
                 string TrackPath = dtgTrack.Rows[e.RowIndex].Cells["Track_path"].Value.ToString();
                 string TrackLength = dtgTrack.Rows[e.RowIndex].Cells["TrackLength"].Value.ToString();
@@ -576,11 +560,11 @@ namespace Music_media
                     String trackName = dtgTrack.Rows[e.RowIndex].Cells["TrackName"].Value.ToString();
                     int trackLength = Convert.ToInt32(dtgTrack.Rows[e.RowIndex].Cells["TrackLength"].Value.ToString());
                     String trackGenre = dtgTrack.Rows[e.RowIndex].Cells["TrackGenre"].Value.ToString();
-                    khoabeoenti.Track trackdtg = new khoabeoenti.Track();
+                    khoabeo.Track trackdtg = new khoabeo.Track();
 
                     if (isChecked)
                     {   
-                        using (var _db = new Music_media.khoabeoenti.MusicMediaDLDEntities())
+                        using (var _db = new Music_media.khoabeo.MusicMediaDLDEntities1())
                         {
                             trackdtg.Track_path = trackPath;
                             trackdtg.TrackName = trackName;
@@ -592,7 +576,7 @@ namespace Music_media
                     }
                     else
                     {
-                        using (var _db = new Music_media.khoabeoenti.MusicMediaDLDEntities())
+                        using (var _db = new Music_media.khoabeo.MusicMediaDLDEntities1())
                         {
                             var trackToRemove = _db.Tracks.FirstOrDefault(x => x.Track_path == trackPath);
                             if (trackToRemove != null)
@@ -615,7 +599,7 @@ namespace Music_media
             deleteButtonColumn.Text = "Xóa";
             deleteButtonColumn.UseColumnTextForButtonValue = true;
             dtgTrack.Columns.Add(deleteButtonColumn);
-            using (var _db = new Music_media.khoabeoenti.MusicMediaDLDEntities())
+            using (var _db = new Music_media.khoabeo.MusicMediaDLDEntities1())
             {
                var tracks = _db.Tracks.ToList();
 
@@ -633,7 +617,19 @@ namespace Music_media
             e.ThrowException = false;
 
         }
->>>>>>> 272e8b2bfcce4f42818f763784d46a644aee5176
+
+       
+        //////TẤT CẢ ĐỀU CỦA THẰNG KHANG
+
+        //private void themFile(object sender, EventArgs e)
+        //{
+        //    OpenFileDialog file = new OpenFileDialog();
+        //    file.Filter = "All Media Files|*.mp3;*.flac;*.m4a;";
+        //    if (file.ShowDialog() == DialogResult.OK)
+        //    {
+        //        BUS_Track.addTrack(@file.FileName, dataGridView1);
+        //    }
+        //}
     }
 }
 

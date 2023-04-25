@@ -18,16 +18,14 @@ namespace Music_media.khoabeo
         public Album()
         {
             this.Tracks = new HashSet<Track>();
-            this.Tracks1 = new HashSet<Track>();
         }
     
         public int AlbumID { get; set; }
         public string AlbumName { get; set; }
         public Nullable<System.DateTime> ReleaseYear { get; set; }
+        public string Album_path { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Track> Tracks { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Track> Tracks1 { get; set; }
     }
 }

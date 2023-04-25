@@ -1,17 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="MusicMediaDLDModel6StoreContainer" CdmEntityContainer="MusicMediaDLDEntities">
+  <EntityContainerMapping StorageEntityContainer="MusicMediaDLDModelStoreContainer" CdmEntityContainer="MusicMediaDLDEntities1">
     <EntitySetMapping Name="Albums">
-      <EntityTypeMapping TypeName="MusicMediaDLDModel6.Album">
+      <EntityTypeMapping TypeName="MusicMediaDLDModel.Album">
         <MappingFragment StoreEntitySet="Album">
           <ScalarProperty Name="AlbumID" ColumnName="AlbumID" />
           <ScalarProperty Name="AlbumName" ColumnName="AlbumName" />
           <ScalarProperty Name="ReleaseYear" ColumnName="ReleaseYear" />
+          <ScalarProperty Name="Album_path" ColumnName="Album_path" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Artists">
-      <EntityTypeMapping TypeName="MusicMediaDLDModel6.Artist">
+      <EntityTypeMapping TypeName="MusicMediaDLDModel.Artist">
         <MappingFragment StoreEntitySet="Artist">
           <ScalarProperty Name="ArtistID" ColumnName="ArtistID" />
           <ScalarProperty Name="ArtustName" ColumnName="ArtustName" />
@@ -19,7 +20,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Playlists">
-      <EntityTypeMapping TypeName="MusicMediaDLDModel6.Playlist">
+      <EntityTypeMapping TypeName="MusicMediaDLDModel.Playlist">
         <MappingFragment StoreEntitySet="Playlist">
           <ScalarProperty Name="PlaylistID" ColumnName="PlaylistID" />
           <ScalarProperty Name="PlaylistName" ColumnName="PlaylistName" />
@@ -28,7 +29,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="sysdiagrams">
-      <EntityTypeMapping TypeName="MusicMediaDLDModel6.sysdiagram">
+      <EntityTypeMapping TypeName="MusicMediaDLDModel.sysdiagram">
         <MappingFragment StoreEntitySet="sysdiagrams">
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="principal_id" ColumnName="principal_id" />
@@ -38,27 +39,20 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="TestTables">
-      <EntityTypeMapping TypeName="MusicMediaDLDModel6.TestTable">
-        <MappingFragment StoreEntitySet="TestTable">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="name" ColumnName="name" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Tracks">
-      <EntityTypeMapping TypeName="MusicMediaDLDModel6.Track">
+      <EntityTypeMapping TypeName="MusicMediaDLDModel.Track">
         <MappingFragment StoreEntitySet="Track">
           <ScalarProperty Name="TrackID" ColumnName="TrackID" />
           <ScalarProperty Name="TrackName" ColumnName="TrackName" />
           <ScalarProperty Name="TrackLength" ColumnName="TrackLength" />
           <ScalarProperty Name="TrackGenre" ColumnName="TrackGenre" />
           <ScalarProperty Name="AlbumID" ColumnName="AlbumID" />
+          <ScalarProperty Name="Track_path" ColumnName="Track_path" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Track_Artist">
-      <EntityTypeMapping TypeName="MusicMediaDLDModel6.Track_Artist">
+      <EntityTypeMapping TypeName="MusicMediaDLDModel.Track_Artist">
         <MappingFragment StoreEntitySet="Track_Artist">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="TrackID" ColumnName="TrackID" />
@@ -67,7 +61,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Track_Playlist">
-      <EntityTypeMapping TypeName="MusicMediaDLDModel6.Track_Playlist">
+      <EntityTypeMapping TypeName="MusicMediaDLDModel.Track_Playlist">
         <MappingFragment StoreEntitySet="Track_Playlist">
           <ScalarProperty Name="ReleaseDate" ColumnName="ReleaseDate" />
           <ScalarProperty Name="TrackID" ColumnName="TrackID" />
@@ -76,7 +70,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Users">
-      <EntityTypeMapping TypeName="MusicMediaDLDModel6.User">
+      <EntityTypeMapping TypeName="MusicMediaDLDModel.User">
         <MappingFragment StoreEntitySet="Users">
           <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="UserName" ColumnName="UserName" />

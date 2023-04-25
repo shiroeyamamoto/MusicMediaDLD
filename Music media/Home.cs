@@ -426,7 +426,7 @@ namespace Music_media
                     List<Track> songs = LoadTrackFromFile(folderPath);
 
 
-                    // Hiển thị danh sách các bài hát trên DataGridView
+              
                     dtgTrack.DataSource = songs;
                 }
             }
@@ -476,26 +476,33 @@ namespace Music_media
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == dtgTrack.Columns["DeleteButtonColumn"].Index && e.RowIndex >= 0)
-            {
-                var result = MessageBox.Show("Bạn có chắc chắn muốn xóa bài hát này không?", "Xóa bài hát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (result == DialogResult.Yes)
-                {
-                    var trackPath = dtgTrack.Rows[e.RowIndex].Cells["Track_path"].Value.ToString();
-                    using (var _db = new Music_media.khoabeoenti.MusicMediaDLDEntities())
-                    {
-                        var trackToRemove = _db.Tracks.FirstOrDefault(x => x.Track_path == trackPath);
-                        if (trackToRemove != null)
-                        {
-                            _db.Tracks.Remove(trackToRemove);
-                            _db.SaveChanges();
-                        }
-                    }
-                }
-            }
+            //if (e.ColumnIndex == dtgTrack.Columns["DeleteButtonColumn"].Index && e.RowIndex >= 0)
+            //{
+            //    var result = MessageBox.Show("Bạn có chắc chắn muốn xóa bài hát này không?", "Xóa bài hát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            //    if (result == DialogResult.Yes)
+            //    {
+            //        var trackPath = dtgTrack.Rows[e.RowIndex].Cells["Track_path"].Value.ToString();
+            //        using (var _db = new Music_media.khoabeoenti.MusicMediaDLDEntities())
+            //        {
+            //            var trackToRemove = _db.Tracks.FirstOrDefault(x => x.Track_path == trackPath);
+            //            if (trackToRemove != null)
+            //            {
+            //                _db.Tracks.Remove(trackToRemove);
+            //                _db.SaveChanges();
+            //            }
+            //            ///KHOABEO LOAD LẠI 
+            //            var tracks = _db.Tracks.ToList();
+            //            dtgTrack.DataSource = tracks;
+
+
+
+            //        }
+
+            //    }
+            //}
             if (dtgTrack.Columns[e.ColumnIndex].Name == "playMusicdtg")
             {
-                MessageBox.Show("123");
+               
                 // Lấy đường dẫn đến file nhạc
                 string TrackPath = dtgTrack.Rows[e.RowIndex].Cells["Track_path"].Value.ToString();
                 string TrackLength = dtgTrack.Rows[e.RowIndex].Cells["TrackLength"].Value.ToString();

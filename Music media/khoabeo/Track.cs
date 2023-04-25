@@ -27,6 +27,7 @@ namespace Music_media.khoabeo
         public string TrackName { get; set; }
         public Nullable<int> TrackLength { get; set; }
         public string TrackGenre { get; set; }
+      
         public Nullable<int> AlbumID { get; set; }
     
         public virtual Album Album { get; set; }
@@ -37,7 +38,12 @@ namespace Music_media.khoabeo
         public virtual ICollection<Track_Artist> Track_Artist1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Track_Playlist> Track_Playlist { get; set; }
+<<<<<<< HEAD
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Track_Playlist> Track_Playlist1 { get; set; }
+=======
+
+     
+>>>>>>> 272e8b2bfcce4f42818f763784d46a644aee5176
     }
 }

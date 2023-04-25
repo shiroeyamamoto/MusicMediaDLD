@@ -18,7 +18,9 @@ namespace DAL_MusicMedia
         public Track()
         {
             this.Track_Artist = new HashSet<Track_Artist>();
+            this.Track_Artist1 = new HashSet<Track_Artist>();
             this.Track_Playlist = new HashSet<Track_Playlist>();
+            this.Track_Playlist1 = new HashSet<Track_Playlist>();
         }
     
         public int TrackID { get; set; }
@@ -29,9 +31,14 @@ namespace DAL_MusicMedia
         public string Track_path { get; set; }
     
         public virtual Album Album { get; set; }
+        public virtual Album Album1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Track_Artist> Track_Artist { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Track_Artist> Track_Artist1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Track_Playlist> Track_Playlist { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Track_Playlist> Track_Playlist1 { get; set; }
     }
 }

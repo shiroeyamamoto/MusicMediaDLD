@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Music_media.khoabeoenti
+namespace Music_media.khoabeo
 {
     using System;
     using System.Collections.Generic;
@@ -18,6 +18,7 @@ namespace Music_media.khoabeoenti
         public User()
         {
             this.Playlists = new HashSet<Playlist>();
+            this.Playlists1 = new HashSet<Playlist>();
         }
     
         public int UserID { get; set; }
@@ -32,5 +33,7 @@ namespace Music_media.khoabeoenti
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Playlist> Playlists { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Playlist> Playlists1 { get; set; }
     }
 }

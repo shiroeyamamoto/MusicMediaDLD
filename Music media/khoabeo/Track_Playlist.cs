@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Music_media.khoabeoenti
+namespace Music_media.khoabeo
 {
     using System;
     using System.Collections.Generic;
@@ -19,6 +19,8 @@ namespace Music_media.khoabeoenti
         public Nullable<int> PlaylistID { get; set; }
     
         public virtual Playlist Playlist { get; set; }
+        public virtual Playlist Playlist1 { get; set; }
         public virtual Track Track { get; set; }
+        public virtual Track Track1 { get; set; }
     }
 }

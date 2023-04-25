@@ -18,6 +18,7 @@ namespace DAL_MusicMedia
         public Album()
         {
             this.Tracks = new HashSet<Track>();
+            this.Tracks1 = new HashSet<Track>();
         }
     
         public int AlbumID { get; set; }
@@ -27,5 +28,7 @@ namespace DAL_MusicMedia
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Track> Tracks { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Track> Tracks1 { get; set; }
     }
 }

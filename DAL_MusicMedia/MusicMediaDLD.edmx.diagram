@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="128e3ff3ca604b199c0cca7608b4166d" Name="Diagram1">
+        <EntityTypeShape EntityType="MusicMediaDLDModel.Album" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicMediaDLDModel.Artist" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicMediaDLDModel.Playlist" Width="1.5" PointX="6" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicMediaDLDModel.Track" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicMediaDLDModel.Track_Artist" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicMediaDLDModel.Track_Playlist" Width="1.5" PointX="8.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicMediaDLDModel.User" Width="1.5" PointX="3.75" PointY="11.25" IsExpanded="true" />
+        <AssociationConnector Association="MusicMediaDLDModel.FK__Track__AlbumID__30F848ED" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicMediaDLDModel.FK__Track__AlbumID__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicMediaDLDModel.FK__Track_Art__Artis__31EC6D26" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicMediaDLDModel.FK__Track_Art__Artis__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicMediaDLDModel.FK__Playlist__UserID__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicMediaDLDModel.FK__Playlist__UserID__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicMediaDLDModel.FK__Track_Pla__Playl__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicMediaDLDModel.FK__Track_Pla__Playl__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicMediaDLDModel.FK__Track_Art__Track__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicMediaDLDModel.FK__Track_Art__Track__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicMediaDLDModel.FK__Track_Pla__Track__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicMediaDLDModel.FK__Track_Pla__Track__412EB0B6" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -8,7 +8,7 @@ namespace DAL_MusicMedia
 {
     public class DAL_User
     {
-        MusicMediaDLDEntities db;
+       /* MusicMediaDLDEntities db;
 
         // phuong thuc khoi tao
         public DAL_User()
@@ -20,6 +20,6 @@ namespace DAL_MusicMedia
         public void getUserList()
         {
             var ds = db.Users.ToList();
-        }
+        }*/
     }
 }

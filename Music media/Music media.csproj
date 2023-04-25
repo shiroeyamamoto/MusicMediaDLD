@@ -114,8 +114,8 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="taglib-sharp, Version=2.1.0.0, Culture=neutral, PublicKeyToken=db62eba44689b5b0, processorArchitecture=MSIL">
-      <HintPath>..\packages\taglib.2.1.0.0\lib\taglib-sharp.dll</HintPath>
+    <Reference Include="TagLibSharp, Version=2.3.0.0, Culture=neutral, PublicKeyToken=db62eba44689b5b0, processorArchitecture=MSIL">
+      <HintPath>..\packages\TagLibSharp.2.3.0\lib\net462\TagLibSharp.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -132,44 +132,47 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="khoabeo\Adoentity.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Adoentity.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="khoabeo\Adoentity.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Adoentity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="khoabeo\Adoentity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Adoentity.edmx</DependentUpon>
+    </Compile>
     <Compile Include="khoabeo\Album.cs">
-      <DependentUpon>Khoabeoenti.tt</DependentUpon>
+      <DependentUpon>Adoentity.tt</DependentUpon>
     </Compile>
     <Compile Include="khoabeo\Artist.cs">
-      <DependentUpon>Khoabeoenti.tt</DependentUpon>
-    </Compile>
-    <Compile Include="khoabeo\Khoabeoenti.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Khoabeoenti.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="khoabeo\Khoabeoenti.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Khoabeoenti.tt</DependentUpon>
-    </Compile>
-    <Compile Include="khoabeo\Khoabeoenti.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Khoabeoenti.edmx</DependentUpon>
+      <DependentUpon>Adoentity.tt</DependentUpon>
     </Compile>
     <Compile Include="khoabeo\Playlist.cs">
-      <DependentUpon>Khoabeoenti.tt</DependentUpon>
+      <DependentUpon>Adoentity.tt</DependentUpon>
     </Compile>
     <Compile Include="khoabeo\sysdiagram.cs">
-      <DependentUpon>Khoabeoenti.tt</DependentUpon>
+      <DependentUpon>Adoentity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="khoabeo\TestTable.cs">
+      <DependentUpon>Adoentity.tt</DependentUpon>
     </Compile>
     <Compile Include="khoabeo\Track.cs">
-      <DependentUpon>Khoabeoenti.tt</DependentUpon>
+      <DependentUpon>Adoentity.tt</DependentUpon>
     </Compile>
     <Compile Include="khoabeo\Track_Artist.cs">
-      <DependentUpon>Khoabeoenti.tt</DependentUpon>
+      <DependentUpon>Adoentity.tt</DependentUpon>
     </Compile>
     <Compile Include="khoabeo\Track_Playlist.cs">
-      <DependentUpon>Khoabeoenti.tt</DependentUpon>
+      <DependentUpon>Adoentity.tt</DependentUpon>
     </Compile>
     <Compile Include="khoabeo\User.cs">
-      <DependentUpon>Khoabeoenti.tt</DependentUpon>
+      <DependentUpon>Adoentity.tt</DependentUpon>
     </Compile>
     <Compile Include="PanelRounded.cs">
       <SubType>Component</SubType>
@@ -190,12 +193,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EntityDeploy Include="khoabeo\Khoabeoenti.edmx">
+    <EntityDeploy Include="khoabeo\Adoentity.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Khoabeoenti.Designer.cs</LastGenOutput>
+      <LastGenOutput>Adoentity.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="khoabeo\Khoabeoenti.edmx.diagram">
-      <DependentUpon>Khoabeoenti.edmx</DependentUpon>
+    <None Include="khoabeo\Adoentity.edmx.diagram">
+      <DependentUpon>Adoentity.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -309,18 +312,18 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="khoabeo\Khoabeoenti.Context.tt">
+    <Content Include="khoabeo\Adoentity.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Khoabeoenti.edmx</DependentUpon>
-      <LastGenOutput>Khoabeoenti.Context.cs</LastGenOutput>
+      <DependentUpon>Adoentity.edmx</DependentUpon>
+      <LastGenOutput>Adoentity.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="khoabeo\Khoabeoenti.tt">
+    <Content Include="khoabeo\Adoentity.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Khoabeoenti.edmx</DependentUpon>
-      <LastGenOutput>Khoabeoenti.cs</LastGenOutput>
+      <DependentUpon>Adoentity.edmx</DependentUpon>
+      <LastGenOutput>Adoentity.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\bin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

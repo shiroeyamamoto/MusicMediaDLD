@@ -18,6 +18,7 @@ namespace DAL_MusicMedia
         public User()
         {
             this.Playlists = new HashSet<Playlist>();
+            this.Playlists1 = new HashSet<Playlist>();
         }
     
         public int UserID { get; set; }
@@ -32,5 +33,7 @@ namespace DAL_MusicMedia
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Playlist> Playlists { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Playlist> Playlists1 { get; set; }
     }
 }

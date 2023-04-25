@@ -16,13 +16,14 @@ using Music_media.customControl;
 using Music_media.Menu_Choice;
 using DevExpress.XtraTab;
 using NAudio.Wave;
+using BUS_MusicMedia;
 using TagLib;
 using NAudio.Wave.SampleProviders;
 using DevExpress.Office.Import.OpenXml;
 using System.Data.SqlClient;
 using System.Threading;
 using NAudio.MediaFoundation;
-using Music_media.khoabeoenti;
+//using Music_media.khoabeoenti;
 
 namespace Music_media
 {
@@ -49,7 +50,10 @@ namespace Music_media
             listTabPages.Add(tabReg);
 
             listTabPages.Add(noneTab);
-            menuControl.SelectedTabPage = homeTab;
+            menuControl.SelectedTabPage = noneTab;
+
+            //BUS_Track.addTrack(@"C:\Users\ACER\Music\Girls Like You - Maroon 5.m4a", dataGridView1);
+            
 
             /*var file = TagLib.File.Create(@"C:\Users\ACER\Music\Akon - Lonely.mp3");
             TimeSpan duration = file.Properties.Duration;
@@ -292,7 +296,7 @@ namespace Music_media
             menuControl.SelectedTabPage = tabLogin;
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        /*private void btnLogin_Click(object sender, EventArgs e)
         {
             using (var context = new MusicMediaDLDEntities())
             {
@@ -315,8 +319,8 @@ namespace Music_media
                     return;
                 }
             }
-        }
-        private void btnRegSucces_Click(object sender, EventArgs e)
+        }*/
+        /*private void btnRegSucces_Click(object sender, EventArgs e)
 
         {
             using (var _db = new khoabeoenti.MusicMediaDLDEntities())
@@ -362,7 +366,7 @@ namespace Music_media
                     MessageBox.Show("Bạn phải đủ 12 tuổi để đăng ký.");
                     return;
                 }
-                khoabeoenti.User newUser = new khoabeoenti.User()
+                *//*khoabeoenti.User newUser = new khoabeoenti.User()
                 {
                     ho = txtHo.Text,
                     Ten = txtTen.Text,
@@ -372,16 +376,16 @@ namespace Music_media
                     Sdt = txtsdtReg.Text,
                     Admin = cbType.Text == "Admin" ? true : false,
                     Coin = 0
-                };
-
+                };*/
+/*
                 _db.Users.Add(newUser);
                 _db.SaveChanges();
                 menuControl.SelectedTabPage = tabLogin;
-                MessageBox.Show("Đăng ký thành công!");
+                MessageBox.Show("Đăng ký thành công!");*//*
             }
 
 
-        }
+        }*/
         public bool sodienthoaihople(string sdt)
         {
 
@@ -422,6 +426,21 @@ namespace Music_media
             {
                 // Thư mục đã chọn
                 string selectedPath = dialog.SelectedPath;
+            }
+        }
+
+        private void buttonPlay_Click(object sender, EventArgs e)
+        {
+            //BUS_User.select(dataGridView1, labelControl10);
+        }
+
+        private void themFile(object sender, EventArgs e)
+        {
+            OpenFileDialog file = new OpenFileDialog();
+            file.Filter = "All Media Files|*.mp3;*.flac;*.m4a;";
+            if (file.ShowDialog() == DialogResult.OK)
+            {
+                BUS_Track.addTrack(@file.FileName,dataGridView1);
             }
         }
     }

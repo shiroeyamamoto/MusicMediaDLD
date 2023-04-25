@@ -81,24 +81,24 @@
             this.minimum = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuControl = new DevExpress.XtraTab.XtraTabControl();
-            this.tabReg = new DevExpress.XtraTab.XtraTabPage();
-            this.txtsdtReg = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btnRegSucces = new System.Windows.Forms.Button();
-            this.dateNgaySinh = new System.Windows.Forms.DateTimePicker();
-            this.cbType = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtPasswordReg = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtUsernameReg = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtTen = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtHo = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.queueTab = new DevExpress.XtraTab.XtraTabPage();
+            this.addFilebtn = new System.Windows.Forms.Panel();
+            this.labelControl32 = new DevExpress.XtraEditors.LabelControl();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.labelControl28 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit13 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.homeTab = new DevExpress.XtraTab.XtraTabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -108,6 +108,8 @@
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.titleName = new DevExpress.XtraEditors.LabelControl();
             this.musicTab = new DevExpress.XtraTab.XtraTabPage();
+            this.btnLibOndb = new System.Windows.Forms.Button();
+            this.btnLibOnMydestop = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -121,21 +123,6 @@
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.queueTab = new DevExpress.XtraTab.XtraTabPage();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.labelControl28 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureEdit13 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.playlistsTab = new DevExpress.XtraTab.XtraTabPage();
             this.panelRounded9 = new Music_media.PanelRounded();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
@@ -157,11 +144,28 @@
             this.labelControl29 = new DevExpress.XtraEditors.LabelControl();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
+            this.tabReg = new DevExpress.XtraTab.XtraTabPage();
+            this.txtsdtReg = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnRegSucces = new System.Windows.Forms.Button();
+            this.dateNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.cbType = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtPasswordReg = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtUsernameReg = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtTen = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtHo = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.fullSreen = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
-            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.btnLibOndb = new System.Windows.Forms.Button();
-            this.btnLibOnMydestop = new System.Windows.Forms.Button();
+            this.labelControl31 = new DevExpress.XtraEditors.LabelControl();
             this.menu.SuspendLayout();
             this.panelAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).BeginInit();
@@ -200,7 +204,16 @@
             this.trackArea.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuControl)).BeginInit();
             this.menuControl.SuspendLayout();
-            this.tabReg.SuspendLayout();
+            this.queueTab.SuspendLayout();
+            this.addFilebtn.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).BeginInit();
             this.homeTab.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -212,19 +225,12 @@
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
-            this.queueTab.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).BeginInit();
             this.playlistsTab.SuspendLayout();
             this.panelRounded9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.settingTab.SuspendLayout();
             this.tabLogin.SuspendLayout();
+            this.tabReg.SuspendLayout();
             this.SuspendLayout();
             // 
             // menu
@@ -246,7 +252,7 @@
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Margin = new System.Windows.Forms.Padding(0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(431, 642);
+            this.menu.Size = new System.Drawing.Size(323, 522);
             this.menu.TabIndex = 0;
             // 
             // panelAccount
@@ -258,10 +264,10 @@
             this.panelAccount.BorderSize = 2;
             this.panelAccount.Controls.Add(this.pictureEdit12);
             this.panelAccount.Controls.Add(this.lbAccount);
-            this.panelAccount.Location = new System.Drawing.Point(7, 337);
+            this.panelAccount.Location = new System.Drawing.Point(5, 274);
             this.panelAccount.Margin = new System.Windows.Forms.Padding(0);
             this.panelAccount.Name = "panelAccount";
-            this.panelAccount.Size = new System.Drawing.Size(413, 44);
+            this.panelAccount.Size = new System.Drawing.Size(310, 36);
             this.panelAccount.TabIndex = 25;
             this.panelAccount.UnderlinedStyle = false;
             this.panelAccount.Click += new System.EventHandler(this.panelAccount_Click);
@@ -270,7 +276,7 @@
             // pictureEdit12
             // 
             this.pictureEdit12.Enabled = false;
-            this.pictureEdit12.Location = new System.Drawing.Point(16, 9);
+            this.pictureEdit12.Location = new System.Drawing.Point(12, 7);
             this.pictureEdit12.Margin = new System.Windows.Forms.Padding(0);
             this.pictureEdit12.Name = "pictureEdit12";
             this.pictureEdit12.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -280,7 +286,7 @@
             this.pictureEdit12.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit12.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit12.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit12.Size = new System.Drawing.Size(33, 27);
+            this.pictureEdit12.Size = new System.Drawing.Size(25, 22);
             this.pictureEdit12.TabIndex = 11;
             // 
             // lbAccount
@@ -290,10 +296,9 @@
             this.lbAccount.Appearance.Options.UseFont = true;
             this.lbAccount.Appearance.Options.UseForeColor = true;
             this.lbAccount.Enabled = false;
-            this.lbAccount.Location = new System.Drawing.Point(58, 12);
-            this.lbAccount.Margin = new System.Windows.Forms.Padding(4);
+            this.lbAccount.Location = new System.Drawing.Point(44, 10);
             this.lbAccount.Name = "lbAccount";
-            this.lbAccount.Size = new System.Drawing.Size(88, 24);
+            this.lbAccount.Size = new System.Drawing.Size(75, 19);
             this.lbAccount.TabIndex = 3;
             this.lbAccount.Text = "ACCOUNT";
             // 
@@ -302,7 +307,7 @@
             this.ico.AllowHtmlTextInToolTip = DevExpress.Utils.DefaultBoolean.False;
             this.ico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ico.EditValue = global::Music_media.Properties.Resources.DLDIco;
-            this.ico.Location = new System.Drawing.Point(72, 9);
+            this.ico.Location = new System.Drawing.Point(54, 7);
             this.ico.Margin = new System.Windows.Forms.Padding(0);
             this.ico.Name = "ico";
             this.ico.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -319,7 +324,7 @@
             this.ico.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.ico.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.ico.ShowToolTips = false;
-            this.ico.Size = new System.Drawing.Size(69, 39);
+            this.ico.Size = new System.Drawing.Size(52, 32);
             this.ico.TabIndex = 12;
             this.ico.TabStop = true;
             // 
@@ -327,10 +332,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.labelControl1);
-            this.panel2.Location = new System.Drawing.Point(145, 4);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(109, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(281, 41);
+            this.panel2.Size = new System.Drawing.Size(211, 33);
             this.panel2.TabIndex = 23;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormMDown);
             this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FormMMove);
@@ -342,10 +346,9 @@
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.Enabled = false;
-            this.labelControl1.Location = new System.Drawing.Point(4, 17);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl1.Location = new System.Drawing.Point(3, 14);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(102, 17);
+            this.labelControl1.Size = new System.Drawing.Size(79, 13);
             this.labelControl1.TabIndex = 13;
             this.labelControl1.Text = "Music Media DLD";
             // 
@@ -358,10 +361,10 @@
             this.playlistsMenu.BorderSize = 2;
             this.playlistsMenu.Controls.Add(this.pictureEdit7);
             this.playlistsMenu.Controls.Add(this.labelControl3);
-            this.playlistsMenu.Location = new System.Drawing.Point(7, 284);
+            this.playlistsMenu.Location = new System.Drawing.Point(5, 231);
             this.playlistsMenu.Margin = new System.Windows.Forms.Padding(0);
             this.playlistsMenu.Name = "playlistsMenu";
-            this.playlistsMenu.Size = new System.Drawing.Size(413, 44);
+            this.playlistsMenu.Size = new System.Drawing.Size(310, 36);
             this.playlistsMenu.TabIndex = 17;
             this.playlistsMenu.UnderlinedStyle = false;
             this.playlistsMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.hightlightRed);
@@ -374,7 +377,7 @@
             // 
             this.pictureEdit7.EditValue = global::Music_media.Properties.Resources.speaker;
             this.pictureEdit7.Enabled = false;
-            this.pictureEdit7.Location = new System.Drawing.Point(16, 9);
+            this.pictureEdit7.Location = new System.Drawing.Point(12, 7);
             this.pictureEdit7.Margin = new System.Windows.Forms.Padding(0);
             this.pictureEdit7.Name = "pictureEdit7";
             this.pictureEdit7.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -384,7 +387,7 @@
             this.pictureEdit7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit7.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit7.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit7.Size = new System.Drawing.Size(33, 27);
+            this.pictureEdit7.Size = new System.Drawing.Size(25, 22);
             this.pictureEdit7.TabIndex = 11;
             // 
             // labelControl3
@@ -394,10 +397,9 @@
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
             this.labelControl3.Enabled = false;
-            this.labelControl3.Location = new System.Drawing.Point(60, 11);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl3.Location = new System.Drawing.Point(45, 9);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(72, 24);
+            this.labelControl3.Size = new System.Drawing.Size(56, 19);
             this.labelControl3.TabIndex = 3;
             this.labelControl3.Text = "Playlists";
             // 
@@ -410,10 +412,10 @@
             this.queueMenu.BorderSize = 2;
             this.queueMenu.Controls.Add(this.pictureEdit8);
             this.queueMenu.Controls.Add(this.labelControl4);
-            this.queueMenu.Location = new System.Drawing.Point(7, 217);
+            this.queueMenu.Location = new System.Drawing.Point(5, 176);
             this.queueMenu.Margin = new System.Windows.Forms.Padding(0);
             this.queueMenu.Name = "queueMenu";
-            this.queueMenu.Size = new System.Drawing.Size(413, 44);
+            this.queueMenu.Size = new System.Drawing.Size(310, 36);
             this.queueMenu.TabIndex = 18;
             this.queueMenu.UnderlinedStyle = false;
             this.queueMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.hightlightRed);
@@ -426,7 +428,7 @@
             // 
             this.pictureEdit8.EditValue = global::Music_media.Properties.Resources.queueIco;
             this.pictureEdit8.Enabled = false;
-            this.pictureEdit8.Location = new System.Drawing.Point(16, 9);
+            this.pictureEdit8.Location = new System.Drawing.Point(12, 7);
             this.pictureEdit8.Margin = new System.Windows.Forms.Padding(0);
             this.pictureEdit8.Name = "pictureEdit8";
             this.pictureEdit8.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -436,7 +438,7 @@
             this.pictureEdit8.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit8.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit8.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit8.Size = new System.Drawing.Size(33, 27);
+            this.pictureEdit8.Size = new System.Drawing.Size(25, 22);
             this.pictureEdit8.TabIndex = 11;
             // 
             // labelControl4
@@ -446,10 +448,9 @@
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Appearance.Options.UseForeColor = true;
             this.labelControl4.Enabled = false;
-            this.labelControl4.Location = new System.Drawing.Point(60, 11);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl4.Location = new System.Drawing.Point(45, 9);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(98, 24);
+            this.labelControl4.Size = new System.Drawing.Size(77, 19);
             this.labelControl4.TabIndex = 3;
             this.labelControl4.Text = "Play queue";
             // 
@@ -462,10 +463,10 @@
             this.musicMenu.BorderSize = 2;
             this.musicMenu.Controls.Add(this.pictureEdit9);
             this.musicMenu.Controls.Add(this.labelControl5);
-            this.musicMenu.Location = new System.Drawing.Point(7, 169);
+            this.musicMenu.Location = new System.Drawing.Point(5, 137);
             this.musicMenu.Margin = new System.Windows.Forms.Padding(0);
             this.musicMenu.Name = "musicMenu";
-            this.musicMenu.Size = new System.Drawing.Size(413, 44);
+            this.musicMenu.Size = new System.Drawing.Size(310, 36);
             this.musicMenu.TabIndex = 19;
             this.musicMenu.UnderlinedStyle = false;
             this.musicMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.hightlightRed);
@@ -478,7 +479,7 @@
             // 
             this.pictureEdit9.EditValue = global::Music_media.Properties.Resources.musicIco;
             this.pictureEdit9.Enabled = false;
-            this.pictureEdit9.Location = new System.Drawing.Point(13, 9);
+            this.pictureEdit9.Location = new System.Drawing.Point(10, 7);
             this.pictureEdit9.Margin = new System.Windows.Forms.Padding(0);
             this.pictureEdit9.Name = "pictureEdit9";
             this.pictureEdit9.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -488,7 +489,7 @@
             this.pictureEdit9.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit9.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit9.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit9.Size = new System.Drawing.Size(33, 27);
+            this.pictureEdit9.Size = new System.Drawing.Size(25, 22);
             this.pictureEdit9.TabIndex = 11;
             // 
             // labelControl5
@@ -498,10 +499,9 @@
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Appearance.Options.UseForeColor = true;
             this.labelControl5.Enabled = false;
-            this.labelControl5.Location = new System.Drawing.Point(60, 11);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl5.Location = new System.Drawing.Point(45, 9);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(111, 24);
+            this.labelControl5.Size = new System.Drawing.Size(89, 19);
             this.labelControl5.TabIndex = 3;
             this.labelControl5.Text = "Music library";
             // 
@@ -514,10 +514,10 @@
             this.homeMenu.BorderSize = 2;
             this.homeMenu.Controls.Add(this.pictureEdit10);
             this.homeMenu.Controls.Add(this.labelControl6);
-            this.homeMenu.Location = new System.Drawing.Point(7, 121);
+            this.homeMenu.Location = new System.Drawing.Point(5, 98);
             this.homeMenu.Margin = new System.Windows.Forms.Padding(0);
             this.homeMenu.Name = "homeMenu";
-            this.homeMenu.Size = new System.Drawing.Size(413, 44);
+            this.homeMenu.Size = new System.Drawing.Size(310, 36);
             this.homeMenu.TabIndex = 20;
             this.homeMenu.UnderlinedStyle = false;
             this.homeMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.hightlightRed);
@@ -530,7 +530,7 @@
             // 
             this.pictureEdit10.EditValue = global::Music_media.Properties.Resources.home;
             this.pictureEdit10.Enabled = false;
-            this.pictureEdit10.Location = new System.Drawing.Point(13, 9);
+            this.pictureEdit10.Location = new System.Drawing.Point(10, 7);
             this.pictureEdit10.Margin = new System.Windows.Forms.Padding(0);
             this.pictureEdit10.Name = "pictureEdit10";
             this.pictureEdit10.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -541,7 +541,7 @@
             this.pictureEdit10.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit10.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.pictureEdit10.ShowToolTips = false;
-            this.pictureEdit10.Size = new System.Drawing.Size(33, 27);
+            this.pictureEdit10.Size = new System.Drawing.Size(25, 22);
             this.pictureEdit10.TabIndex = 12;
             // 
             // labelControl6
@@ -551,10 +551,9 @@
             this.labelControl6.Appearance.Options.UseFont = true;
             this.labelControl6.Appearance.Options.UseForeColor = true;
             this.labelControl6.Enabled = false;
-            this.labelControl6.Location = new System.Drawing.Point(60, 11);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl6.Location = new System.Drawing.Point(45, 9);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(53, 24);
+            this.labelControl6.Size = new System.Drawing.Size(42, 19);
             this.labelControl6.TabIndex = 12;
             this.labelControl6.Text = "Home";
             // 
@@ -565,10 +564,10 @@
             this.panelRounded7.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
             this.panelRounded7.BorderRadius = 5;
             this.panelRounded7.BorderSize = 2;
-            this.panelRounded7.Location = new System.Drawing.Point(0, 272);
+            this.panelRounded7.Location = new System.Drawing.Point(0, 221);
             this.panelRounded7.Margin = new System.Windows.Forms.Padding(0);
             this.panelRounded7.Name = "panelRounded7";
-            this.panelRounded7.Size = new System.Drawing.Size(427, 2);
+            this.panelRounded7.Size = new System.Drawing.Size(320, 2);
             this.panelRounded7.TabIndex = 21;
             this.panelRounded7.UnderlinedStyle = false;
             // 
@@ -581,10 +580,10 @@
             this.settingMenu.BorderSize = 2;
             this.settingMenu.Controls.Add(this.pictureEdit1);
             this.settingMenu.Controls.Add(this.labelControl2);
-            this.settingMenu.Location = new System.Drawing.Point(7, 586);
+            this.settingMenu.Location = new System.Drawing.Point(5, 476);
             this.settingMenu.Margin = new System.Windows.Forms.Padding(0);
             this.settingMenu.Name = "settingMenu";
-            this.settingMenu.Size = new System.Drawing.Size(413, 44);
+            this.settingMenu.Size = new System.Drawing.Size(310, 36);
             this.settingMenu.TabIndex = 13;
             this.settingMenu.UnderlinedStyle = false;
             this.settingMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.hightlightRed);
@@ -597,7 +596,7 @@
             // 
             this.pictureEdit1.EditValue = global::Music_media.Properties.Resources.setting;
             this.pictureEdit1.Enabled = false;
-            this.pictureEdit1.Location = new System.Drawing.Point(16, 9);
+            this.pictureEdit1.Location = new System.Drawing.Point(12, 7);
             this.pictureEdit1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -607,7 +606,7 @@
             this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit1.Size = new System.Drawing.Size(33, 27);
+            this.pictureEdit1.Size = new System.Drawing.Size(25, 22);
             this.pictureEdit1.TabIndex = 11;
             // 
             // labelControl2
@@ -617,10 +616,9 @@
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
             this.labelControl2.Enabled = false;
-            this.labelControl2.Location = new System.Drawing.Point(60, 11);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl2.Location = new System.Drawing.Point(45, 9);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(63, 24);
+            this.labelControl2.Size = new System.Drawing.Size(49, 19);
             this.labelControl2.TabIndex = 3;
             this.labelControl2.Text = "Setting";
             // 
@@ -632,10 +630,10 @@
             this.backBt.BorderRadius = 5;
             this.backBt.BorderSize = 2;
             this.backBt.Controls.Add(this.pictureEdit5);
-            this.backBt.Location = new System.Drawing.Point(7, 9);
+            this.backBt.Location = new System.Drawing.Point(5, 7);
             this.backBt.Margin = new System.Windows.Forms.Padding(0);
             this.backBt.Name = "backBt";
-            this.backBt.Size = new System.Drawing.Size(59, 39);
+            this.backBt.Size = new System.Drawing.Size(44, 32);
             this.backBt.TabIndex = 15;
             this.backBt.UnderlinedStyle = false;
             this.backBt.MouseEnter += new System.EventHandler(this.litteButtonHover);
@@ -646,7 +644,7 @@
             // 
             this.pictureEdit5.EditValue = global::Music_media.Properties.Resources.back;
             this.pictureEdit5.Enabled = false;
-            this.pictureEdit5.Location = new System.Drawing.Point(15, 9);
+            this.pictureEdit5.Location = new System.Drawing.Point(11, 7);
             this.pictureEdit5.Margin = new System.Windows.Forms.Padding(0);
             this.pictureEdit5.Name = "pictureEdit5";
             this.pictureEdit5.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -657,7 +655,7 @@
             this.pictureEdit5.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit5.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.pictureEdit5.ShowToolTips = false;
-            this.pictureEdit5.Size = new System.Drawing.Size(27, 20);
+            this.pictureEdit5.Size = new System.Drawing.Size(20, 16);
             this.pictureEdit5.TabIndex = 14;
             // 
             // searchText
@@ -665,10 +663,9 @@
             this.searchText.BorderColor = System.Drawing.Color.Red;
             this.searchText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.searchText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
-            this.searchText.Location = new System.Drawing.Point(23, 64);
-            this.searchText.Margin = new System.Windows.Forms.Padding(4);
+            this.searchText.Location = new System.Drawing.Point(17, 52);
             this.searchText.Name = "searchText";
-            this.searchText.Size = new System.Drawing.Size(379, 30);
+            this.searchText.Size = new System.Drawing.Size(285, 26);
             this.searchText.TabIndex = 13;
             this.searchText.TabStop = false;
             this.searchText.Enter += new System.EventHandler(this.searchText_Enter);
@@ -691,20 +688,19 @@
             this.play.Controls.Add(this.infoMP);
             this.play.Controls.Add(this.endTime);
             this.play.Controls.Add(this.startTime);
-            this.play.Location = new System.Drawing.Point(0, 642);
+            this.play.Location = new System.Drawing.Point(0, 522);
             this.play.Margin = new System.Windows.Forms.Padding(0);
             this.play.Name = "play";
-            this.play.Size = new System.Drawing.Size(1492, 149);
+            this.play.Size = new System.Drawing.Size(1119, 121);
             this.play.TabIndex = 2;
             // 
             // playBar
             // 
             this.playBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.playBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(63)))), ((int)(((byte)(10)))));
-            this.playBar.Location = new System.Drawing.Point(104, 20);
-            this.playBar.Margin = new System.Windows.Forms.Padding(4);
+            this.playBar.Location = new System.Drawing.Point(78, 16);
             this.playBar.Name = "playBar";
-            this.playBar.Size = new System.Drawing.Size(1281, 7);
+            this.playBar.Size = new System.Drawing.Size(961, 6);
             this.playBar.TabIndex = 12;
             // 
             // panelRounded1
@@ -715,10 +711,10 @@
             this.panelRounded1.BorderRadius = 5;
             this.panelRounded1.BorderSize = 2;
             this.panelRounded1.Controls.Add(this.pictureEdit3);
-            this.panelRounded1.Location = new System.Drawing.Point(1388, 76);
+            this.panelRounded1.Location = new System.Drawing.Point(1041, 62);
             this.panelRounded1.Margin = new System.Windows.Forms.Padding(0);
             this.panelRounded1.Name = "panelRounded1";
-            this.panelRounded1.Size = new System.Drawing.Size(43, 39);
+            this.panelRounded1.Size = new System.Drawing.Size(32, 32);
             this.panelRounded1.TabIndex = 19;
             this.panelRounded1.UnderlinedStyle = false;
             this.panelRounded1.MouseEnter += new System.EventHandler(this.litteButtonHover);
@@ -729,7 +725,7 @@
             // 
             this.pictureEdit3.EditValue = global::Music_media.Properties.Resources.full_screen;
             this.pictureEdit3.Enabled = false;
-            this.pictureEdit3.Location = new System.Drawing.Point(8, 10);
+            this.pictureEdit3.Location = new System.Drawing.Point(6, 8);
             this.pictureEdit3.Margin = new System.Windows.Forms.Padding(0);
             this.pictureEdit3.Name = "pictureEdit3";
             this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -740,7 +736,7 @@
             this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.pictureEdit3.ShowToolTips = false;
-            this.pictureEdit3.Size = new System.Drawing.Size(27, 20);
+            this.pictureEdit3.Size = new System.Drawing.Size(20, 16);
             this.pictureEdit3.TabIndex = 14;
             // 
             // panelRounded4
@@ -751,10 +747,10 @@
             this.panelRounded4.BorderRadius = 5;
             this.panelRounded4.BorderSize = 2;
             this.panelRounded4.Controls.Add(this.pictureEdit6);
-            this.panelRounded4.Location = new System.Drawing.Point(1444, 76);
+            this.panelRounded4.Location = new System.Drawing.Point(1083, 62);
             this.panelRounded4.Margin = new System.Windows.Forms.Padding(0);
             this.panelRounded4.Name = "panelRounded4";
-            this.panelRounded4.Size = new System.Drawing.Size(43, 39);
+            this.panelRounded4.Size = new System.Drawing.Size(32, 32);
             this.panelRounded4.TabIndex = 20;
             this.panelRounded4.UnderlinedStyle = false;
             this.panelRounded4.MouseEnter += new System.EventHandler(this.litteButtonHover);
@@ -765,7 +761,7 @@
             // 
             this.pictureEdit6.EditValue = global::Music_media.Properties.Resources.more;
             this.pictureEdit6.Enabled = false;
-            this.pictureEdit6.Location = new System.Drawing.Point(8, 5);
+            this.pictureEdit6.Location = new System.Drawing.Point(6, 4);
             this.pictureEdit6.Margin = new System.Windows.Forms.Padding(0);
             this.pictureEdit6.Name = "pictureEdit6";
             this.pictureEdit6.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -776,13 +772,13 @@
             this.pictureEdit6.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit6.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.pictureEdit6.ShowToolTips = false;
-            this.pictureEdit6.Size = new System.Drawing.Size(27, 30);
+            this.pictureEdit6.Size = new System.Drawing.Size(20, 24);
             this.pictureEdit6.TabIndex = 14;
             // 
             // buttonPlay
             // 
             this.buttonPlay.EditValue = global::Music_media.Properties.Resources.play_button;
-            this.buttonPlay.Location = new System.Drawing.Point(705, 59);
+            this.buttonPlay.Location = new System.Drawing.Point(529, 48);
             this.buttonPlay.Margin = new System.Windows.Forms.Padding(0);
             this.buttonPlay.Name = "buttonPlay";
             this.buttonPlay.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -793,9 +789,9 @@
             this.buttonPlay.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.buttonPlay.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.buttonPlay.ShowToolTips = false;
-            this.buttonPlay.Size = new System.Drawing.Size(80, 74);
+            this.buttonPlay.Size = new System.Drawing.Size(60, 60);
             this.buttonPlay.TabIndex = 18;
-            this.buttonPlay.Click += new System.EventHandler(this.OnButtonPlayClick);
+            this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);
             // 
             // panelRounded2
             // 
@@ -805,10 +801,10 @@
             this.panelRounded2.BorderRadius = 5;
             this.panelRounded2.BorderSize = 2;
             this.panelRounded2.Controls.Add(this.pictureEdit4);
-            this.panelRounded2.Location = new System.Drawing.Point(1332, 76);
+            this.panelRounded2.Location = new System.Drawing.Point(999, 62);
             this.panelRounded2.Margin = new System.Windows.Forms.Padding(0);
             this.panelRounded2.Name = "panelRounded2";
-            this.panelRounded2.Size = new System.Drawing.Size(43, 39);
+            this.panelRounded2.Size = new System.Drawing.Size(32, 32);
             this.panelRounded2.TabIndex = 18;
             this.panelRounded2.UnderlinedStyle = false;
             this.panelRounded2.MouseEnter += new System.EventHandler(this.litteButtonHover);
@@ -819,7 +815,7 @@
             // 
             this.pictureEdit4.EditValue = global::Music_media.Properties.Resources.volume;
             this.pictureEdit4.Enabled = false;
-            this.pictureEdit4.Location = new System.Drawing.Point(8, 5);
+            this.pictureEdit4.Location = new System.Drawing.Point(6, 4);
             this.pictureEdit4.Margin = new System.Windows.Forms.Padding(0);
             this.pictureEdit4.Name = "pictureEdit4";
             this.pictureEdit4.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -830,7 +826,7 @@
             this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit4.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.pictureEdit4.ShowToolTips = false;
-            this.pictureEdit4.Size = new System.Drawing.Size(27, 30);
+            this.pictureEdit4.Size = new System.Drawing.Size(20, 24);
             this.pictureEdit4.TabIndex = 14;
             // 
             // repeatPanel
@@ -841,10 +837,10 @@
             this.repeatPanel.BorderRadius = 5;
             this.repeatPanel.BorderSize = 2;
             this.repeatPanel.Controls.Add(this.repeatImg);
-            this.repeatPanel.Location = new System.Drawing.Point(848, 76);
+            this.repeatPanel.Location = new System.Drawing.Point(636, 62);
             this.repeatPanel.Margin = new System.Windows.Forms.Padding(0);
             this.repeatPanel.Name = "repeatPanel";
-            this.repeatPanel.Size = new System.Drawing.Size(43, 39);
+            this.repeatPanel.Size = new System.Drawing.Size(32, 32);
             this.repeatPanel.TabIndex = 17;
             this.repeatPanel.UnderlinedStyle = false;
             this.repeatPanel.MouseEnter += new System.EventHandler(this.litteButtonHover);
@@ -855,7 +851,7 @@
             // 
             this.repeatImg.EditValue = global::Music_media.Properties.Resources.unrepeat;
             this.repeatImg.Enabled = false;
-            this.repeatImg.Location = new System.Drawing.Point(8, 10);
+            this.repeatImg.Location = new System.Drawing.Point(6, 8);
             this.repeatImg.Margin = new System.Windows.Forms.Padding(0);
             this.repeatImg.Name = "repeatImg";
             this.repeatImg.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -866,7 +862,7 @@
             this.repeatImg.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.repeatImg.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.repeatImg.ShowToolTips = false;
-            this.repeatImg.Size = new System.Drawing.Size(27, 20);
+            this.repeatImg.Size = new System.Drawing.Size(20, 16);
             this.repeatImg.TabIndex = 14;
             // 
             // backPanel
@@ -877,10 +873,10 @@
             this.backPanel.BorderRadius = 5;
             this.backPanel.BorderSize = 2;
             this.backPanel.Controls.Add(this.backImg);
-            this.backPanel.Location = new System.Drawing.Point(656, 76);
+            this.backPanel.Location = new System.Drawing.Point(492, 62);
             this.backPanel.Margin = new System.Windows.Forms.Padding(0);
             this.backPanel.Name = "backPanel";
-            this.backPanel.Size = new System.Drawing.Size(43, 39);
+            this.backPanel.Size = new System.Drawing.Size(32, 32);
             this.backPanel.TabIndex = 15;
             this.backPanel.UnderlinedStyle = false;
             this.backPanel.MouseEnter += new System.EventHandler(this.litteButtonHover);
@@ -891,7 +887,7 @@
             // 
             this.backImg.EditValue = global::Music_media.Properties.Resources.back_button;
             this.backImg.Enabled = false;
-            this.backImg.Location = new System.Drawing.Point(8, 5);
+            this.backImg.Location = new System.Drawing.Point(6, 4);
             this.backImg.Margin = new System.Windows.Forms.Padding(0);
             this.backImg.Name = "backImg";
             this.backImg.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -902,7 +898,7 @@
             this.backImg.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.backImg.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.backImg.ShowToolTips = false;
-            this.backImg.Size = new System.Drawing.Size(27, 30);
+            this.backImg.Size = new System.Drawing.Size(20, 24);
             this.backImg.TabIndex = 14;
             // 
             // nextPanel
@@ -913,10 +909,10 @@
             this.nextPanel.BorderRadius = 5;
             this.nextPanel.BorderSize = 2;
             this.nextPanel.Controls.Add(this.nextImg);
-            this.nextPanel.Location = new System.Drawing.Point(792, 76);
+            this.nextPanel.Location = new System.Drawing.Point(594, 62);
             this.nextPanel.Margin = new System.Windows.Forms.Padding(0);
             this.nextPanel.Name = "nextPanel";
-            this.nextPanel.Size = new System.Drawing.Size(43, 39);
+            this.nextPanel.Size = new System.Drawing.Size(32, 32);
             this.nextPanel.TabIndex = 16;
             this.nextPanel.UnderlinedStyle = false;
             this.nextPanel.MouseEnter += new System.EventHandler(this.litteButtonHover);
@@ -927,7 +923,7 @@
             // 
             this.nextImg.EditValue = global::Music_media.Properties.Resources.nextbutton;
             this.nextImg.Enabled = false;
-            this.nextImg.Location = new System.Drawing.Point(8, 5);
+            this.nextImg.Location = new System.Drawing.Point(6, 4);
             this.nextImg.Margin = new System.Windows.Forms.Padding(0);
             this.nextImg.Name = "nextImg";
             this.nextImg.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -938,7 +934,7 @@
             this.nextImg.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.nextImg.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.nextImg.ShowToolTips = false;
-            this.nextImg.Size = new System.Drawing.Size(27, 30);
+            this.nextImg.Size = new System.Drawing.Size(20, 24);
             this.nextImg.TabIndex = 14;
             // 
             // ranPanel
@@ -949,10 +945,10 @@
             this.ranPanel.BorderRadius = 5;
             this.ranPanel.BorderSize = 2;
             this.ranPanel.Controls.Add(this.ranImg);
-            this.ranPanel.Location = new System.Drawing.Point(601, 76);
+            this.ranPanel.Location = new System.Drawing.Point(451, 62);
             this.ranPanel.Margin = new System.Windows.Forms.Padding(0);
             this.ranPanel.Name = "ranPanel";
-            this.ranPanel.Size = new System.Drawing.Size(43, 39);
+            this.ranPanel.Size = new System.Drawing.Size(32, 32);
             this.ranPanel.TabIndex = 14;
             this.ranPanel.UnderlinedStyle = false;
             this.ranPanel.MouseEnter += new System.EventHandler(this.litteButtonHover);
@@ -963,7 +959,7 @@
             // 
             this.ranImg.EditValue = global::Music_media.Properties.Resources.random;
             this.ranImg.Enabled = false;
-            this.ranImg.Location = new System.Drawing.Point(8, 10);
+            this.ranImg.Location = new System.Drawing.Point(6, 8);
             this.ranImg.Margin = new System.Windows.Forms.Padding(0);
             this.ranImg.Name = "ranImg";
             this.ranImg.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -974,7 +970,7 @@
             this.ranImg.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.ranImg.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.ranImg.ShowToolTips = false;
-            this.ranImg.Size = new System.Drawing.Size(27, 20);
+            this.ranImg.Size = new System.Drawing.Size(20, 16);
             this.ranImg.TabIndex = 14;
             // 
             // infoMP
@@ -988,11 +984,11 @@
             this.infoMP.Controls.Add(this.artistMP);
             this.infoMP.Controls.Add(this.imgMP);
             this.infoMP.Controls.Add(this.nameMP);
-            this.infoMP.Location = new System.Drawing.Point(7, 46);
+            this.infoMP.Location = new System.Drawing.Point(5, 37);
             this.infoMP.Margin = new System.Windows.Forms.Padding(0);
-            this.infoMP.MaximumSize = new System.Drawing.Size(575, 98);
+            this.infoMP.MaximumSize = new System.Drawing.Size(431, 80);
             this.infoMP.Name = "infoMP";
-            this.infoMP.Size = new System.Drawing.Size(312, 98);
+            this.infoMP.Size = new System.Drawing.Size(234, 80);
             this.infoMP.TabIndex = 13;
             this.infoMP.UnderlinedStyle = false;
             this.infoMP.MouseEnter += new System.EventHandler(this.litteButtonHover);
@@ -1006,10 +1002,9 @@
             this.artistMP.Appearance.Options.UseFont = true;
             this.artistMP.Appearance.Options.UseForeColor = true;
             this.artistMP.Enabled = false;
-            this.artistMP.Location = new System.Drawing.Point(117, 58);
-            this.artistMP.Margin = new System.Windows.Forms.Padding(4);
+            this.artistMP.Location = new System.Drawing.Point(88, 47);
             this.artistMP.Name = "artistMP";
-            this.artistMP.Size = new System.Drawing.Size(35, 19);
+            this.artistMP.Size = new System.Drawing.Size(29, 16);
             this.artistMP.TabIndex = 13;
             this.artistMP.Text = "artist";
             // 
@@ -1017,7 +1012,7 @@
             // 
             this.imgMP.EditValue = global::Music_media.Properties.Resources.home;
             this.imgMP.Enabled = false;
-            this.imgMP.Location = new System.Drawing.Point(5, 9);
+            this.imgMP.Location = new System.Drawing.Point(4, 7);
             this.imgMP.Margin = new System.Windows.Forms.Padding(0);
             this.imgMP.Name = "imgMP";
             this.imgMP.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -1028,7 +1023,7 @@
             this.imgMP.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.imgMP.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.imgMP.ShowToolTips = false;
-            this.imgMP.Size = new System.Drawing.Size(93, 82);
+            this.imgMP.Size = new System.Drawing.Size(70, 67);
             this.imgMP.TabIndex = 12;
             // 
             // nameMP
@@ -1038,10 +1033,9 @@
             this.nameMP.Appearance.Options.UseFont = true;
             this.nameMP.Appearance.Options.UseForeColor = true;
             this.nameMP.Enabled = false;
-            this.nameMP.Location = new System.Drawing.Point(117, 22);
-            this.nameMP.Margin = new System.Windows.Forms.Padding(4);
+            this.nameMP.Location = new System.Drawing.Point(88, 18);
             this.nameMP.Name = "nameMP";
-            this.nameMP.Size = new System.Drawing.Size(143, 29);
+            this.nameMP.Size = new System.Drawing.Size(114, 23);
             this.nameMP.TabIndex = 12;
             this.nameMP.Text = "music name";
             // 
@@ -1049,10 +1043,9 @@
             // 
             this.endTime.AutoSize = true;
             this.endTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.endTime.Location = new System.Drawing.Point(1412, 15);
-            this.endTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.endTime.Location = new System.Drawing.Point(1059, 12);
             this.endTime.Name = "endTime";
-            this.endTime.Size = new System.Drawing.Size(56, 17);
+            this.endTime.Size = new System.Drawing.Size(43, 13);
             this.endTime.TabIndex = 14;
             this.endTime.Text = "0:00:00";
             // 
@@ -1060,10 +1053,9 @@
             // 
             this.startTime.AutoSize = true;
             this.startTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startTime.Location = new System.Drawing.Point(19, 15);
-            this.startTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.startTime.Location = new System.Drawing.Point(14, 12);
             this.startTime.Name = "startTime";
-            this.startTime.Size = new System.Drawing.Size(56, 17);
+            this.startTime.Size = new System.Drawing.Size(43, 13);
             this.startTime.TabIndex = 13;
             this.startTime.Text = "0:00:00";
             // 
@@ -1078,10 +1070,10 @@
             this.trackArea.Controls.Add(this.menuControl);
             this.trackArea.Controls.Add(this.fullSreen);
             this.trackArea.Controls.Add(this.exit);
-            this.trackArea.Location = new System.Drawing.Point(425, 0);
+            this.trackArea.Location = new System.Drawing.Point(319, 0);
             this.trackArea.Margin = new System.Windows.Forms.Padding(0);
             this.trackArea.Name = "trackArea";
-            this.trackArea.Size = new System.Drawing.Size(1067, 647);
+            this.trackArea.Size = new System.Drawing.Size(800, 526);
             this.trackArea.TabIndex = 1;
             // 
             // minimum
@@ -1090,12 +1082,12 @@
             this.minimum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.minimum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.minimum.ForeColor = System.Drawing.Color.Black;
-            this.minimum.Location = new System.Drawing.Point(891, 1);
+            this.minimum.Location = new System.Drawing.Point(668, 1);
             this.minimum.Margin = new System.Windows.Forms.Padding(0);
-            this.minimum.MaximumSize = new System.Drawing.Size(59, 37);
-            this.minimum.MinimumSize = new System.Drawing.Size(59, 37);
+            this.minimum.MaximumSize = new System.Drawing.Size(44, 30);
+            this.minimum.MinimumSize = new System.Drawing.Size(44, 30);
             this.minimum.Name = "minimum";
-            this.minimum.Size = new System.Drawing.Size(59, 37);
+            this.minimum.Size = new System.Drawing.Size(44, 30);
             this.minimum.TabIndex = 10;
             this.minimum.TabStop = false;
             this.minimum.Text = "-";
@@ -1108,9 +1100,8 @@
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(0, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(891, 43);
+            this.panel1.Size = new System.Drawing.Size(668, 35);
             this.panel1.TabIndex = 22;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormMDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FormMMove);
@@ -1130,16 +1121,15 @@
             this.menuControl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.menuControl.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.menuControl.BorderStylePage = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.menuControl.Location = new System.Drawing.Point(75, 42);
+            this.menuControl.Location = new System.Drawing.Point(56, 33);
             this.menuControl.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.menuControl.LookAndFeel.SkinMaskColor2 = System.Drawing.Color.Transparent;
             this.menuControl.LookAndFeel.SkinName = "VS2010";
             this.menuControl.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.menuControl.Margin = new System.Windows.Forms.Padding(4);
             this.menuControl.Name = "menuControl";
-            this.menuControl.SelectedTabPage = this.musicTab;
+            this.menuControl.SelectedTabPage = this.queueTab;
             this.menuControl.ShowTabHeader = DevExpress.Utils.DefaultBoolean.False;
-            this.menuControl.Size = new System.Drawing.Size(987, 601);
+            this.menuControl.Size = new System.Drawing.Size(740, 488);
             this.menuControl.TabIndex = 15;
             this.menuControl.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.homeTab,
@@ -1151,6 +1141,843 @@
             this.tabLogin,
             this.tabReg,
             this.xtraTabPage1});
+            // 
+            // queueTab
+            // 
+            this.queueTab.Controls.Add(this.addFilebtn);
+            this.queueTab.Controls.Add(this.flowLayoutPanel3);
+            this.queueTab.Controls.Add(this.panel4);
+            this.queueTab.Controls.Add(this.panel3);
+            this.queueTab.Controls.Add(this.labelControl10);
+            this.queueTab.Name = "queueTab";
+            this.queueTab.Size = new System.Drawing.Size(738, 478);
+            this.queueTab.Text = "Queue";
+            // 
+            // addFilebtn
+            // 
+            this.addFilebtn.Controls.Add(this.labelControl32);
+            this.addFilebtn.Location = new System.Drawing.Point(611, 75);
+            this.addFilebtn.Margin = new System.Windows.Forms.Padding(0);
+            this.addFilebtn.Name = "addFilebtn";
+            this.addFilebtn.Size = new System.Drawing.Size(73, 32);
+            this.addFilebtn.TabIndex = 28;
+            this.addFilebtn.Click += new System.EventHandler(this.themFile);
+            this.addFilebtn.MouseEnter += new System.EventHandler(this.hoverItem);
+            this.addFilebtn.MouseLeave += new System.EventHandler(this.hoverLeaveItem);
+            this.addFilebtn.MouseHover += new System.EventHandler(this.hoverItem);
+            // 
+            // labelControl32
+            // 
+            this.labelControl32.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl32.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl32.Appearance.Options.UseFont = true;
+            this.labelControl32.Appearance.Options.UseForeColor = true;
+            this.labelControl32.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl32.Enabled = false;
+            this.labelControl32.Location = new System.Drawing.Point(14, 8);
+            this.labelControl32.Name = "labelControl32";
+            this.labelControl32.Size = new System.Drawing.Size(53, 16);
+            this.labelControl32.TabIndex = 16;
+            this.labelControl32.Text = "Add file";
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.AutoScroll = true;
+            this.flowLayoutPanel3.Controls.Add(this.panel10);
+            this.flowLayoutPanel3.Controls.Add(this.dataGridView1);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 137);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(740, 346);
+            this.flowLayoutPanel3.TabIndex = 28;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.labelControl14);
+            this.panel10.Controls.Add(this.panel11);
+            this.panel10.Controls.Add(this.labelControl25);
+            this.panel10.Controls.Add(this.panel12);
+            this.panel10.Location = new System.Drawing.Point(7, 7);
+            this.panel10.Margin = new System.Windows.Forms.Padding(7, 7, 0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Padding = new System.Windows.Forms.Padding(5);
+            this.panel10.Size = new System.Drawing.Size(678, 48);
+            this.panel10.TabIndex = 17;
+            // 
+            // labelControl14
+            // 
+            this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl14.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl14.Appearance.Options.UseFont = true;
+            this.labelControl14.Appearance.Options.UseForeColor = true;
+            this.labelControl14.Enabled = false;
+            this.labelControl14.Location = new System.Drawing.Point(632, 19);
+            this.labelControl14.Margin = new System.Windows.Forms.Padding(0);
+            this.labelControl14.Name = "labelControl14";
+            this.labelControl14.Size = new System.Drawing.Size(28, 13);
+            this.labelControl14.TabIndex = 18;
+            this.labelControl14.Text = "03:07";
+            // 
+            // panel11
+            // 
+            this.panel11.AutoSize = true;
+            this.panel11.Controls.Add(this.labelControl24);
+            this.panel11.Location = new System.Drawing.Point(467, 10);
+            this.panel11.Margin = new System.Windows.Forms.Padding(0);
+            this.panel11.Name = "panel11";
+            this.panel11.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.panel11.Size = new System.Drawing.Size(48, 29);
+            this.panel11.TabIndex = 18;
+            // 
+            // labelControl24
+            // 
+            this.labelControl24.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl24.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl24.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl24.Appearance.Options.UseBackColor = true;
+            this.labelControl24.Appearance.Options.UseFont = true;
+            this.labelControl24.Appearance.Options.UseForeColor = true;
+            this.labelControl24.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl24.Enabled = false;
+            this.labelControl24.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
+            this.labelControl24.Location = new System.Drawing.Point(13, 9);
+            this.labelControl24.Margin = new System.Windows.Forms.Padding(0);
+            this.labelControl24.Name = "labelControl24";
+            this.labelControl24.Size = new System.Drawing.Size(24, 13);
+            this.labelControl24.TabIndex = 15;
+            this.labelControl24.Text = "2002";
+            // 
+            // labelControl25
+            // 
+            this.labelControl25.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl25.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl25.Appearance.Options.UseFont = true;
+            this.labelControl25.Appearance.Options.UseForeColor = true;
+            this.labelControl25.Enabled = false;
+            this.labelControl25.Location = new System.Drawing.Point(70, 19);
+            this.labelControl25.Margin = new System.Windows.Forms.Padding(0);
+            this.labelControl25.Name = "labelControl25";
+            this.labelControl25.Size = new System.Drawing.Size(24, 13);
+            this.labelControl25.TabIndex = 14;
+            this.labelControl25.Text = "2002";
+            // 
+            // panel12
+            // 
+            this.panel12.AutoSize = true;
+            this.panel12.Controls.Add(this.labelControl26);
+            this.panel12.Location = new System.Drawing.Point(301, 10);
+            this.panel12.Margin = new System.Windows.Forms.Padding(0);
+            this.panel12.Name = "panel12";
+            this.panel12.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.panel12.Size = new System.Drawing.Size(88, 32);
+            this.panel12.TabIndex = 17;
+            // 
+            // labelControl26
+            // 
+            this.labelControl26.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl26.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl26.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl26.Appearance.Options.UseBackColor = true;
+            this.labelControl26.Appearance.Options.UseFont = true;
+            this.labelControl26.Appearance.Options.UseForeColor = true;
+            this.labelControl26.Enabled = false;
+            this.labelControl26.Location = new System.Drawing.Point(13, 9);
+            this.labelControl26.Margin = new System.Windows.Forms.Padding(0);
+            this.labelControl26.Name = "labelControl26";
+            this.labelControl26.Size = new System.Drawing.Size(55, 13);
+            this.labelControl26.TabIndex = 15;
+            this.labelControl26.Text = "Anne-Marie";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 58);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(723, 285);
+            this.dataGridView1.TabIndex = 18;
+            this.dataGridView1.Visible = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.labelControl27);
+            this.panel4.Location = new System.Drawing.Point(116, 75);
+            this.panel4.Margin = new System.Windows.Forms.Padding(0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(85, 32);
+            this.panel4.TabIndex = 27;
+            this.panel4.MouseEnter += new System.EventHandler(this.hoverItem);
+            this.panel4.MouseLeave += new System.EventHandler(this.hoverLeaveItem);
+            this.panel4.MouseHover += new System.EventHandler(this.hoverItem);
+            // 
+            // labelControl27
+            // 
+            this.labelControl27.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl27.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl27.Appearance.Options.UseFont = true;
+            this.labelControl27.Appearance.Options.UseForeColor = true;
+            this.labelControl27.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl27.Enabled = false;
+            this.labelControl27.Location = new System.Drawing.Point(14, 8);
+            this.labelControl27.Name = "labelControl27";
+            this.labelControl27.Size = new System.Drawing.Size(57, 16);
+            this.labelControl27.TabIndex = 16;
+            this.labelControl27.Text = "+  Add to";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.labelControl28);
+            this.panel3.Controls.Add(this.pictureEdit13);
+            this.panel3.Location = new System.Drawing.Point(0, 75);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(85, 32);
+            this.panel3.TabIndex = 26;
+            this.panel3.MouseEnter += new System.EventHandler(this.hoverItem);
+            this.panel3.MouseLeave += new System.EventHandler(this.hoverLeaveItem);
+            this.panel3.MouseHover += new System.EventHandler(this.hoverItem);
+            // 
+            // labelControl28
+            // 
+            this.labelControl28.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl28.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl28.Appearance.Options.UseFont = true;
+            this.labelControl28.Appearance.Options.UseForeColor = true;
+            this.labelControl28.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl28.Enabled = false;
+            this.labelControl28.Location = new System.Drawing.Point(38, 8);
+            this.labelControl28.Name = "labelControl28";
+            this.labelControl28.Size = new System.Drawing.Size(40, 16);
+            this.labelControl28.TabIndex = 16;
+            this.labelControl28.Text = "Clear";
+            // 
+            // pictureEdit13
+            // 
+            this.pictureEdit13.EditValue = global::Music_media.Properties.Resources.bin;
+            this.pictureEdit13.Enabled = false;
+            this.pictureEdit13.Location = new System.Drawing.Point(14, 8);
+            this.pictureEdit13.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureEdit13.Name = "pictureEdit13";
+            this.pictureEdit13.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit13.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.pictureEdit13.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit13.Properties.Appearance.Options.UseForeColor = true;
+            this.pictureEdit13.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit13.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit13.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit13.ShowToolTips = false;
+            this.pictureEdit13.Size = new System.Drawing.Size(16, 16);
+            this.pictureEdit13.TabIndex = 15;
+            // 
+            // labelControl10
+            // 
+            this.labelControl10.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl10.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl10.Appearance.Options.UseBackColor = true;
+            this.labelControl10.Appearance.Options.UseFont = true;
+            this.labelControl10.Appearance.Options.UseForeColor = true;
+            this.labelControl10.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
+            this.labelControl10.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl10.Enabled = false;
+            this.labelControl10.Location = new System.Drawing.Point(0, 0);
+            this.labelControl10.Margin = new System.Windows.Forms.Padding(0);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(204, 45);
+            this.labelControl10.TabIndex = 17;
+            this.labelControl10.Text = "Play queue";
+            // 
+            // homeTab
+            // 
+            this.homeTab.Appearance.PageClient.BackColor = System.Drawing.Color.Black;
+            this.homeTab.Appearance.PageClient.Options.UseBackColor = true;
+            this.homeTab.Controls.Add(this.flowLayoutPanel1);
+            this.homeTab.Controls.Add(this.labelControl8);
+            this.homeTab.Controls.Add(this.titleName);
+            this.homeTab.Name = "homeTab";
+            this.homeTab.Size = new System.Drawing.Size(738, 478);
+            this.homeTab.Text = "Home";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.AutoSize = true;
+            this.flowLayoutPanel1.Controls.Add(this.panel6);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 130);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(740, 353);
+            this.flowLayoutPanel1.TabIndex = 18;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.labelControl21);
+            this.panel6.Controls.Add(this.pictureEdit11);
+            this.panel6.Controls.Add(this.labelControl33);
+            this.panel6.Location = new System.Drawing.Point(7, 7);
+            this.panel6.Margin = new System.Windows.Forms.Padding(7, 7, 0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Padding = new System.Windows.Forms.Padding(5);
+            this.panel6.Size = new System.Drawing.Size(161, 213);
+            this.panel6.TabIndex = 15;
+            // 
+            // labelControl21
+            // 
+            this.labelControl21.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl21.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.labelControl21.Appearance.Options.UseFont = true;
+            this.labelControl21.Appearance.Options.UseForeColor = true;
+            this.labelControl21.Enabled = false;
+            this.labelControl21.Location = new System.Drawing.Point(8, 191);
+            this.labelControl21.Name = "labelControl21";
+            this.labelControl21.Size = new System.Drawing.Size(29, 16);
+            this.labelControl21.TabIndex = 18;
+            this.labelControl21.Text = "artist";
+            // 
+            // pictureEdit11
+            // 
+            this.pictureEdit11.EditValue = global::Music_media.Properties.Resources.home;
+            this.pictureEdit11.Enabled = false;
+            this.pictureEdit11.Location = new System.Drawing.Point(5, 7);
+            this.pictureEdit11.Name = "pictureEdit11";
+            this.pictureEdit11.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit11.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.pictureEdit11.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit11.Properties.Appearance.Options.UseForeColor = true;
+            this.pictureEdit11.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit11.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit11.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.pictureEdit11.ShowToolTips = false;
+            this.pictureEdit11.Size = new System.Drawing.Size(148, 152);
+            this.pictureEdit11.TabIndex = 16;
+            // 
+            // labelControl33
+            // 
+            this.labelControl33.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl33.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl33.Appearance.Options.UseFont = true;
+            this.labelControl33.Appearance.Options.UseForeColor = true;
+            this.labelControl33.Enabled = false;
+            this.labelControl33.Location = new System.Drawing.Point(8, 162);
+            this.labelControl33.Name = "labelControl33";
+            this.labelControl33.Size = new System.Drawing.Size(114, 23);
+            this.labelControl33.TabIndex = 17;
+            this.labelControl33.Text = "music name";
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl8.Appearance.Options.UseFont = true;
+            this.labelControl8.Appearance.Options.UseForeColor = true;
+            this.labelControl8.Enabled = false;
+            this.labelControl8.Location = new System.Drawing.Point(3, 83);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(115, 23);
+            this.labelControl8.TabIndex = 15;
+            this.labelControl8.Text = "Recent media";
+            // 
+            // titleName
+            // 
+            this.titleName.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.titleName.Appearance.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.titleName.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.titleName.Appearance.Options.UseBackColor = true;
+            this.titleName.Appearance.Options.UseFont = true;
+            this.titleName.Appearance.Options.UseForeColor = true;
+            this.titleName.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
+            this.titleName.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.titleName.Enabled = false;
+            this.titleName.Location = new System.Drawing.Point(3, 0);
+            this.titleName.Margin = new System.Windows.Forms.Padding(0);
+            this.titleName.Name = "titleName";
+            this.titleName.Size = new System.Drawing.Size(108, 45);
+            this.titleName.TabIndex = 16;
+            this.titleName.Text = "Home";
+            // 
+            // musicTab
+            // 
+            this.musicTab.Controls.Add(this.btnLibOndb);
+            this.musicTab.Controls.Add(this.btnLibOnMydestop);
+            this.musicTab.Controls.Add(this.flowLayoutPanel2);
+            this.musicTab.Controls.Add(this.panel5);
+            this.musicTab.Controls.Add(this.labelControl7);
+            this.musicTab.Name = "musicTab";
+            this.musicTab.Size = new System.Drawing.Size(738, 478);
+            this.musicTab.Text = "Music";
+            // 
+            // btnLibOndb
+            // 
+            this.btnLibOndb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
+            this.btnLibOndb.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLibOndb.ForeColor = System.Drawing.Color.Black;
+            this.btnLibOndb.Location = new System.Drawing.Point(422, 72);
+            this.btnLibOndb.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLibOndb.Name = "btnLibOndb";
+            this.btnLibOndb.Size = new System.Drawing.Size(190, 37);
+            this.btnLibOndb.TabIndex = 27;
+            this.btnLibOndb.Text = "Trong thư viện của bạn";
+            this.btnLibOndb.UseVisualStyleBackColor = false;
+            // 
+            // btnLibOnMydestop
+            // 
+            this.btnLibOnMydestop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
+            this.btnLibOnMydestop.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLibOnMydestop.ForeColor = System.Drawing.Color.Black;
+            this.btnLibOnMydestop.Location = new System.Drawing.Point(224, 75);
+            this.btnLibOnMydestop.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLibOnMydestop.Name = "btnLibOnMydestop";
+            this.btnLibOnMydestop.Size = new System.Drawing.Size(128, 37);
+            this.btnLibOnMydestop.TabIndex = 26;
+            this.btnLibOnMydestop.Text = "Trên máy";
+            this.btnLibOnMydestop.UseVisualStyleBackColor = false;
+            this.btnLibOnMydestop.Click += new System.EventHandler(this.btnLibOnMydestop_Click);
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.AutoScroll = true;
+            this.flowLayoutPanel2.Controls.Add(this.labelControl19);
+            this.flowLayoutPanel2.Controls.Add(this.panel7);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 137);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(740, 346);
+            this.flowLayoutPanel2.TabIndex = 25;
+            // 
+            // labelControl19
+            // 
+            this.labelControl19.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl19.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(81)))), ((int)(((byte)(34)))));
+            this.labelControl19.Appearance.Options.UseFont = true;
+            this.labelControl19.Appearance.Options.UseForeColor = true;
+            this.labelControl19.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl19.Location = new System.Drawing.Point(8, 3);
+            this.labelControl19.Margin = new System.Windows.Forms.Padding(8, 3, 3, 10);
+            this.labelControl19.Name = "labelControl19";
+            this.labelControl19.Size = new System.Drawing.Size(241, 23);
+            this.labelControl19.TabIndex = 15;
+            this.labelControl19.Text = "#";
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.labelControl35);
+            this.panel7.Controls.Add(this.panel9);
+            this.panel7.Controls.Add(this.labelControl20);
+            this.panel7.Controls.Add(this.panel8);
+            this.panel7.Location = new System.Drawing.Point(7, 43);
+            this.panel7.Margin = new System.Windows.Forms.Padding(7, 7, 0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Padding = new System.Windows.Forms.Padding(5);
+            this.panel7.Size = new System.Drawing.Size(678, 48);
+            this.panel7.TabIndex = 16;
+            // 
+            // labelControl35
+            // 
+            this.labelControl35.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl35.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl35.Appearance.Options.UseFont = true;
+            this.labelControl35.Appearance.Options.UseForeColor = true;
+            this.labelControl35.Enabled = false;
+            this.labelControl35.Location = new System.Drawing.Point(632, 19);
+            this.labelControl35.Margin = new System.Windows.Forms.Padding(0);
+            this.labelControl35.Name = "labelControl35";
+            this.labelControl35.Size = new System.Drawing.Size(28, 13);
+            this.labelControl35.TabIndex = 18;
+            this.labelControl35.Text = "03:07";
+            // 
+            // panel9
+            // 
+            this.panel9.AutoSize = true;
+            this.panel9.Controls.Add(this.labelControl34);
+            this.panel9.Location = new System.Drawing.Point(467, 10);
+            this.panel9.Margin = new System.Windows.Forms.Padding(0);
+            this.panel9.Name = "panel9";
+            this.panel9.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.panel9.Size = new System.Drawing.Size(48, 29);
+            this.panel9.TabIndex = 18;
+            // 
+            // labelControl34
+            // 
+            this.labelControl34.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl34.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl34.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl34.Appearance.Options.UseBackColor = true;
+            this.labelControl34.Appearance.Options.UseFont = true;
+            this.labelControl34.Appearance.Options.UseForeColor = true;
+            this.labelControl34.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl34.Enabled = false;
+            this.labelControl34.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
+            this.labelControl34.Location = new System.Drawing.Point(13, 9);
+            this.labelControl34.Margin = new System.Windows.Forms.Padding(0);
+            this.labelControl34.Name = "labelControl34";
+            this.labelControl34.Size = new System.Drawing.Size(24, 13);
+            this.labelControl34.TabIndex = 15;
+            this.labelControl34.Text = "2002";
+            // 
+            // labelControl20
+            // 
+            this.labelControl20.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl20.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl20.Appearance.Options.UseFont = true;
+            this.labelControl20.Appearance.Options.UseForeColor = true;
+            this.labelControl20.Enabled = false;
+            this.labelControl20.Location = new System.Drawing.Point(70, 19);
+            this.labelControl20.Margin = new System.Windows.Forms.Padding(0);
+            this.labelControl20.Name = "labelControl20";
+            this.labelControl20.Size = new System.Drawing.Size(24, 13);
+            this.labelControl20.TabIndex = 14;
+            this.labelControl20.Text = "2002";
+            // 
+            // panel8
+            // 
+            this.panel8.AutoSize = true;
+            this.panel8.Controls.Add(this.labelControl23);
+            this.panel8.Location = new System.Drawing.Point(301, 10);
+            this.panel8.Margin = new System.Windows.Forms.Padding(0);
+            this.panel8.Name = "panel8";
+            this.panel8.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.panel8.Size = new System.Drawing.Size(88, 32);
+            this.panel8.TabIndex = 17;
+            // 
+            // labelControl23
+            // 
+            this.labelControl23.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl23.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl23.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl23.Appearance.Options.UseBackColor = true;
+            this.labelControl23.Appearance.Options.UseFont = true;
+            this.labelControl23.Appearance.Options.UseForeColor = true;
+            this.labelControl23.Enabled = false;
+            this.labelControl23.Location = new System.Drawing.Point(13, 9);
+            this.labelControl23.Margin = new System.Windows.Forms.Padding(0);
+            this.labelControl23.Name = "labelControl23";
+            this.labelControl23.Size = new System.Drawing.Size(55, 13);
+            this.labelControl23.TabIndex = 15;
+            this.labelControl23.Text = "Anne-Marie";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(81)))), ((int)(((byte)(34)))));
+            this.panel5.Controls.Add(this.labelControl12);
+            this.panel5.Controls.Add(this.pictureEdit2);
+            this.panel5.Location = new System.Drawing.Point(0, 75);
+            this.panel5.Margin = new System.Windows.Forms.Padding(0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(145, 32);
+            this.panel5.TabIndex = 24;
+            // 
+            // labelControl12
+            // 
+            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl12.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.labelControl12.Appearance.Options.UseFont = true;
+            this.labelControl12.Appearance.Options.UseForeColor = true;
+            this.labelControl12.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl12.Enabled = false;
+            this.labelControl12.Location = new System.Drawing.Point(42, 8);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(96, 16);
+            this.labelControl12.TabIndex = 16;
+            this.labelControl12.Text = "Shuffle and play";
+            // 
+            // pictureEdit2
+            // 
+            this.pictureEdit2.EditValue = global::Music_media.Properties.Resources.randomwhite;
+            this.pictureEdit2.Enabled = false;
+            this.pictureEdit2.Location = new System.Drawing.Point(14, 8);
+            this.pictureEdit2.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureEdit2.Name = "pictureEdit2";
+            this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit2.Properties.Appearance.Options.UseForeColor = true;
+            this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit2.ShowToolTips = false;
+            this.pictureEdit2.Size = new System.Drawing.Size(16, 16);
+            this.pictureEdit2.TabIndex = 15;
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl7.Appearance.Options.UseBackColor = true;
+            this.labelControl7.Appearance.Options.UseFont = true;
+            this.labelControl7.Appearance.Options.UseForeColor = true;
+            this.labelControl7.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
+            this.labelControl7.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl7.Enabled = false;
+            this.labelControl7.Location = new System.Drawing.Point(0, 0);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(0);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(107, 45);
+            this.labelControl7.TabIndex = 17;
+            this.labelControl7.Text = "Music";
+            // 
+            // playlistsTab
+            // 
+            this.playlistsTab.Controls.Add(this.panelRounded9);
+            this.playlistsTab.Controls.Add(this.label1);
+            this.playlistsTab.Controls.Add(this.pictureBox1);
+            this.playlistsTab.Controls.Add(this.labelControl9);
+            this.playlistsTab.Name = "playlistsTab";
+            this.playlistsTab.Size = new System.Drawing.Size(738, 478);
+            this.playlistsTab.Text = "Playlists";
+            // 
+            // panelRounded9
+            // 
+            this.panelRounded9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(81)))), ((int)(((byte)(34)))));
+            this.panelRounded9.BorderColor = System.Drawing.Color.Transparent;
+            this.panelRounded9.BorderFocusColor = System.Drawing.Color.Transparent;
+            this.panelRounded9.BorderRadius = 5;
+            this.panelRounded9.BorderSize = 2;
+            this.panelRounded9.Controls.Add(this.labelControl13);
+            this.panelRounded9.Location = new System.Drawing.Point(319, 286);
+            this.panelRounded9.Margin = new System.Windows.Forms.Padding(0);
+            this.panelRounded9.Name = "panelRounded9";
+            this.panelRounded9.Size = new System.Drawing.Size(181, 32);
+            this.panelRounded9.TabIndex = 23;
+            this.panelRounded9.UnderlinedStyle = false;
+            // 
+            // labelControl13
+            // 
+            this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl13.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.labelControl13.Appearance.Options.UseFont = true;
+            this.labelControl13.Appearance.Options.UseForeColor = true;
+            this.labelControl13.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl13.Enabled = false;
+            this.labelControl13.Location = new System.Drawing.Point(22, 3);
+            this.labelControl13.Name = "labelControl13";
+            this.labelControl13.Size = new System.Drawing.Size(152, 26);
+            this.labelControl13.TabIndex = 16;
+            this.labelControl13.Text = "+  Create a new playlist";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.label1.Location = new System.Drawing.Point(314, 245);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(316, 32);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "You don\'t have any playlists";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Enabled = false;
+            this.pictureBox1.Image = global::Music_media.Properties.Resources.speaker;
+            this.pictureBox1.Location = new System.Drawing.Point(88, 193);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(193, 172);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl9.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl9.Appearance.Options.UseBackColor = true;
+            this.labelControl9.Appearance.Options.UseFont = true;
+            this.labelControl9.Appearance.Options.UseForeColor = true;
+            this.labelControl9.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
+            this.labelControl9.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl9.Enabled = false;
+            this.labelControl9.Location = new System.Drawing.Point(0, 0);
+            this.labelControl9.Margin = new System.Windows.Forms.Padding(0);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(153, 45);
+            this.labelControl9.TabIndex = 17;
+            this.labelControl9.Text = "Playlists";
+            // 
+            // noneTab
+            // 
+            this.noneTab.Appearance.PageClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.noneTab.Appearance.PageClient.Options.UseBackColor = true;
+            this.noneTab.Name = "noneTab";
+            this.noneTab.Size = new System.Drawing.Size(738, 478);
+            this.noneTab.Text = "None";
+            // 
+            // settingTab
+            // 
+            this.settingTab.Controls.Add(this.labelControl18);
+            this.settingTab.Controls.Add(this.labelControl17);
+            this.settingTab.Controls.Add(this.labelControl16);
+            this.settingTab.Controls.Add(this.labelControl15);
+            this.settingTab.Controls.Add(this.labelControl11);
+            this.settingTab.Name = "settingTab";
+            this.settingTab.Size = new System.Drawing.Size(738, 478);
+            this.settingTab.Text = "setting";
+            // 
+            // labelControl18
+            // 
+            this.labelControl18.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl18.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl18.Appearance.Options.UseFont = true;
+            this.labelControl18.Appearance.Options.UseForeColor = true;
+            this.labelControl18.Enabled = false;
+            this.labelControl18.Location = new System.Drawing.Point(116, 347);
+            this.labelControl18.Name = "labelControl18";
+            this.labelControl18.Size = new System.Drawing.Size(305, 23);
+            this.labelControl18.TabIndex = 22;
+            this.labelControl18.Text = "4 con chim, tối nay nghe nói holiday";
+            // 
+            // labelControl17
+            // 
+            this.labelControl17.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl17.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl17.Appearance.Options.UseFont = true;
+            this.labelControl17.Appearance.Options.UseForeColor = true;
+            this.labelControl17.Enabled = false;
+            this.labelControl17.Location = new System.Drawing.Point(116, 288);
+            this.labelControl17.Name = "labelControl17";
+            this.labelControl17.Size = new System.Drawing.Size(305, 23);
+            this.labelControl17.TabIndex = 21;
+            this.labelControl17.Text = "4 con chim, tối nay nghe nói holiday";
+            // 
+            // labelControl16
+            // 
+            this.labelControl16.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl16.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl16.Appearance.Options.UseFont = true;
+            this.labelControl16.Appearance.Options.UseForeColor = true;
+            this.labelControl16.Enabled = false;
+            this.labelControl16.Location = new System.Drawing.Point(116, 236);
+            this.labelControl16.Name = "labelControl16";
+            this.labelControl16.Size = new System.Drawing.Size(305, 23);
+            this.labelControl16.TabIndex = 20;
+            this.labelControl16.Text = "4 con chim, tối nay nghe nói holiday";
+            // 
+            // labelControl15
+            // 
+            this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl15.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl15.Appearance.Options.UseFont = true;
+            this.labelControl15.Appearance.Options.UseForeColor = true;
+            this.labelControl15.Enabled = false;
+            this.labelControl15.Location = new System.Drawing.Point(116, 182);
+            this.labelControl15.Name = "labelControl15";
+            this.labelControl15.Size = new System.Drawing.Size(305, 23);
+            this.labelControl15.TabIndex = 19;
+            this.labelControl15.Text = "4 con chim, tối nay nghe nói holiday";
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl11.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl11.Appearance.Options.UseBackColor = true;
+            this.labelControl11.Appearance.Options.UseFont = true;
+            this.labelControl11.Appearance.Options.UseForeColor = true;
+            this.labelControl11.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
+            this.labelControl11.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl11.Enabled = false;
+            this.labelControl11.Location = new System.Drawing.Point(0, 0);
+            this.labelControl11.Margin = new System.Windows.Forms.Padding(0);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(133, 45);
+            this.labelControl11.TabIndex = 18;
+            this.labelControl11.Text = "Setting";
+            // 
+            // tabLogin
+            // 
+            this.tabLogin.Controls.Add(this.btnSignup);
+            this.tabLogin.Controls.Add(this.labelControl22);
+            this.tabLogin.Controls.Add(this.btnLogin);
+            this.tabLogin.Controls.Add(this.txtUserPass);
+            this.tabLogin.Controls.Add(this.labelControl29);
+            this.tabLogin.Controls.Add(this.txtUserName);
+            this.tabLogin.Controls.Add(this.labelControl30);
+            this.tabLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.tabLogin.Name = "tabLogin";
+            this.tabLogin.Size = new System.Drawing.Size(738, 478);
+            this.tabLogin.Text = "xtraTabPage1";
+            // 
+            // btnSignup
+            // 
+            this.btnSignup.AutoSize = true;
+            this.btnSignup.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSignup.FlatAppearance.BorderSize = 0;
+            this.btnSignup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
+            this.btnSignup.Location = new System.Drawing.Point(418, 275);
+            this.btnSignup.Name = "btnSignup";
+            this.btnSignup.Size = new System.Drawing.Size(132, 27);
+            this.btnSignup.TabIndex = 41;
+            this.btnSignup.Text = "Đăng ký tài khoản";
+            this.btnSignup.UseVisualStyleBackColor = false;
+            this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
+            // 
+            // labelControl22
+            // 
+            this.labelControl22.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl22.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl22.Appearance.Options.UseFont = true;
+            this.labelControl22.Appearance.Options.UseForeColor = true;
+            this.labelControl22.Location = new System.Drawing.Point(167, 115);
+            this.labelControl22.Margin = new System.Windows.Forms.Padding(2);
+            this.labelControl22.Name = "labelControl22";
+            this.labelControl22.Size = new System.Drawing.Size(417, 30);
+            this.labelControl22.TabIndex = 40;
+            this.labelControl22.Text = "To continue, log in to DLD MUSIC";
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
+            this.btnLogin.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btnLogin.Location = new System.Drawing.Point(463, 323);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(108, 41);
+            this.btnLogin.TabIndex = 39;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            // 
+            // txtUserPass
+            // 
+            this.txtUserPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserPass.Location = new System.Drawing.Point(278, 236);
+            this.txtUserPass.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUserPass.Name = "txtUserPass";
+            this.txtUserPass.Size = new System.Drawing.Size(217, 28);
+            this.txtUserPass.TabIndex = 38;
+            // 
+            // labelControl29
+            // 
+            this.labelControl29.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl29.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl29.Appearance.Options.UseFont = true;
+            this.labelControl29.Appearance.Options.UseForeColor = true;
+            this.labelControl29.Location = new System.Drawing.Point(179, 240);
+            this.labelControl29.Margin = new System.Windows.Forms.Padding(2);
+            this.labelControl29.Name = "labelControl29";
+            this.labelControl29.Size = new System.Drawing.Size(92, 22);
+            this.labelControl29.TabIndex = 37;
+            this.labelControl29.Text = "Passworld";
+            // 
+            // txtUserName
+            // 
+            this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserName.Location = new System.Drawing.Point(278, 188);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(217, 28);
+            this.txtUserName.TabIndex = 36;
+            // 
+            // labelControl30
+            // 
+            this.labelControl30.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl30.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl30.Appearance.Options.UseFont = true;
+            this.labelControl30.Appearance.Options.UseForeColor = true;
+            this.labelControl30.Location = new System.Drawing.Point(179, 191);
+            this.labelControl30.Margin = new System.Windows.Forms.Padding(2);
+            this.labelControl30.Name = "labelControl30";
+            this.labelControl30.Size = new System.Drawing.Size(90, 22);
+            this.labelControl30.TabIndex = 35;
+            this.labelControl30.Text = "Username";
             // 
             // tabReg
             // 
@@ -1171,16 +1998,18 @@
             this.tabReg.Controls.Add(this.label2);
             this.tabReg.Controls.Add(this.txtHo);
             this.tabReg.Controls.Add(this.label9);
+            this.tabReg.Margin = new System.Windows.Forms.Padding(2);
             this.tabReg.Name = "tabReg";
-            this.tabReg.Size = new System.Drawing.Size(985, 589);
+            this.tabReg.Size = new System.Drawing.Size(738, 478);
             this.tabReg.Text = "xtraTabPage1";
             // 
             // txtsdtReg
             // 
             this.txtsdtReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsdtReg.Location = new System.Drawing.Point(377, 229);
+            this.txtsdtReg.Location = new System.Drawing.Point(283, 186);
+            this.txtsdtReg.Margin = new System.Windows.Forms.Padding(2);
             this.txtsdtReg.Name = "txtsdtReg";
-            this.txtsdtReg.Size = new System.Drawing.Size(354, 34);
+            this.txtsdtReg.Size = new System.Drawing.Size(266, 28);
             this.txtsdtReg.TabIndex = 70;
             // 
             // label8
@@ -1189,9 +2018,10 @@
             this.label8.BackColor = System.Drawing.Color.Snow;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.label8.Location = new System.Drawing.Point(182, 235);
+            this.label8.Location = new System.Drawing.Point(136, 191);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(173, 25);
+            this.label8.Size = new System.Drawing.Size(141, 20);
             this.label8.TabIndex = 69;
             this.label8.Text = "SỐ ĐIỆN THOẠI";
             // 
@@ -1200,9 +2030,10 @@
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
             this.btnBack.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.btnBack.Location = new System.Drawing.Point(70, 17);
+            this.btnBack.Location = new System.Drawing.Point(52, 14);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(106, 43);
+            this.btnBack.Size = new System.Drawing.Size(80, 35);
             this.btnBack.TabIndex = 68;
             this.btnBack.Text = "BACK";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -1212,9 +2043,10 @@
             // 
             this.label7.Font = new System.Drawing.Font("Tahoma", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.label7.Location = new System.Drawing.Point(241, 39);
+            this.label7.Location = new System.Drawing.Point(181, 32);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(673, 46);
+            this.label7.Size = new System.Drawing.Size(505, 37);
             this.label7.TabIndex = 67;
             this.label7.Text = "Sign up for free to start listening.";
             // 
@@ -1226,23 +2058,22 @@
             this.btnRegSucces.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegSucces.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegSucces.ForeColor = System.Drawing.Color.Black;
-            this.btnRegSucces.Location = new System.Drawing.Point(692, 522);
-            this.btnRegSucces.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegSucces.Location = new System.Drawing.Point(519, 424);
             this.btnRegSucces.Name = "btnRegSucces";
-            this.btnRegSucces.Size = new System.Drawing.Size(194, 50);
+            this.btnRegSucces.Size = new System.Drawing.Size(146, 41);
             this.btnRegSucces.TabIndex = 66;
             this.btnRegSucces.Text = "Đăng Kí";
             this.btnRegSucces.UseVisualStyleBackColor = false;
-            this.btnRegSucces.Click += new System.EventHandler(this.btnRegSucces_Click);
             // 
             // dateNgaySinh
             // 
             this.dateNgaySinh.CustomFormat = "dd/MM/yyyy";
             this.dateNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateNgaySinh.Location = new System.Drawing.Point(382, 270);
+            this.dateNgaySinh.Location = new System.Drawing.Point(286, 219);
+            this.dateNgaySinh.Margin = new System.Windows.Forms.Padding(2);
             this.dateNgaySinh.Name = "dateNgaySinh";
-            this.dateNgaySinh.Size = new System.Drawing.Size(184, 34);
+            this.dateNgaySinh.Size = new System.Drawing.Size(139, 28);
             this.dateNgaySinh.TabIndex = 65;
             // 
             // cbType
@@ -1252,9 +2083,10 @@
             this.cbType.Items.AddRange(new object[] {
             "admin",
             "user"});
-            this.cbType.Location = new System.Drawing.Point(382, 448);
+            this.cbType.Location = new System.Drawing.Point(286, 364);
+            this.cbType.Margin = new System.Windows.Forms.Padding(2);
             this.cbType.Name = "cbType";
-            this.cbType.Size = new System.Drawing.Size(354, 37);
+            this.cbType.Size = new System.Drawing.Size(266, 30);
             this.cbType.TabIndex = 64;
             // 
             // label6
@@ -1263,19 +2095,21 @@
             this.label6.BackColor = System.Drawing.Color.Snow;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.label6.Location = new System.Drawing.Point(223, 454);
+            this.label6.Location = new System.Drawing.Point(167, 369);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 25);
+            this.label6.Size = new System.Drawing.Size(100, 20);
             this.label6.TabIndex = 63;
             this.label6.Text = "Type User :";
             // 
             // txtPasswordReg
             // 
             this.txtPasswordReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPasswordReg.Location = new System.Drawing.Point(382, 384);
+            this.txtPasswordReg.Location = new System.Drawing.Point(286, 312);
+            this.txtPasswordReg.Margin = new System.Windows.Forms.Padding(2);
             this.txtPasswordReg.Name = "txtPasswordReg";
             this.txtPasswordReg.PasswordChar = '*';
-            this.txtPasswordReg.Size = new System.Drawing.Size(354, 34);
+            this.txtPasswordReg.Size = new System.Drawing.Size(266, 28);
             this.txtPasswordReg.TabIndex = 62;
             // 
             // label5
@@ -1284,18 +2118,20 @@
             this.label5.BackColor = System.Drawing.Color.Snow;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.label5.Location = new System.Drawing.Point(241, 390);
+            this.label5.Location = new System.Drawing.Point(181, 317);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 25);
+            this.label5.Size = new System.Drawing.Size(91, 20);
             this.label5.TabIndex = 61;
             this.label5.Text = "Password:";
             // 
             // txtUsernameReg
             // 
             this.txtUsernameReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsernameReg.Location = new System.Drawing.Point(382, 324);
+            this.txtUsernameReg.Location = new System.Drawing.Point(286, 263);
+            this.txtUsernameReg.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsernameReg.Name = "txtUsernameReg";
-            this.txtUsernameReg.Size = new System.Drawing.Size(354, 34);
+            this.txtUsernameReg.Size = new System.Drawing.Size(266, 28);
             this.txtUsernameReg.TabIndex = 60;
             // 
             // label4
@@ -1304,9 +2140,10 @@
             this.label4.BackColor = System.Drawing.Color.Snow;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.label4.Location = new System.Drawing.Point(229, 333);
+            this.label4.Location = new System.Drawing.Point(172, 271);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 25);
+            this.label4.Size = new System.Drawing.Size(103, 20);
             this.label4.TabIndex = 59;
             this.label4.Text = "User Name:";
             // 
@@ -1316,18 +2153,20 @@
             this.label3.BackColor = System.Drawing.Color.Snow;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.label3.Location = new System.Drawing.Point(236, 278);
+            this.label3.Location = new System.Drawing.Point(177, 226);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 25);
+            this.label3.Size = new System.Drawing.Size(95, 20);
             this.label3.TabIndex = 58;
             this.label3.Text = "Ngày Sinh:";
             // 
             // txtTen
             // 
             this.txtTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTen.Location = new System.Drawing.Point(378, 178);
+            this.txtTen.Location = new System.Drawing.Point(284, 145);
+            this.txtTen.Margin = new System.Windows.Forms.Padding(2);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(354, 34);
+            this.txtTen.Size = new System.Drawing.Size(266, 28);
             this.txtTen.TabIndex = 57;
             // 
             // label2
@@ -1336,18 +2175,20 @@
             this.label2.BackColor = System.Drawing.Color.Snow;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.label2.Location = new System.Drawing.Point(288, 187);
+            this.label2.Location = new System.Drawing.Point(216, 152);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 25);
+            this.label2.Size = new System.Drawing.Size(44, 20);
             this.label2.TabIndex = 56;
             this.label2.Text = "Tên:";
             // 
             // txtHo
             // 
             this.txtHo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHo.Location = new System.Drawing.Point(378, 125);
+            this.txtHo.Location = new System.Drawing.Point(284, 102);
+            this.txtHo.Margin = new System.Windows.Forms.Padding(2);
             this.txtHo.Name = "txtHo";
-            this.txtHo.Size = new System.Drawing.Size(354, 34);
+            this.txtHo.Size = new System.Drawing.Size(266, 28);
             this.txtHo.TabIndex = 55;
             // 
             // label9
@@ -1356,794 +2197,19 @@
             this.label9.BackColor = System.Drawing.Color.Snow;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.label9.Location = new System.Drawing.Point(298, 131);
+            this.label9.Location = new System.Drawing.Point(224, 106);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 25);
+            this.label9.Size = new System.Drawing.Size(37, 20);
             this.label9.TabIndex = 54;
             this.label9.Text = "Họ:";
             // 
-            // homeTab
-            // 
-            this.homeTab.Appearance.PageClient.BackColor = System.Drawing.Color.Black;
-            this.homeTab.Appearance.PageClient.Options.UseBackColor = true;
-            this.homeTab.Controls.Add(this.flowLayoutPanel1);
-            this.homeTab.Controls.Add(this.labelControl8);
-            this.homeTab.Controls.Add(this.titleName);
-            this.homeTab.Margin = new System.Windows.Forms.Padding(4);
-            this.homeTab.Name = "homeTab";
-            this.homeTab.Size = new System.Drawing.Size(985, 589);
-            this.homeTab.Text = "Home";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.Controls.Add(this.panel6);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 160);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(987, 434);
-            this.flowLayoutPanel1.TabIndex = 18;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.labelControl21);
-            this.panel6.Controls.Add(this.pictureEdit11);
-            this.panel6.Controls.Add(this.labelControl33);
-            this.panel6.Location = new System.Drawing.Point(9, 9);
-            this.panel6.Margin = new System.Windows.Forms.Padding(9, 9, 0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.panel6.Size = new System.Drawing.Size(215, 262);
-            this.panel6.TabIndex = 15;
-            // 
-            // labelControl21
-            // 
-            this.labelControl21.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl21.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.labelControl21.Appearance.Options.UseFont = true;
-            this.labelControl21.Appearance.Options.UseForeColor = true;
-            this.labelControl21.Enabled = false;
-            this.labelControl21.Location = new System.Drawing.Point(11, 235);
-            this.labelControl21.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl21.Name = "labelControl21";
-            this.labelControl21.Size = new System.Drawing.Size(35, 19);
-            this.labelControl21.TabIndex = 18;
-            this.labelControl21.Text = "artist";
-            // 
-            // pictureEdit11
-            // 
-            this.pictureEdit11.EditValue = global::Music_media.Properties.Resources.home;
-            this.pictureEdit11.Enabled = false;
-            this.pictureEdit11.Location = new System.Drawing.Point(7, 9);
-            this.pictureEdit11.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureEdit11.Name = "pictureEdit11";
-            this.pictureEdit11.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit11.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.pictureEdit11.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit11.Properties.Appearance.Options.UseForeColor = true;
-            this.pictureEdit11.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit11.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit11.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit11.ShowToolTips = false;
-            this.pictureEdit11.Size = new System.Drawing.Size(197, 187);
-            this.pictureEdit11.TabIndex = 16;
-            // 
-            // labelControl33
-            // 
-            this.labelControl33.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl33.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl33.Appearance.Options.UseFont = true;
-            this.labelControl33.Appearance.Options.UseForeColor = true;
-            this.labelControl33.Enabled = false;
-            this.labelControl33.Location = new System.Drawing.Point(11, 199);
-            this.labelControl33.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl33.Name = "labelControl33";
-            this.labelControl33.Size = new System.Drawing.Size(143, 29);
-            this.labelControl33.TabIndex = 17;
-            this.labelControl33.Text = "music name";
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Appearance.Options.UseForeColor = true;
-            this.labelControl8.Enabled = false;
-            this.labelControl8.Location = new System.Drawing.Point(4, 102);
-            this.labelControl8.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(145, 29);
-            this.labelControl8.TabIndex = 15;
-            this.labelControl8.Text = "Recent media";
-            // 
-            // titleName
-            // 
-            this.titleName.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.titleName.Appearance.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.titleName.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.titleName.Appearance.Options.UseBackColor = true;
-            this.titleName.Appearance.Options.UseFont = true;
-            this.titleName.Appearance.Options.UseForeColor = true;
-            this.titleName.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
-            this.titleName.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.titleName.Enabled = false;
-            this.titleName.Location = new System.Drawing.Point(4, 0);
-            this.titleName.Margin = new System.Windows.Forms.Padding(0);
-            this.titleName.Name = "titleName";
-            this.titleName.Size = new System.Drawing.Size(134, 56);
-            this.titleName.TabIndex = 16;
-            this.titleName.Text = "Home";
-            // 
-            // musicTab
-            // 
-            this.musicTab.Controls.Add(this.btnLibOndb);
-            this.musicTab.Controls.Add(this.btnLibOnMydestop);
-            this.musicTab.Controls.Add(this.flowLayoutPanel2);
-            this.musicTab.Controls.Add(this.panel5);
-            this.musicTab.Controls.Add(this.labelControl7);
-            this.musicTab.Margin = new System.Windows.Forms.Padding(4);
-            this.musicTab.Name = "musicTab";
-            this.musicTab.Size = new System.Drawing.Size(985, 589);
-            this.musicTab.Text = "Music";
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.Controls.Add(this.labelControl19);
-            this.flowLayoutPanel2.Controls.Add(this.panel7);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 169);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(987, 426);
-            this.flowLayoutPanel2.TabIndex = 25;
-            // 
-            // labelControl19
-            // 
-            this.labelControl19.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl19.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(81)))), ((int)(((byte)(34)))));
-            this.labelControl19.Appearance.Options.UseFont = true;
-            this.labelControl19.Appearance.Options.UseForeColor = true;
-            this.labelControl19.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl19.Location = new System.Drawing.Point(11, 4);
-            this.labelControl19.Margin = new System.Windows.Forms.Padding(11, 4, 4, 12);
-            this.labelControl19.Name = "labelControl19";
-            this.labelControl19.Size = new System.Drawing.Size(321, 28);
-            this.labelControl19.TabIndex = 15;
-            this.labelControl19.Text = "#";
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.labelControl35);
-            this.panel7.Controls.Add(this.panel9);
-            this.panel7.Controls.Add(this.labelControl20);
-            this.panel7.Controls.Add(this.panel8);
-            this.panel7.Location = new System.Drawing.Point(9, 53);
-            this.panel7.Margin = new System.Windows.Forms.Padding(9, 9, 0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.panel7.Size = new System.Drawing.Size(904, 59);
-            this.panel7.TabIndex = 16;
-            // 
-            // labelControl35
-            // 
-            this.labelControl35.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl35.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl35.Appearance.Options.UseFont = true;
-            this.labelControl35.Appearance.Options.UseForeColor = true;
-            this.labelControl35.Enabled = false;
-            this.labelControl35.Location = new System.Drawing.Point(843, 23);
-            this.labelControl35.Margin = new System.Windows.Forms.Padding(0);
-            this.labelControl35.Name = "labelControl35";
-            this.labelControl35.Size = new System.Drawing.Size(37, 17);
-            this.labelControl35.TabIndex = 18;
-            this.labelControl35.Text = "03:07";
-            // 
-            // panel9
-            // 
-            this.panel9.AutoSize = true;
-            this.panel9.Controls.Add(this.labelControl34);
-            this.panel9.Location = new System.Drawing.Point(623, 12);
-            this.panel9.Margin = new System.Windows.Forms.Padding(0);
-            this.panel9.Name = "panel9";
-            this.panel9.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
-            this.panel9.Size = new System.Drawing.Size(64, 36);
-            this.panel9.TabIndex = 18;
-            // 
-            // labelControl34
-            // 
-            this.labelControl34.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.labelControl34.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl34.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl34.Appearance.Options.UseBackColor = true;
-            this.labelControl34.Appearance.Options.UseFont = true;
-            this.labelControl34.Appearance.Options.UseForeColor = true;
-            this.labelControl34.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl34.Enabled = false;
-            this.labelControl34.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
-            this.labelControl34.Location = new System.Drawing.Point(17, 11);
-            this.labelControl34.Margin = new System.Windows.Forms.Padding(0);
-            this.labelControl34.Name = "labelControl34";
-            this.labelControl34.Size = new System.Drawing.Size(32, 16);
-            this.labelControl34.TabIndex = 15;
-            this.labelControl34.Text = "2002";
-            // 
-            // labelControl20
-            // 
-            this.labelControl20.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl20.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl20.Appearance.Options.UseFont = true;
-            this.labelControl20.Appearance.Options.UseForeColor = true;
-            this.labelControl20.Enabled = false;
-            this.labelControl20.Location = new System.Drawing.Point(93, 23);
-            this.labelControl20.Margin = new System.Windows.Forms.Padding(0);
-            this.labelControl20.Name = "labelControl20";
-            this.labelControl20.Size = new System.Drawing.Size(32, 17);
-            this.labelControl20.TabIndex = 14;
-            this.labelControl20.Text = "2002";
-            // 
-            // panel8
-            // 
-            this.panel8.AutoSize = true;
-            this.panel8.Controls.Add(this.labelControl23);
-            this.panel8.Location = new System.Drawing.Point(401, 12);
-            this.panel8.Margin = new System.Windows.Forms.Padding(0);
-            this.panel8.Name = "panel8";
-            this.panel8.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
-            this.panel8.Size = new System.Drawing.Size(117, 39);
-            this.panel8.TabIndex = 17;
-            // 
-            // labelControl23
-            // 
-            this.labelControl23.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.labelControl23.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl23.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl23.Appearance.Options.UseBackColor = true;
-            this.labelControl23.Appearance.Options.UseFont = true;
-            this.labelControl23.Appearance.Options.UseForeColor = true;
-            this.labelControl23.Enabled = false;
-            this.labelControl23.Location = new System.Drawing.Point(17, 11);
-            this.labelControl23.Margin = new System.Windows.Forms.Padding(0);
-            this.labelControl23.Name = "labelControl23";
-            this.labelControl23.Size = new System.Drawing.Size(67, 17);
-            this.labelControl23.TabIndex = 15;
-            this.labelControl23.Text = "Anne-Marie";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(81)))), ((int)(((byte)(34)))));
-            this.panel5.Controls.Add(this.labelControl12);
-            this.panel5.Controls.Add(this.pictureEdit2);
-            this.panel5.Location = new System.Drawing.Point(0, 92);
-            this.panel5.Margin = new System.Windows.Forms.Padding(0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(193, 39);
-            this.panel5.TabIndex = 24;
-            // 
-            // labelControl12
-            // 
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl12.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Appearance.Options.UseForeColor = true;
-            this.labelControl12.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl12.Enabled = false;
-            this.labelControl12.Location = new System.Drawing.Point(56, 10);
-            this.labelControl12.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(128, 20);
-            this.labelControl12.TabIndex = 16;
-            this.labelControl12.Text = "Shuffle and play";
-            // 
-            // pictureEdit2
-            // 
-            this.pictureEdit2.EditValue = global::Music_media.Properties.Resources.randomwhite;
-            this.pictureEdit2.Enabled = false;
-            this.pictureEdit2.Location = new System.Drawing.Point(19, 10);
-            this.pictureEdit2.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureEdit2.Name = "pictureEdit2";
-            this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit2.Properties.Appearance.Options.UseForeColor = true;
-            this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit2.ShowToolTips = false;
-            this.pictureEdit2.Size = new System.Drawing.Size(21, 20);
-            this.pictureEdit2.TabIndex = 15;
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl7.Appearance.Options.UseBackColor = true;
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Appearance.Options.UseForeColor = true;
-            this.labelControl7.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
-            this.labelControl7.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl7.Enabled = false;
-            this.labelControl7.Location = new System.Drawing.Point(0, 0);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(0);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(132, 56);
-            this.labelControl7.TabIndex = 17;
-            this.labelControl7.Text = "Music";
-            // 
-            // queueTab
-            // 
-            this.queueTab.Controls.Add(this.flowLayoutPanel3);
-            this.queueTab.Controls.Add(this.panel4);
-            this.queueTab.Controls.Add(this.panel3);
-            this.queueTab.Controls.Add(this.labelControl10);
-            this.queueTab.Margin = new System.Windows.Forms.Padding(4);
-            this.queueTab.Name = "queueTab";
-            this.queueTab.Size = new System.Drawing.Size(985, 589);
-            this.queueTab.Text = "Queue";
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.AutoScroll = true;
-            this.flowLayoutPanel3.Controls.Add(this.panel10);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 169);
-            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(987, 426);
-            this.flowLayoutPanel3.TabIndex = 28;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.labelControl14);
-            this.panel10.Controls.Add(this.panel11);
-            this.panel10.Controls.Add(this.labelControl25);
-            this.panel10.Controls.Add(this.panel12);
-            this.panel10.Location = new System.Drawing.Point(9, 9);
-            this.panel10.Margin = new System.Windows.Forms.Padding(9, 9, 0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.panel10.Size = new System.Drawing.Size(904, 59);
-            this.panel10.TabIndex = 17;
-            // 
-            // labelControl14
-            // 
-            this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl14.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl14.Appearance.Options.UseFont = true;
-            this.labelControl14.Appearance.Options.UseForeColor = true;
-            this.labelControl14.Enabled = false;
-            this.labelControl14.Location = new System.Drawing.Point(843, 23);
-            this.labelControl14.Margin = new System.Windows.Forms.Padding(0);
-            this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(37, 17);
-            this.labelControl14.TabIndex = 18;
-            this.labelControl14.Text = "03:07";
-            // 
-            // panel11
-            // 
-            this.panel11.AutoSize = true;
-            this.panel11.Controls.Add(this.labelControl24);
-            this.panel11.Location = new System.Drawing.Point(623, 12);
-            this.panel11.Margin = new System.Windows.Forms.Padding(0);
-            this.panel11.Name = "panel11";
-            this.panel11.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
-            this.panel11.Size = new System.Drawing.Size(64, 36);
-            this.panel11.TabIndex = 18;
-            // 
-            // labelControl24
-            // 
-            this.labelControl24.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.labelControl24.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl24.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl24.Appearance.Options.UseBackColor = true;
-            this.labelControl24.Appearance.Options.UseFont = true;
-            this.labelControl24.Appearance.Options.UseForeColor = true;
-            this.labelControl24.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl24.Enabled = false;
-            this.labelControl24.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
-            this.labelControl24.Location = new System.Drawing.Point(17, 11);
-            this.labelControl24.Margin = new System.Windows.Forms.Padding(0);
-            this.labelControl24.Name = "labelControl24";
-            this.labelControl24.Size = new System.Drawing.Size(32, 16);
-            this.labelControl24.TabIndex = 15;
-            this.labelControl24.Text = "2002";
-            // 
-            // labelControl25
-            // 
-            this.labelControl25.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl25.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl25.Appearance.Options.UseFont = true;
-            this.labelControl25.Appearance.Options.UseForeColor = true;
-            this.labelControl25.Enabled = false;
-            this.labelControl25.Location = new System.Drawing.Point(93, 23);
-            this.labelControl25.Margin = new System.Windows.Forms.Padding(0);
-            this.labelControl25.Name = "labelControl25";
-            this.labelControl25.Size = new System.Drawing.Size(32, 17);
-            this.labelControl25.TabIndex = 14;
-            this.labelControl25.Text = "2002";
-            // 
-            // panel12
-            // 
-            this.panel12.AutoSize = true;
-            this.panel12.Controls.Add(this.labelControl26);
-            this.panel12.Location = new System.Drawing.Point(401, 12);
-            this.panel12.Margin = new System.Windows.Forms.Padding(0);
-            this.panel12.Name = "panel12";
-            this.panel12.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
-            this.panel12.Size = new System.Drawing.Size(117, 39);
-            this.panel12.TabIndex = 17;
-            // 
-            // labelControl26
-            // 
-            this.labelControl26.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.labelControl26.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl26.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl26.Appearance.Options.UseBackColor = true;
-            this.labelControl26.Appearance.Options.UseFont = true;
-            this.labelControl26.Appearance.Options.UseForeColor = true;
-            this.labelControl26.Enabled = false;
-            this.labelControl26.Location = new System.Drawing.Point(17, 11);
-            this.labelControl26.Margin = new System.Windows.Forms.Padding(0);
-            this.labelControl26.Name = "labelControl26";
-            this.labelControl26.Size = new System.Drawing.Size(67, 17);
-            this.labelControl26.TabIndex = 15;
-            this.labelControl26.Text = "Anne-Marie";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.labelControl27);
-            this.panel4.Location = new System.Drawing.Point(155, 92);
-            this.panel4.Margin = new System.Windows.Forms.Padding(0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(113, 39);
-            this.panel4.TabIndex = 27;
-            // 
-            // labelControl27
-            // 
-            this.labelControl27.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl27.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl27.Appearance.Options.UseFont = true;
-            this.labelControl27.Appearance.Options.UseForeColor = true;
-            this.labelControl27.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl27.Enabled = false;
-            this.labelControl27.Location = new System.Drawing.Point(19, 10);
-            this.labelControl27.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl27.Name = "labelControl27";
-            this.labelControl27.Size = new System.Drawing.Size(76, 20);
-            this.labelControl27.TabIndex = 16;
-            this.labelControl27.Text = "+  Add to";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.labelControl28);
-            this.panel3.Controls.Add(this.pictureEdit13);
-            this.panel3.Location = new System.Drawing.Point(0, 92);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(113, 39);
-            this.panel3.TabIndex = 26;
-            // 
-            // labelControl28
-            // 
-            this.labelControl28.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl28.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl28.Appearance.Options.UseFont = true;
-            this.labelControl28.Appearance.Options.UseForeColor = true;
-            this.labelControl28.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl28.Enabled = false;
-            this.labelControl28.Location = new System.Drawing.Point(51, 10);
-            this.labelControl28.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl28.Name = "labelControl28";
-            this.labelControl28.Size = new System.Drawing.Size(53, 20);
-            this.labelControl28.TabIndex = 16;
-            this.labelControl28.Text = "Clear";
-            // 
-            // pictureEdit13
-            // 
-            this.pictureEdit13.Enabled = false;
-            this.pictureEdit13.Location = new System.Drawing.Point(19, 10);
-            this.pictureEdit13.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureEdit13.Name = "pictureEdit13";
-            this.pictureEdit13.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit13.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.pictureEdit13.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit13.Properties.Appearance.Options.UseForeColor = true;
-            this.pictureEdit13.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit13.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit13.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit13.ShowToolTips = false;
-            this.pictureEdit13.Size = new System.Drawing.Size(21, 20);
-            this.pictureEdit13.TabIndex = 15;
-            // 
-            // labelControl10
-            // 
-            this.labelControl10.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl10.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl10.Appearance.Options.UseBackColor = true;
-            this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Appearance.Options.UseForeColor = true;
-            this.labelControl10.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
-            this.labelControl10.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl10.Enabled = false;
-            this.labelControl10.Location = new System.Drawing.Point(0, 0);
-            this.labelControl10.Margin = new System.Windows.Forms.Padding(0);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(252, 56);
-            this.labelControl10.TabIndex = 17;
-            this.labelControl10.Text = "Play queue";
-            // 
-            // playlistsTab
-            // 
-            this.playlistsTab.Controls.Add(this.panelRounded9);
-            this.playlistsTab.Controls.Add(this.label1);
-            this.playlistsTab.Controls.Add(this.pictureBox1);
-            this.playlistsTab.Controls.Add(this.labelControl9);
-            this.playlistsTab.Margin = new System.Windows.Forms.Padding(4);
-            this.playlistsTab.Name = "playlistsTab";
-            this.playlistsTab.Size = new System.Drawing.Size(985, 589);
-            this.playlistsTab.Text = "Playlists";
-            // 
-            // panelRounded9
-            // 
-            this.panelRounded9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(81)))), ((int)(((byte)(34)))));
-            this.panelRounded9.BorderColor = System.Drawing.Color.Transparent;
-            this.panelRounded9.BorderFocusColor = System.Drawing.Color.Transparent;
-            this.panelRounded9.BorderRadius = 5;
-            this.panelRounded9.BorderSize = 2;
-            this.panelRounded9.Controls.Add(this.labelControl13);
-            this.panelRounded9.Location = new System.Drawing.Point(425, 352);
-            this.panelRounded9.Margin = new System.Windows.Forms.Padding(0);
-            this.panelRounded9.Name = "panelRounded9";
-            this.panelRounded9.Size = new System.Drawing.Size(241, 39);
-            this.panelRounded9.TabIndex = 23;
-            this.panelRounded9.UnderlinedStyle = false;
-            // 
-            // labelControl13
-            // 
-            this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl13.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Appearance.Options.UseForeColor = true;
-            this.labelControl13.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl13.Enabled = false;
-            this.labelControl13.Location = new System.Drawing.Point(29, 4);
-            this.labelControl13.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(203, 32);
-            this.labelControl13.TabIndex = 16;
-            this.labelControl13.Text = "+  Create a new playlist";
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.label1.Location = new System.Drawing.Point(419, 302);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(421, 39);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "You don\'t have any playlists";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Enabled = false;
-            this.pictureBox1.Image = global::Music_media.Properties.Resources.speaker;
-            this.pictureBox1.Location = new System.Drawing.Point(117, 238);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(257, 212);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl9.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl9.Appearance.Options.UseBackColor = true;
-            this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Appearance.Options.UseForeColor = true;
-            this.labelControl9.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
-            this.labelControl9.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl9.Enabled = false;
-            this.labelControl9.Location = new System.Drawing.Point(0, 0);
-            this.labelControl9.Margin = new System.Windows.Forms.Padding(0);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(193, 56);
-            this.labelControl9.TabIndex = 17;
-            this.labelControl9.Text = "Playlists";
-            // 
-            // noneTab
-            // 
-            this.noneTab.Appearance.PageClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.noneTab.Appearance.PageClient.Options.UseBackColor = true;
-            this.noneTab.Margin = new System.Windows.Forms.Padding(4);
-            this.noneTab.Name = "noneTab";
-            this.noneTab.Size = new System.Drawing.Size(985, 589);
-            this.noneTab.Text = "None";
-            // 
-            // settingTab
-            // 
-            this.settingTab.Controls.Add(this.labelControl18);
-            this.settingTab.Controls.Add(this.labelControl17);
-            this.settingTab.Controls.Add(this.labelControl16);
-            this.settingTab.Controls.Add(this.labelControl15);
-            this.settingTab.Controls.Add(this.labelControl11);
-            this.settingTab.Margin = new System.Windows.Forms.Padding(4);
-            this.settingTab.Name = "settingTab";
-            this.settingTab.Size = new System.Drawing.Size(985, 589);
-            this.settingTab.Text = "setting";
-            // 
-            // labelControl18
-            // 
-            this.labelControl18.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl18.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl18.Appearance.Options.UseFont = true;
-            this.labelControl18.Appearance.Options.UseForeColor = true;
-            this.labelControl18.Enabled = false;
-            this.labelControl18.Location = new System.Drawing.Point(155, 427);
-            this.labelControl18.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl18.Name = "labelControl18";
-            this.labelControl18.Size = new System.Drawing.Size(383, 29);
-            this.labelControl18.TabIndex = 22;
-            this.labelControl18.Text = "4 con chim, tối nay nghe nói holiday";
-            // 
-            // labelControl17
-            // 
-            this.labelControl17.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl17.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl17.Appearance.Options.UseFont = true;
-            this.labelControl17.Appearance.Options.UseForeColor = true;
-            this.labelControl17.Enabled = false;
-            this.labelControl17.Location = new System.Drawing.Point(155, 354);
-            this.labelControl17.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl17.Name = "labelControl17";
-            this.labelControl17.Size = new System.Drawing.Size(383, 29);
-            this.labelControl17.TabIndex = 21;
-            this.labelControl17.Text = "4 con chim, tối nay nghe nói holiday";
-            // 
-            // labelControl16
-            // 
-            this.labelControl16.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl16.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl16.Appearance.Options.UseFont = true;
-            this.labelControl16.Appearance.Options.UseForeColor = true;
-            this.labelControl16.Enabled = false;
-            this.labelControl16.Location = new System.Drawing.Point(155, 290);
-            this.labelControl16.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(383, 29);
-            this.labelControl16.TabIndex = 20;
-            this.labelControl16.Text = "4 con chim, tối nay nghe nói holiday";
-            // 
-            // labelControl15
-            // 
-            this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl15.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl15.Appearance.Options.UseFont = true;
-            this.labelControl15.Appearance.Options.UseForeColor = true;
-            this.labelControl15.Enabled = false;
-            this.labelControl15.Location = new System.Drawing.Point(155, 224);
-            this.labelControl15.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(383, 29);
-            this.labelControl15.TabIndex = 19;
-            this.labelControl15.Text = "4 con chim, tối nay nghe nói holiday";
-            // 
-            // labelControl11
-            // 
-            this.labelControl11.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl11.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl11.Appearance.Options.UseBackColor = true;
-            this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Appearance.Options.UseForeColor = true;
-            this.labelControl11.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
-            this.labelControl11.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl11.Enabled = false;
-            this.labelControl11.Location = new System.Drawing.Point(0, 0);
-            this.labelControl11.Margin = new System.Windows.Forms.Padding(0);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(166, 56);
-            this.labelControl11.TabIndex = 18;
-            this.labelControl11.Text = "Setting";
-            // 
-            // tabLogin
-            // 
-            this.tabLogin.Controls.Add(this.btnSignup);
-            this.tabLogin.Controls.Add(this.labelControl22);
-            this.tabLogin.Controls.Add(this.btnLogin);
-            this.tabLogin.Controls.Add(this.txtUserPass);
-            this.tabLogin.Controls.Add(this.labelControl29);
-            this.tabLogin.Controls.Add(this.txtUserName);
-            this.tabLogin.Controls.Add(this.labelControl30);
-            this.tabLogin.Name = "tabLogin";
-            this.tabLogin.Size = new System.Drawing.Size(985, 589);
-            this.tabLogin.Text = "xtraTabPage1";
-            // 
-            // btnSignup
-            // 
-            this.btnSignup.AutoSize = true;
-            this.btnSignup.BackColor = System.Drawing.SystemColors.Control;
-            this.btnSignup.FlatAppearance.BorderSize = 0;
-            this.btnSignup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSignup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
-            this.btnSignup.Location = new System.Drawing.Point(558, 338);
-            this.btnSignup.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSignup.Name = "btnSignup";
-            this.btnSignup.Size = new System.Drawing.Size(151, 30);
-            this.btnSignup.TabIndex = 41;
-            this.btnSignup.Text = "Đăng ký tài khoản";
-            this.btnSignup.UseVisualStyleBackColor = false;
-            this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
-            // 
-            // labelControl22
-            // 
-            this.labelControl22.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl22.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl22.Appearance.Options.UseFont = true;
-            this.labelControl22.Appearance.Options.UseForeColor = true;
-            this.labelControl22.Location = new System.Drawing.Point(223, 141);
-            this.labelControl22.Name = "labelControl22";
-            this.labelControl22.Size = new System.Drawing.Size(522, 38);
-            this.labelControl22.TabIndex = 40;
-            this.labelControl22.Text = "To continue, log in to DLD MUSIC";
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
-            this.btnLogin.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.btnLogin.Location = new System.Drawing.Point(617, 398);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(144, 50);
-            this.btnLogin.TabIndex = 39;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // txtUserPass
-            // 
-            this.txtUserPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserPass.Location = new System.Drawing.Point(371, 291);
-            this.txtUserPass.Name = "txtUserPass";
-            this.txtUserPass.Size = new System.Drawing.Size(288, 34);
-            this.txtUserPass.TabIndex = 38;
-            // 
-            // labelControl29
-            // 
-            this.labelControl29.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl29.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl29.Appearance.Options.UseFont = true;
-            this.labelControl29.Appearance.Options.UseForeColor = true;
-            this.labelControl29.Location = new System.Drawing.Point(239, 296);
-            this.labelControl29.Name = "labelControl29";
-            this.labelControl29.Size = new System.Drawing.Size(122, 29);
-            this.labelControl29.TabIndex = 37;
-            this.labelControl29.Text = "Passworld";
-            // 
-            // txtUserName
-            // 
-            this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserName.Location = new System.Drawing.Point(371, 232);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(288, 34);
-            this.txtUserName.TabIndex = 36;
-            // 
-            // labelControl30
-            // 
-            this.labelControl30.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl30.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl30.Appearance.Options.UseFont = true;
-            this.labelControl30.Appearance.Options.UseForeColor = true;
-            this.labelControl30.Location = new System.Drawing.Point(239, 235);
-            this.labelControl30.Name = "labelControl30";
-            this.labelControl30.Size = new System.Drawing.Size(119, 29);
-            this.labelControl30.TabIndex = 35;
-            this.labelControl30.Text = "Username";
+            // xtraTabPage1
+            // 
+            this.xtraTabPage1.Margin = new System.Windows.Forms.Padding(2);
+            this.xtraTabPage1.Name = "xtraTabPage1";
+            this.xtraTabPage1.Size = new System.Drawing.Size(738, 478);
+            this.xtraTabPage1.Text = "xtraTabPage1";
             // 
             // fullSreen
             // 
@@ -2151,12 +2217,12 @@
             this.fullSreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fullSreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.fullSreen.ForeColor = System.Drawing.Color.Black;
-            this.fullSreen.Location = new System.Drawing.Point(949, 0);
+            this.fullSreen.Location = new System.Drawing.Point(712, 0);
             this.fullSreen.Margin = new System.Windows.Forms.Padding(0);
-            this.fullSreen.MaximumSize = new System.Drawing.Size(59, 37);
-            this.fullSreen.MinimumSize = new System.Drawing.Size(59, 37);
+            this.fullSreen.MaximumSize = new System.Drawing.Size(44, 30);
+            this.fullSreen.MinimumSize = new System.Drawing.Size(44, 30);
             this.fullSreen.Name = "fullSreen";
-            this.fullSreen.Size = new System.Drawing.Size(59, 37);
+            this.fullSreen.Size = new System.Drawing.Size(44, 30);
             this.fullSreen.TabIndex = 9;
             this.fullSreen.TabStop = false;
             this.fullSreen.Text = "\t▢";
@@ -2171,12 +2237,12 @@
             this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.exit.ForeColor = System.Drawing.Color.Black;
-            this.exit.Location = new System.Drawing.Point(1008, 0);
+            this.exit.Location = new System.Drawing.Point(756, 0);
             this.exit.Margin = new System.Windows.Forms.Padding(0);
-            this.exit.MaximumSize = new System.Drawing.Size(59, 37);
-            this.exit.MinimumSize = new System.Drawing.Size(59, 37);
+            this.exit.MaximumSize = new System.Drawing.Size(44, 30);
+            this.exit.MinimumSize = new System.Drawing.Size(44, 30);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(59, 37);
+            this.exit.Size = new System.Drawing.Size(44, 30);
             this.exit.TabIndex = 7;
             this.exit.TabStop = false;
             this.exit.Text = "X";
@@ -2186,50 +2252,32 @@
             this.exit.MouseLeave += new System.EventHandler(this.exit_MouseLeave);
             this.exit.MouseHover += new System.EventHandler(this.exit_MouseHover);
             // 
-            // xtraTabPage1
+            // labelControl31
             // 
-            this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(985, 589);
-            this.xtraTabPage1.Text = "xtraTabPage1";
-            // 
-            // btnLibOndb
-            // 
-            this.btnLibOndb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
-            this.btnLibOndb.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLibOndb.ForeColor = System.Drawing.Color.Black;
-            this.btnLibOndb.Location = new System.Drawing.Point(563, 89);
-            this.btnLibOndb.Name = "btnLibOndb";
-            this.btnLibOndb.Size = new System.Drawing.Size(253, 46);
-            this.btnLibOndb.TabIndex = 27;
-            this.btnLibOndb.Text = "Trong thư viện của bạn";
-            this.btnLibOndb.UseVisualStyleBackColor = false;
-            // 
-            // btnLibOnMydestop
-            // 
-            this.btnLibOnMydestop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
-            this.btnLibOnMydestop.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLibOnMydestop.ForeColor = System.Drawing.Color.Black;
-            this.btnLibOnMydestop.Location = new System.Drawing.Point(299, 92);
-            this.btnLibOnMydestop.Name = "btnLibOnMydestop";
-            this.btnLibOnMydestop.Size = new System.Drawing.Size(170, 46);
-            this.btnLibOnMydestop.TabIndex = 26;
-            this.btnLibOnMydestop.Text = "Trên máy";
-            this.btnLibOnMydestop.UseVisualStyleBackColor = false;
-            this.btnLibOnMydestop.Click += new System.EventHandler(this.btnLibOnMydestop_Click);
+            this.labelControl31.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl31.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl31.Appearance.Options.UseFont = true;
+            this.labelControl31.Appearance.Options.UseForeColor = true;
+            this.labelControl31.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl31.Enabled = false;
+            this.labelControl31.Location = new System.Drawing.Point(14, 8);
+            this.labelControl31.Name = "labelControl31";
+            this.labelControl31.Size = new System.Drawing.Size(50, 16);
+            this.labelControl31.TabIndex = 16;
+            this.labelControl31.Text = "Add file";
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1491, 790);
+            this.ClientSize = new System.Drawing.Size(1118, 642);
             this.Controls.Add(this.play);
             this.Controls.Add(this.trackArea);
             this.Controls.Add(this.menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1491, 790);
-            this.MinimumSize = new System.Drawing.Size(1491, 790);
+            this.MaximumSize = new System.Drawing.Size(1118, 642);
+            this.MinimumSize = new System.Drawing.Size(1118, 642);
             this.Name = "Home";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -2283,8 +2331,19 @@
             this.trackArea.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.menuControl)).EndInit();
             this.menuControl.ResumeLayout(false);
-            this.tabReg.ResumeLayout(false);
-            this.tabReg.PerformLayout();
+            this.queueTab.ResumeLayout(false);
+            this.queueTab.PerformLayout();
+            this.addFilebtn.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).EndInit();
             this.homeTab.ResumeLayout(false);
             this.homeTab.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -2301,17 +2360,6 @@
             this.panel8.PerformLayout();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
-            this.queueTab.ResumeLayout(false);
-            this.queueTab.PerformLayout();
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).EndInit();
             this.playlistsTab.ResumeLayout(false);
             this.playlistsTab.PerformLayout();
             this.panelRounded9.ResumeLayout(false);
@@ -2320,6 +2368,8 @@
             this.settingTab.PerformLayout();
             this.tabLogin.ResumeLayout(false);
             this.tabLogin.PerformLayout();
+            this.tabReg.ResumeLayout(false);
+            this.tabReg.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2460,5 +2510,10 @@
         private System.Windows.Forms.Button btnLibOndb;
         private System.Windows.Forms.Button btnLibOnMydestop;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel AddFile;
+        private DevExpress.XtraEditors.LabelControl labelControl31;
+        private System.Windows.Forms.Panel addFilebtn;
+        private DevExpress.XtraEditors.LabelControl labelControl32;
     }
 }

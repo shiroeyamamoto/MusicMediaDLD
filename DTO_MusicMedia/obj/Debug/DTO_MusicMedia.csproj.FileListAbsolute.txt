@@ -28,3 +28,13 @@ C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DTO_MusicMedia\obj\Debug\DTO_Mus
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DTO_MusicMedia\obj\Debug\DTO_MusicMedia.csproj.CoreCompileInputs.cache
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DTO_MusicMedia\obj\Debug\DTO_MusicMedia.exe
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\DTO_MusicMedia\obj\Debug\DTO_MusicMedia.pdb
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\DTO_MusicMedia\bin\Debug\DTO_MusicMedia.exe.config
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\DTO_MusicMedia\bin\Debug\DTO_MusicMedia.exe
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\DTO_MusicMedia\bin\Debug\DTO_MusicMedia.pdb
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\DTO_MusicMedia\obj\Debug\DTO_MusicMedia.csproj.AssemblyReference.cache
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\DTO_MusicMedia\obj\Debug\DTO_MusicMedia.csproj.SuggestedBindingRedirects.cache
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\DTO_MusicMedia\obj\Debug\DTO_MusicMedia.Properties.Resources.resources
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\DTO_MusicMedia\obj\Debug\DTO_MusicMedia.csproj.GenerateResource.cache
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\DTO_MusicMedia\obj\Debug\DTO_MusicMedia.csproj.CoreCompileInputs.cache
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\DTO_MusicMedia\obj\Debug\DTO_MusicMedia.exe
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\DTO_MusicMedia\obj\Debug\DTO_MusicMedia.pdb

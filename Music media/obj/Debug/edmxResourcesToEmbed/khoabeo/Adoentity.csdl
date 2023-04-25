@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MusicMediaDLDModel6" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Album">
+    <Key>
+      <PropertyRef Name="AlbumID" />
+    </Key>
+    <Property Name="AlbumID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AlbumName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ReleaseYear" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Tracks" Relationship="Self.FK__Track__AlbumID__36B12243" FromRole="Album" ToRole="Track" />
+    <NavigationProperty Name="Tracks1" Relationship="Self.FK__Track__AlbumID__5DCAEF64" FromRole="Album" ToRole="Track" />
+  </EntityType>
+  <EntityType Name="Artist">
+    <Key>
+      <PropertyRef Name="ArtistID" />
+    </Key>
+    <Property Name="ArtistID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ArtustName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Track_Artist" Relationship="Self.FK__Track_Art__Artis__403A8C7D" FromRole="Artist" ToRole="Track_Artist" />
+    <NavigationProperty Name="Track_Artist1" Relationship="Self.FK__Track_Art__Artis__5EBF139D" FromRole="Artist" ToRole="Track_Artist" />
+  </EntityType>
+  <EntityType Name="Playlist">
+    <Key>
+      <PropertyRef Name="PlaylistID" />
+    </Key>
+    <Property Name="PlaylistID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PlaylistName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="UserID" Type="Int32" />
+    <NavigationProperty Name="User" Relationship="Self.FK__Playlist__UserID__31EC6D26" FromRole="Playlist" ToRole="Users" />
+    <NavigationProperty Name="User1" Relationship="Self.FK__Playlist__UserID__5CD6CB2B" FromRole="Playlist" ToRole="Users" />
+    <NavigationProperty Name="Track_Playlist" Relationship="Self.FK__Track_Pla__Playl__3A81B327" FromRole="Playlist" ToRole="Track_Playlist" />
+    <NavigationProperty Name="Track_Playlist1" Relationship="Self.FK__Track_Pla__Playl__60A75C0F" FromRole="Playlist" ToRole="Track_Playlist" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TestTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Track">
+    <Key>
+      <PropertyRef Name="TrackID" />
+    </Key>
+    <Property Name="TrackID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TrackName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="TrackLength" Type="Int32" />
+    <Property Name="TrackGenre" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="AlbumID" Type="Int32" />
+    <NavigationProperty Name="Album" Relationship="Self.FK__Track__AlbumID__36B12243" FromRole="Track" ToRole="Album" />
+    <NavigationProperty Name="Album1" Relationship="Self.FK__Track__AlbumID__5DCAEF64" FromRole="Track" ToRole="Album" />
+    <NavigationProperty Name="Track_Artist" Relationship="Self.FK__Track_Art__Track__3F466844" FromRole="Track" ToRole="Track_Artist" />
+    <NavigationProperty Name="Track_Artist1" Relationship="Self.FK__Track_Art__Track__5FB337D6" FromRole="Track" ToRole="Track_Artist" />
+    <NavigationProperty Name="Track_Playlist" Relationship="Self.FK__Track_Pla__Track__398D8EEE" FromRole="Track" ToRole="Track_Playlist" />
+    <NavigationProperty Name="Track_Playlist1" Relationship="Self.FK__Track_Pla__Track__619B8048" FromRole="Track" ToRole="Track_Playlist" />
+  </EntityType>
+  <EntityType Name="Track_Artist">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TrackID" Type="Int32" />
+    <Property Name="ArtistID" Type="Int32" />
+    <NavigationProperty Name="Artist" Relationship="Self.FK__Track_Art__Artis__403A8C7D" FromRole="Track_Artist" ToRole="Artist" />
+    <NavigationProperty Name="Artist1" Relationship="Self.FK__Track_Art__Artis__5EBF139D" FromRole="Track_Artist" ToRole="Artist" />
+    <NavigationProperty Name="Track" Relationship="Self.FK__Track_Art__Track__3F466844" FromRole="Track_Artist" ToRole="Track" />
+    <NavigationProperty Name="Track1" Relationship="Self.FK__Track_Art__Track__5FB337D6" FromRole="Track_Artist" ToRole="Track" />
+  </EntityType>
+  <EntityType Name="Track_Playlist">
+    <Key>
+      <PropertyRef Name="ReleaseDate" />
+    </Key>
+    <Property Name="ReleaseDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TrackID" Type="Int32" />
+    <Property Name="PlaylistID" Type="Int32" />
+    <NavigationProperty Name="Playlist" Relationship="Self.FK__Track_Pla__Playl__3A81B327" FromRole="Track_Playlist" ToRole="Playlist" />
+    <NavigationProperty Name="Playlist1" Relationship="Self.FK__Track_Pla__Playl__60A75C0F" FromRole="Track_Playlist" ToRole="Playlist" />
+    <NavigationProperty Name="Track" Relationship="Self.FK__Track_Pla__Track__398D8EEE" FromRole="Track_Playlist" ToRole="Track" />
+    <NavigationProperty Name="Track1" Relationship="Self.FK__Track_Pla__Track__619B8048" FromRole="Track_Playlist" ToRole="Track" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ngaySinh" Type="DateTime" Precision="7" />
+    <Property Name="Userpassword" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ho" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Ten" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Sdt" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Admin" Type="Boolean" />
+    <Property Name="Coin" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="Playlists" Relationship="Self.FK__Playlist__UserID__31EC6D26" FromRole="Users" ToRole="Playlist" />
+    <NavigationProperty Name="Playlists1" Relationship="Self.FK__Playlist__UserID__5CD6CB2B" FromRole="Users" ToRole="Playlist" />
+  </EntityType>
+  <Association Name="FK__Track__AlbumID__36B12243">
+    <End Role="Album" Type="Self.Album" Multiplicity="0..1" />
+    <End Role="Track" Type="Self.Track" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Album">
+        <PropertyRef Name="AlbumID" />
+      </Principal>
+      <Dependent Role="Track">
+        <PropertyRef Name="AlbumID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Track__AlbumID__5DCAEF64">
+    <End Role="Album" Type="Self.Album" Multiplicity="0..1" />
+    <End Role="Track" Type="Self.Track" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Album">
+        <PropertyRef Name="AlbumID" />
+      </Principal>
+      <Dependent Role="Track">
+        <PropertyRef Name="AlbumID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Track_Art__Artis__403A8C7D">
+    <End Role="Artist" Type="Self.Artist" Multiplicity="0..1" />
+    <End Role="Track_Artist" Type="Self.Track_Artist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Artist">
+        <PropertyRef Name="ArtistID" />
+      </Principal>
+      <Dependent Role="Track_Artist">
+        <PropertyRef Name="ArtistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Track_Art__Artis__5EBF139D">
+    <End Role="Artist" Type="Self.Artist" Multiplicity="0..1" />
+    <End Role="Track_Artist" Type="Self.Track_Artist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Artist">
+        <PropertyRef Name="ArtistID" />
+      </Principal>
+      <Dependent Role="Track_Artist">
+        <PropertyRef Name="ArtistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Playlist__UserID__31EC6D26">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Playlist" Type="Self.Playlist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Playlist">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Playlist__UserID__5CD6CB2B">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Playlist" Type="Self.Playlist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Playlist">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Track_Pla__Playl__3A81B327">
+    <End Role="Playlist" Type="Self.Playlist" Multiplicity="0..1" />
+    <End Role="Track_Playlist" Type="Self.Track_Playlist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Playlist">
+        <PropertyRef Name="PlaylistID" />
+      </Principal>
+      <Dependent Role="Track_Playlist">
+        <PropertyRef Name="PlaylistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Track_Pla__Playl__60A75C0F">
+    <End Role="Playlist" Type="Self.Playlist" Multiplicity="0..1" />
+    <End Role="Track_Playlist" Type="Self.Track_Playlist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Playlist">
+        <PropertyRef Name="PlaylistID" />
+      </Principal>
+      <Dependent Role="Track_Playlist">
+        <PropertyRef Name="PlaylistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Track_Art__Track__3F466844">
+    <End Role="Track" Type="Self.Track" Multiplicity="0..1" />
+    <End Role="Track_Artist" Type="Self.Track_Artist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Track">
+        <PropertyRef Name="TrackID" />
+      </Principal>
+      <Dependent Role="Track_Artist">
+        <PropertyRef Name="TrackID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Track_Art__Track__5FB337D6">
+    <End Role="Track" Type="Self.Track" Multiplicity="0..1" />
+    <End Role="Track_Artist" Type="Self.Track_Artist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Track">
+        <PropertyRef Name="TrackID" />
+      </Principal>
+      <Dependent Role="Track_Artist">
+        <PropertyRef Name="TrackID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Track_Pla__Track__398D8EEE">
+    <End Role="Track" Type="Self.Track" Multiplicity="0..1" />
+    <End Role="Track_Playlist" Type="Self.Track_Playlist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Track">
+        <PropertyRef Name="TrackID" />
+      </Principal>
+      <Dependent Role="Track_Playlist">
+        <PropertyRef Name="TrackID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Track_Pla__Track__619B8048">
+    <End Role="Track" Type="Self.Track" Multiplicity="0..1" />
+    <End Role="Track_Playlist" Type="Self.Track_Playlist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Track">
+        <PropertyRef Name="TrackID" />
+      </Principal>
+      <Dependent Role="Track_Playlist">
+        <PropertyRef Name="TrackID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MusicMediaDLDEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Albums" EntityType="Self.Album" />
+    <EntitySet Name="Artists" EntityType="Self.Artist" />
+    <EntitySet Name="Playlists" EntityType="Self.Playlist" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="TestTables" EntityType="Self.TestTable" />
+    <EntitySet Name="Tracks" EntityType="Self.Track" />
+    <EntitySet Name="Track_Artist" EntityType="Self.Track_Artist" />
+    <EntitySet Name="Track_Playlist" EntityType="Self.Track_Playlist" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK__Track__AlbumID__36B12243" Association="Self.FK__Track__AlbumID__36B12243">
+      <End Role="Album" EntitySet="Albums" />
+      <End Role="Track" EntitySet="Tracks" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Track__AlbumID__5DCAEF64" Association="Self.FK__Track__AlbumID__5DCAEF64">
+      <End Role="Album" EntitySet="Albums" />
+      <End Role="Track" EntitySet="Tracks" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Track_Art__Artis__403A8C7D" Association="Self.FK__Track_Art__Artis__403A8C7D">
+      <End Role="Artist" EntitySet="Artists" />
+      <End Role="Track_Artist" EntitySet="Track_Artist" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Track_Art__Artis__5EBF139D" Association="Self.FK__Track_Art__Artis__5EBF139D">
+      <End Role="Artist" EntitySet="Artists" />
+      <End Role="Track_Artist" EntitySet="Track_Artist" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Playlist__UserID__31EC6D26" Association="Self.FK__Playlist__UserID__31EC6D26">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Playlist" EntitySet="Playlists" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Playlist__UserID__5CD6CB2B" Association="Self.FK__Playlist__UserID__5CD6CB2B">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Playlist" EntitySet="Playlists" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Track_Pla__Playl__3A81B327" Association="Self.FK__Track_Pla__Playl__3A81B327">
+      <End Role="Playlist" EntitySet="Playlists" />
+      <End Role="Track_Playlist" EntitySet="Track_Playlist" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Track_Pla__Playl__60A75C0F" Association="Self.FK__Track_Pla__Playl__60A75C0F">
+      <End Role="Playlist" EntitySet="Playlists" />
+      <End Role="Track_Playlist" EntitySet="Track_Playlist" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Track_Art__Track__3F466844" Association="Self.FK__Track_Art__Track__3F466844">
+      <End Role="Track" EntitySet="Tracks" />
+      <End Role="Track_Artist" EntitySet="Track_Artist" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Track_Art__Track__5FB337D6" Association="Self.FK__Track_Art__Track__5FB337D6">
+      <End Role="Track" EntitySet="Tracks" />
+      <End Role="Track_Artist" EntitySet="Track_Artist" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Track_Pla__Track__398D8EEE" Association="Self.FK__Track_Pla__Track__398D8EEE">
+      <End Role="Track" EntitySet="Tracks" />
+      <End Role="Track_Playlist" EntitySet="Track_Playlist" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Track_Pla__Track__619B8048" Association="Self.FK__Track_Pla__Track__619B8048">
+      <End Role="Track" EntitySet="Tracks" />
+      <End Role="Track_Playlist" EntitySet="Track_Playlist" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

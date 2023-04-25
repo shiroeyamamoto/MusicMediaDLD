@@ -18,6 +18,7 @@ namespace DAL_MusicMedia
         public Artist()
         {
             this.Track_Artist = new HashSet<Track_Artist>();
+            this.Track_Artist1 = new HashSet<Track_Artist>();
         }
     
         public int ArtistID { get; set; }
@@ -25,5 +26,7 @@ namespace DAL_MusicMedia
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Track_Artist> Track_Artist { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Track_Artist> Track_Artist1 { get; set; }
     }
 }

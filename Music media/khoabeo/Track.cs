@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Music_media.khoabeoenti
+namespace Music_media.khoabeo
 {
     using System;
     using System.Collections.Generic;
@@ -18,7 +18,9 @@ namespace Music_media.khoabeoenti
         public Track()
         {
             this.Track_Artist = new HashSet<Track_Artist>();
+            this.Track_Artist1 = new HashSet<Track_Artist>();
             this.Track_Playlist = new HashSet<Track_Playlist>();
+            this.Track_Playlist1 = new HashSet<Track_Playlist>();
         }
     
         public int TrackID { get; set; }
@@ -26,12 +28,16 @@ namespace Music_media.khoabeoenti
         public Nullable<int> TrackLength { get; set; }
         public string TrackGenre { get; set; }
         public Nullable<int> AlbumID { get; set; }
-        public string Track_path { get; set; }
     
         public virtual Album Album { get; set; }
+        public virtual Album Album1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Track_Artist> Track_Artist { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Track_Artist> Track_Artist1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Track_Playlist> Track_Playlist { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Track_Playlist> Track_Playlist1 { get; set; }
     }
 }

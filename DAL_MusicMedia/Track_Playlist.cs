@@ -19,6 +19,8 @@ namespace DAL_MusicMedia
         public Nullable<int> PlaylistID { get; set; }
     
         public virtual Playlist Playlist { get; set; }
+        public virtual Playlist Playlist1 { get; set; }
         public virtual Track Track { get; set; }
+        public virtual Track Track1 { get; set; }
     }
 }

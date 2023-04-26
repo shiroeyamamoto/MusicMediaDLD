@@ -26,6 +26,9 @@ using NAudio.MediaFoundation;
 using System.Windows.Media;
 using Music_media.khoabeo;
 using BUS_MusicMedia;
+using Label = System.Windows.Forms.Label;
+using DevExpress.DocumentView.Controls;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Music_media
 {
@@ -50,7 +53,8 @@ namespace Music_media
             listTabPages.Add(settingTab);
             listTabPages.Add(tabLogin);
             listTabPages.Add(tabReg);
-
+            listTabPages.Add(tabCreatPlaylist);
+            listTabPages.Add(tabPlaylistOfUser);
             listTabPages.Add(noneTab);
             menuControl.SelectedTabPage = homeTab;
 
@@ -251,6 +255,13 @@ namespace Music_media
         //HomeControl
         private void Home_Load(object sender, EventArgs e)
         {
+            txtUserName.Text = "Conduongmau";
+            txtUserPass.Text = "Test";
+            tabCreatPlaylist.Appearance.Header.BackColor = System.Drawing.Color.FromArgb(64, 64, 64);
+            tabCreatPlaylist.Appearance.Header.BackColor2 = System.Drawing.Color.FromArgb(30, 30, 30);
+            tabCreatPlaylist.Appearance.Header.BorderColor = System.Drawing.Color.FromArgb(50, 50, 50);
+            tabCreatPlaylist.Appearance.Header.Options.UseBackColor = true;
+            tabCreatPlaylist.Appearance.Header.Options.UseBorderColor = true;
 
         }
         //MusicControl
@@ -308,6 +319,7 @@ namespace Music_media
                 {
                     MessageBox.Show("Login success");
                     menuControl.SelectedTabPage = playlistsTab;
+                    playlistsMenu.Visible= true;
                 }
                 else
                 {
@@ -399,10 +411,7 @@ namespace Music_media
 
             return true;
         }
-        private void panelAccount_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+     
         private void btnSignup_Click(object sender, EventArgs e)
         {
             menuControl.SelectedTabPage = tabReg;
@@ -416,6 +425,10 @@ namespace Music_media
         }
         private void BtnOpenFolder_Click(object sender, EventArgs e)
         {
+
+
+            DeleteMusic.Visible = false;
+
             using (var dialog = new FolderBrowserDialog())
             {
                 if (dialog.ShowDialog() == DialogResult.OK)
@@ -457,14 +470,8 @@ namespace Music_media
                         Track_path = file
                     };
 
-                    if (tagFile.Tag.Genres.Length > 0)
-                    {
-                        foreach (string genre in tagFile.Tag.Genres)
-                        {
-                            track.TrackGenre += genre + ", ";
-                        }
-                        track.TrackGenre = track.TrackGenre.TrimEnd(',', ' '); // Loại bỏ dấu phẩy và khoảng trắng cuối cùng
-                    }
+                   
+                    track.TrackGenre = tagFile.Tag.FirstGenre;
 
                     songs.Add(track);
                 }
@@ -478,7 +485,7 @@ namespace Music_media
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == dtgTrack.Columns["DeleteButtonColumn"].Index && e.RowIndex >= 0)
+            if (e.ColumnIndex == dtgTrack.Columns["DeleteMusic"].Index && e.RowIndex >= 0)
             {
                 var result = MessageBox.Show("Bạn có chắc chắn muốn xóa bài hát này không?", "Xóa bài hát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
@@ -504,40 +511,110 @@ namespace Music_media
             }
             if (dtgTrack.Columns[e.ColumnIndex].Name == "playMusicdtg")
             {
-               
-                // Lấy đường dẫn đến file nhạc
+                
                 string TrackPath = dtgTrack.Rows[e.RowIndex].Cells["Track_path"].Value.ToString();
                 string TrackLength = dtgTrack.Rows[e.RowIndex].Cells["TrackLength"].Value.ToString();
                 TimeSpan timeSpan = TimeSpan.FromSeconds(int.Parse(TrackLength));
                 endTime.Text = timeSpan.ToString(@"mm\:ss");
                 playBar.Maximum = Convert.ToInt32(TrackLength);
-                PlayMp3(TrackPath, playBar, timer1);
 
+                
+                DevExpress.XtraEditors.PictureEdit pictureBox = imgMP;
+                DevExpress.XtraEditors.LabelControl nameLabel = nameMP;
+                DevExpress.XtraEditors.LabelControl artistLabel = artistMP;
+
+                PlayMp3(TrackPath, playBar, timer1, pictureBox, nameLabel, artistLabel);
+            }
+
+        }
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                dtgTrack.CurrentCell = dtgTrack.Rows[e.RowIndex].Cells[e.ColumnIndex];
+                ContextMenuStrip menu = new ContextMenuStrip();
+
+                using (var _db = new Music_media.khoabeo.MusicMediaDLDEntities1())
+                {
+                    var currentUser = _db.Users.FirstOrDefault(u => u.UserName == txtUserName.Text);
+        
+                    var playlists = _db.Playlists.Where(p => p.UserID == currentUser.UserID).ToList();
+
+                    foreach (var playlist in playlists)
+                    {
+                        var menuItem = new ToolStripMenuItem(playlist.PlaylistName);
+
+                        menuItem.Click += (s, a) =>
+                        {
+                            var selectedTrack = dtgTrack.Rows[e.RowIndex].DataBoundItem as Track;
+
+                            using (var _dbMenu = new Music_media.khoabeo.MusicMediaDLDEntities1())
+                            {
+                                var dbPlaylist = _dbMenu.Playlists.FirstOrDefault(p => p.PlaylistName == playlist.PlaylistName);
+
+                                var trackPlaylist = new Track_Playlist
+                                {
+                                    TrackID = selectedTrack.TrackID,
+                                    PlaylistID = dbPlaylist.PlaylistID
+                                };
+                                _dbMenu.Track_Playlist.Add(trackPlaylist);
+
+                                _dbMenu.SaveChanges();
+                            }
+
+                            MessageBox.Show($"Bài hát '{selectedTrack.TrackName}' đã được thêm vào playlist '{playlist.PlaylistName}' thành công!");
+                        };
+
+                        menu.Items.Add(menuItem);
+                    }
+                }
+
+                menu.Show(dtgTrack, e.Location);
             }
         }
+
+
+
         /// pHÁT NHẠC TẠI ĐÂY BÂY PHẢI CÓ ĐỦ 3 THÔNG SỐ
-        public static void PlayMp3(string filePath, ProgressBar progressBar, System.Windows.Forms.Timer playbackTimer)
+        public static void PlayMp3(string filePath, System.Windows.Forms.ProgressBar progressBar, System.Windows.Forms.Timer playbackTimer, DevExpress.XtraEditors.PictureEdit pictureBox, DevExpress.XtraEditors.LabelControl nameLabel, DevExpress.XtraEditors.LabelControl artistLabel)
         {
             mediaPlayer.Stop();
             mediaPlayer.Open(new Uri(filePath));
             mediaPlayer.Play();
 
+            
+            var tagFile = TagLib.File.Create(filePath);
+            var picture = tagFile.Tag.Pictures.FirstOrDefault();
+            if (picture != null)
+            {
+                using (var stream = new MemoryStream(picture.Data.Data))
+                {
+                    pictureBox.Image = Image.FromStream(stream);
+                }
+            }
+            else
+            {
+                pictureBox.Image = null;
+            }
+
+           
+            nameLabel.Text = tagFile.Tag.Title;
+            artistLabel.Text = tagFile.Tag.Performers.FirstOrDefault();
+
             playbackTimer.Interval = 1000;
             playbackTimer.Tick += (sender, args) =>
             {
                 progressBar.Value = (int)mediaPlayer.Position.TotalSeconds;
-              
             };
             playbackTimer.Start();
 
-           
             mediaPlayer.MediaEnded += (sender, args) =>
             {
                 playbackTimer.Stop();
                 progressBar.Value = 0;
-               
             };
         }
+
 
 
         private void playBar_MouseUp(object sender, MouseEventArgs e)
@@ -566,12 +643,16 @@ namespace Music_media
                     {   
                         using (var _db = new Music_media.khoabeo.MusicMediaDLDEntities1())
                         {
-                            trackdtg.Track_path = trackPath;
-                            trackdtg.TrackName = trackName;
-                            trackdtg.TrackLength = trackLength;
-                            trackdtg.TrackGenre = trackGenre;
-                            _db.Tracks.Add(trackdtg);
-                            _db.SaveChanges();
+                            Boolean kiemTra = _db.Tracks.Any(x => x.Track_path == trackPath);
+                            if (!kiemTra)
+                            {
+                                trackdtg.Track_path = trackPath;
+                                trackdtg.TrackName = trackName;
+                                trackdtg.TrackLength = trackLength;
+                                trackdtg.TrackGenre = trackGenre;
+                                _db.Tracks.Add(trackdtg);
+                                _db.SaveChanges();
+                            }
                         }
                     }
                     else
@@ -594,11 +675,8 @@ namespace Music_media
 
         private void btnLibOndb_Click(object sender, EventArgs e)
         {
-            var deleteButtonColumn = new DataGridViewButtonColumn();
-            deleteButtonColumn.Name = "DeleteButtonColumn";
-            deleteButtonColumn.Text = "Xóa";
-            deleteButtonColumn.UseColumnTextForButtonValue = true;
-            dtgTrack.Columns.Add(deleteButtonColumn);
+            DeleteMusic.Visible = true;
+            SelectTrack.Visible = false;
             using (var _db = new Music_media.khoabeo.MusicMediaDLDEntities1())
             {
                var tracks = _db.Tracks.ToList();
@@ -618,7 +696,165 @@ namespace Music_media
 
         }
 
-       
+    
+
+ 
+
+        private void panelRounded9_Click(object sender, EventArgs e)
+        {
+            menuControl.SelectedTabPage = tabCreatPlaylist;
+        }
+
+        private void btnPopCreatePlaylist_Click(object sender, EventArgs e)
+        {
+            using (var _db = new Music_media.khoabeo.MusicMediaDLDEntities1())
+            {
+                Boolean kiemTraPlaylist = _db.Playlists.Any(p => p.PlaylistName.Equals(this.txtCreatPlaylist.Text));
+                if (this.txtCreatPlaylist.Text.Length > 5 && kiemTraPlaylist == false)
+                {
+
+                    khoabeo.User user = _db.Users.FirstOrDefault(u => u.UserName.Equals(txtUserName.Text));
+
+                    if (user != null)
+                    {
+
+                        khoabeo.Playlist newPlaylist = new khoabeo.Playlist()
+                        {
+                            PlaylistName = this.txtCreatPlaylist.Text,
+                            UserID = user.UserID
+                        };
+
+
+                        _db.Playlists.Add(newPlaylist);
+                        _db.SaveChanges();
+                        menuControl.SelectedTabPage = playlistsTab;
+                        MessageBox.Show("Taoj Thành Công");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Faild");
+                }
+            }
+        }
+
+        private void btnCancelCreate_Click(object sender, EventArgs e)
+        {
+            menuControl.SelectedTabPage = playlistsTab;
+        }
+
+        private void playlistsMenu_Paint(object sender, PaintEventArgs e)
+        {
+            using (var _db = new Music_media.khoabeo.MusicMediaDLDEntities1())
+            {
+                var currentUser = _db.Users.FirstOrDefault(u => u.UserName == txtUserName.Text);
+                var playlists = _db.Playlists.Where(p => p.UserID == currentUser.UserID).ToList();
+                flowPlaylist.Controls.Clear();
+                List<object> combinedList = new List<object>();
+                foreach (var playlist in playlists)
+                {
+                    var panel = new Panel();
+                    panel.BorderStyle = BorderStyle.FixedSingle;
+                    panel.Width = 200;
+                    panel.Height = 100;
+
+                    var labelPlaylistName = new Label();
+                    labelPlaylistName.Text = playlist.PlaylistName;
+                    labelPlaylistName.AutoSize = true;
+                    labelPlaylistName.Font = new Font("Arial", 12, FontStyle.Bold);
+                    labelPlaylistName.Location = new Point(10, 10);
+                    panel.Controls.Add(labelPlaylistName);
+
+                    var pictureBox = new PictureBox();
+                    pictureBox.Image = Image.FromFile(@"C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\Resources\musicIco.png");
+                    pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pictureBox.Location = new Point(10, 50);
+                    pictureBox.Width = 50;
+                    pictureBox.Height = 50;
+                    panel.Controls.Add(pictureBox);
+                    panel.MouseClick += (s, eventArgs) =>
+                    {
+                        menuControl.SelectedTabPage = tabPlaylistOfUser;
+                        LoadTracksForUserAndPlaylist(dtgvPlaylist, playlist.PlaylistID);
+                    };
+
+                    flowPlaylist.Controls.Add(panel);
+                }
+            }
+        }
+
+
+        private void LoadTracksForUserAndPlaylist(DataGridView dtgvTrackPlaylist, int playlistID)
+        {
+            using (var _db = new Music_media.khoabeo.MusicMediaDLDEntities1())
+            {
+                // Lấy danh sách các Track_Playlist có PlaylistID tương ứng
+                var trackPlaylist = _db.Track_Playlist
+                    .Where(tp => tp.PlaylistID == playlistID)
+                    .ToList();
+
+                // Lấy danh sách các Track thuộc Playlist có PlaylistID tương ứng
+                var tracks = trackPlaylist
+                    .Select(tp => tp.Track)
+                    .ToList();
+
+                // Đặt danh sách này làm nguồn dữ liệu cho DataGridView
+                dtgvTrackPlaylist.DataSource = tracks;
+            }
+        }
+
+        private void dtgvPlaylist_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == dtgvPlaylist.Columns["DeleteOfListTrack"].Index && e.RowIndex >= 0)
+            {
+                var result = MessageBox.Show("Bạn có chắc chắn muốn xóa bài hát này không?", "Xóa bài hát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    var trackPath = dtgvPlaylist.Rows[e.RowIndex].Cells["Track_path"].Value.ToString();
+                    using (var _db = new Music_media.khoabeo.MusicMediaDLDEntities1())
+                    {
+                        var trackToRemove = _db.Tracks.FirstOrDefault(x => x.Track_path == trackPath);
+                        if (trackToRemove != null)
+                        {
+                            _db.Tracks.Remove(trackToRemove);
+                            _db.SaveChanges();
+                        }
+                        ///KHOABEO LOAD LẠI 
+                        var tracks = _db.Tracks.ToList();
+                        dtgTrack.DataSource = tracks;
+
+
+
+                    }
+
+                }
+            }
+            if (dtgvPlaylist.Columns[e.ColumnIndex].Name == "playOfListTrack")
+            {
+
+                string TrackPath = dtgvPlaylist.Rows[e.RowIndex].Cells["Track_path"].Value.ToString();
+                string TrackLength = dtgvPlaylist.Rows[e.RowIndex].Cells["TrackLength"].Value.ToString();
+                TimeSpan timeSpan = TimeSpan.FromSeconds(int.Parse(TrackLength));
+                endTime.Text = timeSpan.ToString(@"mm\:ss");
+                playBar.Maximum = Convert.ToInt32(TrackLength);
+
+
+                DevExpress.XtraEditors.PictureEdit pictureBox = imgMP;
+                DevExpress.XtraEditors.LabelControl nameLabel = nameMP;
+                DevExpress.XtraEditors.LabelControl artistLabel = artistMP;
+
+                PlayMp3(TrackPath, playBar, timer1, pictureBox, nameLabel, artistLabel);
+            }
+        }
+
+
+
+
+
+
+
+
+
         //////TẤT CẢ ĐỀU CỦA THẰNG KHANG
 
         //private void themFile(object sender, EventArgs e)

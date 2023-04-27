@@ -32,6 +32,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menu = new System.Windows.Forms.Panel();
+            this.panelRounded3 = new Music_media.PanelRounded();
+            this.pictureEdit14 = new DevExpress.XtraEditors.PictureEdit();
+            this.lbAdmin = new DevExpress.XtraEditors.LabelControl();
             this.panelAccount = new Music_media.PanelRounded();
             this.pictureEdit12 = new DevExpress.XtraEditors.PictureEdit();
             this.lbAccount = new DevExpress.XtraEditors.LabelControl();
@@ -84,10 +87,18 @@
             this.minimum = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuControl = new DevExpress.XtraTab.XtraTabControl();
-            this.tabPlaylistOfUser = new DevExpress.XtraTab.XtraTabPage();
-            this.dtgvPlaylist = new System.Windows.Forms.DataGridView();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
+            this.tabProfile = new DevExpress.XtraTab.XtraTabPage();
+            this.btnLogOut = new System.Windows.Forms.Button();
+            this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
+            this.lbAccountOverview = new DevExpress.XtraEditors.LabelControl();
+            this.lbCoinUShow = new DevExpress.XtraEditors.LabelControl();
+            this.lbCoinU = new DevExpress.XtraEditors.LabelControl();
+            this.lbSdtUShow = new DevExpress.XtraEditors.LabelControl();
+            this.lbSdtU = new DevExpress.XtraEditors.LabelControl();
+            this.lbBirthdayUShow = new DevExpress.XtraEditors.LabelControl();
+            this.lbBirthdayU = new DevExpress.XtraEditors.LabelControl();
+            this.lbNameUserShow = new DevExpress.XtraEditors.LabelControl();
+            this.lbNameUser = new DevExpress.XtraEditors.LabelControl();
             this.homeTab = new DevExpress.XtraTab.XtraTabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -167,12 +178,18 @@
             this.btnPopCreatePlaylist = new System.Windows.Forms.Button();
             this.txtCreatPlaylist = new System.Windows.Forms.TextBox();
             this.lbNameCreatPlaylist = new DevExpress.XtraEditors.LabelControl();
+            this.tabPlaylistOfUser = new DevExpress.XtraTab.XtraTabPage();
+            this.dtgvPlaylist = new System.Windows.Forms.DataGridView();
+            this.playOfListTrack = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.DeleteOfListTrack = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             this.fullSreen = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.playOfListTrack = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.DeleteOfListTrack = new System.Windows.Forms.DataGridViewButtonColumn();
             this.menu.SuspendLayout();
+            this.panelRounded3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit14.Properties)).BeginInit();
             this.panelAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ico.Properties)).BeginInit();
@@ -210,9 +227,7 @@
             this.trackArea.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuControl)).BeginInit();
             this.menuControl.SuspendLayout();
-            this.tabPlaylistOfUser.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvPlaylist)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tabProfile.SuspendLayout();
             this.homeTab.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -236,6 +251,9 @@
             this.tabLogin.SuspendLayout();
             this.tabReg.SuspendLayout();
             this.tabCreatPlaylist.SuspendLayout();
+            this.tabPlaylistOfUser.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvPlaylist)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // menu
@@ -243,6 +261,7 @@
             this.menu.AutoScroll = true;
             this.menu.AutoSize = true;
             this.menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.menu.Controls.Add(this.panelRounded3);
             this.menu.Controls.Add(this.panelAccount);
             this.menu.Controls.Add(this.ico);
             this.menu.Controls.Add(this.panel2);
@@ -260,6 +279,53 @@
             this.menu.Size = new System.Drawing.Size(431, 642);
             this.menu.TabIndex = 0;
             // 
+            // panelRounded3
+            // 
+            this.panelRounded3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.panelRounded3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.panelRounded3.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.panelRounded3.BorderRadius = 5;
+            this.panelRounded3.BorderSize = 2;
+            this.panelRounded3.Controls.Add(this.pictureEdit14);
+            this.panelRounded3.Controls.Add(this.lbAdmin);
+            this.panelRounded3.Location = new System.Drawing.Point(7, 399);
+            this.panelRounded3.Margin = new System.Windows.Forms.Padding(0);
+            this.panelRounded3.Name = "panelRounded3";
+            this.panelRounded3.Size = new System.Drawing.Size(413, 44);
+            this.panelRounded3.TabIndex = 26;
+            this.panelRounded3.UnderlinedStyle = false;
+            // 
+            // pictureEdit14
+            // 
+            this.pictureEdit14.EditValue = global::Music_media.Properties.Resources._385755_user_male_icon;
+            this.pictureEdit14.Enabled = false;
+            this.pictureEdit14.Location = new System.Drawing.Point(16, 9);
+            this.pictureEdit14.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureEdit14.Name = "pictureEdit14";
+            this.pictureEdit14.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit14.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.pictureEdit14.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit14.Properties.Appearance.Options.UseForeColor = true;
+            this.pictureEdit14.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit14.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit14.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.pictureEdit14.Size = new System.Drawing.Size(33, 27);
+            this.pictureEdit14.TabIndex = 11;
+            // 
+            // lbAdmin
+            // 
+            this.lbAdmin.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbAdmin.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbAdmin.Appearance.Options.UseFont = true;
+            this.lbAdmin.Appearance.Options.UseForeColor = true;
+            this.lbAdmin.Enabled = false;
+            this.lbAdmin.Location = new System.Drawing.Point(58, 12);
+            this.lbAdmin.Margin = new System.Windows.Forms.Padding(4);
+            this.lbAdmin.Name = "lbAdmin";
+            this.lbAdmin.Size = new System.Drawing.Size(61, 24);
+            this.lbAdmin.TabIndex = 3;
+            this.lbAdmin.Text = "ADMIN";
+            // 
             // panelAccount
             // 
             this.panelAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
@@ -276,9 +342,11 @@
             this.panelAccount.TabIndex = 25;
             this.panelAccount.UnderlinedStyle = false;
             this.panelAccount.Click += new System.EventHandler(this.panelAccount_Click);
+            this.panelAccount.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAccount_Paint);
             // 
             // pictureEdit12
             // 
+            this.pictureEdit12.EditValue = global::Music_media.Properties.Resources._285655_user_icon;
             this.pictureEdit12.Enabled = false;
             this.pictureEdit12.Location = new System.Drawing.Point(16, 9);
             this.pictureEdit12.Margin = new System.Windows.Forms.Padding(0);
@@ -292,6 +360,7 @@
             this.pictureEdit12.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.pictureEdit12.Size = new System.Drawing.Size(33, 27);
             this.pictureEdit12.TabIndex = 11;
+            this.pictureEdit12.BackgroundImageChanged += new System.EventHandler(this.exit_MouseLeave);
             // 
             // lbAccount
             // 
@@ -1150,7 +1219,7 @@
             this.menuControl.LookAndFeel.UseDefaultLookAndFeel = false;
             this.menuControl.Margin = new System.Windows.Forms.Padding(4);
             this.menuControl.Name = "menuControl";
-            this.menuControl.SelectedTabPage = this.tabPlaylistOfUser;
+            this.menuControl.SelectedTabPage = this.tabProfile;
             this.menuControl.ShowTabHeader = DevExpress.Utils.DefaultBoolean.False;
             this.menuControl.Size = new System.Drawing.Size(987, 601);
             this.menuControl.TabIndex = 15;
@@ -1164,72 +1233,161 @@
             this.tabLogin,
             this.tabReg,
             this.tabCreatPlaylist,
-            this.tabPlaylistOfUser});
+            this.tabPlaylistOfUser,
+            this.tabProfile});
             // 
-            // tabPlaylistOfUser
+            // tabProfile
             // 
-            this.tabPlaylistOfUser.Controls.Add(this.dtgvPlaylist);
-            this.tabPlaylistOfUser.Controls.Add(this.pictureBox2);
-            this.tabPlaylistOfUser.Controls.Add(this.labelControl19);
-            this.tabPlaylistOfUser.Name = "tabPlaylistOfUser";
-            this.tabPlaylistOfUser.Size = new System.Drawing.Size(985, 589);
-            this.tabPlaylistOfUser.Text = "xtraTabPage1";
+            this.tabProfile.Controls.Add(this.btnLogOut);
+            this.tabProfile.Controls.Add(this.labelControl20);
+            this.tabProfile.Controls.Add(this.lbAccountOverview);
+            this.tabProfile.Controls.Add(this.lbCoinUShow);
+            this.tabProfile.Controls.Add(this.lbCoinU);
+            this.tabProfile.Controls.Add(this.lbSdtUShow);
+            this.tabProfile.Controls.Add(this.lbSdtU);
+            this.tabProfile.Controls.Add(this.lbBirthdayUShow);
+            this.tabProfile.Controls.Add(this.lbBirthdayU);
+            this.tabProfile.Controls.Add(this.lbNameUserShow);
+            this.tabProfile.Controls.Add(this.lbNameUser);
+            this.tabProfile.Name = "tabProfile";
+            this.tabProfile.Size = new System.Drawing.Size(985, 589);
+            this.tabProfile.Text = "xtraTabPage1";
+            this.tabProfile.Paint += new System.Windows.Forms.PaintEventHandler(this.tabProfile_Paint);
             // 
-            // dtgvPlaylist
+            // btnLogOut
             // 
-            this.dtgvPlaylist.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dtgvPlaylist.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dtgvPlaylist.BackgroundColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 7.8F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvPlaylist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvPlaylist.ColumnHeadersHeight = 29;
-            this.dtgvPlaylist.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.playOfListTrack,
-            this.DeleteOfListTrack});
-            this.dtgvPlaylist.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dtgvPlaylist.Location = new System.Drawing.Point(9, 178);
-            this.dtgvPlaylist.Name = "dtgvPlaylist";
-            this.dtgvPlaylist.RowHeadersWidth = 51;
-            this.dtgvPlaylist.RowTemplate.Height = 24;
-            this.dtgvPlaylist.Size = new System.Drawing.Size(967, 327);
-            this.dtgvPlaylist.TabIndex = 29;
-            this.dtgvPlaylist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvPlaylist_CellContentClick);
+            this.btnLogOut.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btnLogOut.Location = new System.Drawing.Point(654, 503);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(161, 42);
+            this.btnLogOut.TabIndex = 10;
+            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
-            // pictureBox2
+            // labelControl20
             // 
-            this.pictureBox2.Enabled = false;
-            this.pictureBox2.Image = global::Music_media.Properties.Resources.speaker;
-            this.pictureBox2.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(91, 67);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 23;
-            this.pictureBox2.TabStop = false;
+            this.labelControl20.Appearance.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl20.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl20.Appearance.Options.UseFont = true;
+            this.labelControl20.Appearance.Options.UseForeColor = true;
+            this.labelControl20.Location = new System.Drawing.Point(127, 76);
+            this.labelControl20.Name = "labelControl20";
+            this.labelControl20.Size = new System.Drawing.Size(89, 33);
+            this.labelControl20.TabIndex = 9;
+            this.labelControl20.Text = "Profile";
             // 
-            // labelControl19
+            // lbAccountOverview
             // 
-            this.labelControl19.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.labelControl19.Appearance.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl19.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.labelControl19.Appearance.Options.UseBackColor = true;
-            this.labelControl19.Appearance.Options.UseFont = true;
-            this.labelControl19.Appearance.Options.UseForeColor = true;
-            this.labelControl19.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
-            this.labelControl19.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl19.Enabled = false;
-            this.labelControl19.Location = new System.Drawing.Point(99, 4);
-            this.labelControl19.Margin = new System.Windows.Forms.Padding(0);
-            this.labelControl19.Name = "labelControl19";
-            this.labelControl19.Size = new System.Drawing.Size(193, 56);
-            this.labelControl19.TabIndex = 22;
-            this.labelControl19.Text = "Playlists";
+            this.lbAccountOverview.Appearance.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAccountOverview.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.lbAccountOverview.Appearance.Options.UseFont = true;
+            this.lbAccountOverview.Appearance.Options.UseForeColor = true;
+            this.lbAccountOverview.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
+            this.lbAccountOverview.LineLocation = DevExpress.XtraEditors.LineLocation.Top;
+            this.lbAccountOverview.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Horizontal;
+            this.lbAccountOverview.Location = new System.Drawing.Point(299, 16);
+            this.lbAccountOverview.Name = "lbAccountOverview";
+            this.lbAccountOverview.Size = new System.Drawing.Size(294, 40);
+            this.lbAccountOverview.TabIndex = 8;
+            this.lbAccountOverview.Text = "Account overview";
+            // 
+            // lbCoinUShow
+            // 
+            this.lbCoinUShow.Appearance.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCoinUShow.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.lbCoinUShow.Appearance.Options.UseFont = true;
+            this.lbCoinUShow.Appearance.Options.UseForeColor = true;
+            this.lbCoinUShow.Location = new System.Drawing.Point(513, 439);
+            this.lbCoinUShow.Name = "lbCoinUShow";
+            this.lbCoinUShow.Size = new System.Drawing.Size(171, 33);
+            this.lbCoinUShow.TabIndex = 7;
+            this.lbCoinUShow.Text = "labelControl23";
+            // 
+            // lbCoinU
+            // 
+            this.lbCoinU.Appearance.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCoinU.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.lbCoinU.Appearance.Options.UseFont = true;
+            this.lbCoinU.Appearance.Options.UseForeColor = true;
+            this.lbCoinU.Location = new System.Drawing.Point(127, 439);
+            this.lbCoinU.Name = "lbCoinU";
+            this.lbCoinU.Size = new System.Drawing.Size(52, 33);
+            this.lbCoinU.TabIndex = 6;
+            this.lbCoinU.Text = "Coin";
+            // 
+            // lbSdtUShow
+            // 
+            this.lbSdtUShow.Appearance.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSdtUShow.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.lbSdtUShow.Appearance.Options.UseFont = true;
+            this.lbSdtUShow.Appearance.Options.UseForeColor = true;
+            this.lbSdtUShow.Location = new System.Drawing.Point(513, 349);
+            this.lbSdtUShow.Name = "lbSdtUShow";
+            this.lbSdtUShow.Size = new System.Drawing.Size(171, 33);
+            this.lbSdtUShow.TabIndex = 5;
+            this.lbSdtUShow.Text = "labelControl23";
+            // 
+            // lbSdtU
+            // 
+            this.lbSdtU.Appearance.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSdtU.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.lbSdtU.Appearance.Options.UseFont = true;
+            this.lbSdtU.Appearance.Options.UseForeColor = true;
+            this.lbSdtU.Location = new System.Drawing.Point(127, 349);
+            this.lbSdtU.Name = "lbSdtU";
+            this.lbSdtU.Size = new System.Drawing.Size(49, 33);
+            this.lbSdtU.TabIndex = 4;
+            this.lbSdtU.Text = "SDT";
+            // 
+            // lbBirthdayUShow
+            // 
+            this.lbBirthdayUShow.Appearance.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBirthdayUShow.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.lbBirthdayUShow.Appearance.Options.UseFont = true;
+            this.lbBirthdayUShow.Appearance.Options.UseForeColor = true;
+            this.lbBirthdayUShow.Location = new System.Drawing.Point(513, 259);
+            this.lbBirthdayUShow.Name = "lbBirthdayUShow";
+            this.lbBirthdayUShow.Size = new System.Drawing.Size(171, 33);
+            this.lbBirthdayUShow.TabIndex = 3;
+            this.lbBirthdayUShow.Text = "labelControl23";
+            // 
+            // lbBirthdayU
+            // 
+            this.lbBirthdayU.Appearance.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBirthdayU.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.lbBirthdayU.Appearance.Options.UseFont = true;
+            this.lbBirthdayU.Appearance.Options.UseForeColor = true;
+            this.lbBirthdayU.Location = new System.Drawing.Point(127, 259);
+            this.lbBirthdayU.Name = "lbBirthdayU";
+            this.lbBirthdayU.Size = new System.Drawing.Size(116, 33);
+            this.lbBirthdayU.TabIndex = 2;
+            this.lbBirthdayU.Text = "Ngày sinh";
+            // 
+            // lbNameUserShow
+            // 
+            this.lbNameUserShow.Appearance.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNameUserShow.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.lbNameUserShow.Appearance.Options.UseFont = true;
+            this.lbNameUserShow.Appearance.Options.UseForeColor = true;
+            this.lbNameUserShow.Location = new System.Drawing.Point(513, 169);
+            this.lbNameUserShow.Name = "lbNameUserShow";
+            this.lbNameUserShow.Size = new System.Drawing.Size(171, 33);
+            this.lbNameUserShow.TabIndex = 1;
+            this.lbNameUserShow.Text = "labelControl23";
+            // 
+            // lbNameUser
+            // 
+            this.lbNameUser.Appearance.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNameUser.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.lbNameUser.Appearance.Options.UseFont = true;
+            this.lbNameUser.Appearance.Options.UseForeColor = true;
+            this.lbNameUser.Location = new System.Drawing.Point(127, 169);
+            this.lbNameUser.Name = "lbNameUser";
+            this.lbNameUser.Size = new System.Drawing.Size(123, 33);
+            this.lbNameUser.TabIndex = 0;
+            this.lbNameUser.Text = "UserName";
             // 
             // homeTab
             // 
@@ -1361,14 +1519,14 @@
             this.dtgTrack.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dtgTrack.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dtgTrack.BackgroundColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 7.8F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgTrack.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgTrack.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgTrack.ColumnHeadersHeight = 29;
             this.dtgTrack.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.SelectTrack,
@@ -1896,6 +2054,8 @@
             // 
             // tabLogin
             // 
+            this.tabLogin.Appearance.PageClient.BackColor = System.Drawing.Color.Gray;
+            this.tabLogin.Appearance.PageClient.Options.UseBackColor = true;
             this.tabLogin.Controls.Add(this.btnSignup);
             this.tabLogin.Controls.Add(this.labelControl22);
             this.tabLogin.Controls.Add(this.btnLogin);
@@ -2256,6 +2416,93 @@
             this.lbNameCreatPlaylist.TabIndex = 9;
             this.lbNameCreatPlaylist.Text = "Đặt tên cho playlist của bạn #";
             // 
+            // tabPlaylistOfUser
+            // 
+            this.tabPlaylistOfUser.Controls.Add(this.dtgvPlaylist);
+            this.tabPlaylistOfUser.Controls.Add(this.pictureBox2);
+            this.tabPlaylistOfUser.Controls.Add(this.labelControl19);
+            this.tabPlaylistOfUser.Name = "tabPlaylistOfUser";
+            this.tabPlaylistOfUser.Size = new System.Drawing.Size(985, 589);
+            this.tabPlaylistOfUser.Text = "xtraTabPage1";
+            // 
+            // dtgvPlaylist
+            // 
+            this.dtgvPlaylist.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dtgvPlaylist.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dtgvPlaylist.BackgroundColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvPlaylist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgvPlaylist.ColumnHeadersHeight = 29;
+            this.dtgvPlaylist.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.playOfListTrack,
+            this.DeleteOfListTrack});
+            this.dtgvPlaylist.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dtgvPlaylist.Location = new System.Drawing.Point(9, 178);
+            this.dtgvPlaylist.Name = "dtgvPlaylist";
+            this.dtgvPlaylist.RowHeadersWidth = 51;
+            this.dtgvPlaylist.RowTemplate.Height = 24;
+            this.dtgvPlaylist.Size = new System.Drawing.Size(967, 327);
+            this.dtgvPlaylist.TabIndex = 29;
+            this.dtgvPlaylist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvPlaylist_CellContentClick);
+            // 
+            // playOfListTrack
+            // 
+            this.playOfListTrack.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.playOfListTrack.HeaderText = "Play";
+            this.playOfListTrack.MinimumWidth = 6;
+            this.playOfListTrack.Name = "playOfListTrack";
+            this.playOfListTrack.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.playOfListTrack.Text = "Play me!!!";
+            this.playOfListTrack.UseColumnTextForButtonValue = true;
+            this.playOfListTrack.Width = 36;
+            // 
+            // DeleteOfListTrack
+            // 
+            this.DeleteOfListTrack.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.DeleteOfListTrack.HeaderText = "Delete";
+            this.DeleteOfListTrack.MinimumWidth = 6;
+            this.DeleteOfListTrack.Name = "DeleteOfListTrack";
+            this.DeleteOfListTrack.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.DeleteOfListTrack.Text = "Del Me =((";
+            this.DeleteOfListTrack.UseColumnTextForButtonValue = true;
+            this.DeleteOfListTrack.Width = 49;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Enabled = false;
+            this.pictureBox2.Image = global::Music_media.Properties.Resources.speaker;
+            this.pictureBox2.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(91, 67);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 23;
+            this.pictureBox2.TabStop = false;
+            // 
+            // labelControl19
+            // 
+            this.labelControl19.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl19.Appearance.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl19.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.labelControl19.Appearance.Options.UseBackColor = true;
+            this.labelControl19.Appearance.Options.UseFont = true;
+            this.labelControl19.Appearance.Options.UseForeColor = true;
+            this.labelControl19.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
+            this.labelControl19.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl19.Enabled = false;
+            this.labelControl19.Location = new System.Drawing.Point(99, 4);
+            this.labelControl19.Margin = new System.Windows.Forms.Padding(0);
+            this.labelControl19.Name = "labelControl19";
+            this.labelControl19.Size = new System.Drawing.Size(193, 56);
+            this.labelControl19.TabIndex = 22;
+            this.labelControl19.Text = "Playlists";
+            // 
             // fullSreen
             // 
             this.fullSreen.FlatAppearance.BorderSize = 0;
@@ -2301,28 +2548,6 @@
             // 
             this.timer1.Enabled = true;
             // 
-            // playOfListTrack
-            // 
-            this.playOfListTrack.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.playOfListTrack.HeaderText = "Play";
-            this.playOfListTrack.MinimumWidth = 6;
-            this.playOfListTrack.Name = "playOfListTrack";
-            this.playOfListTrack.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.playOfListTrack.Text = "Play me!!!";
-            this.playOfListTrack.UseColumnTextForButtonValue = true;
-            this.playOfListTrack.Width = 36;
-            // 
-            // DeleteOfListTrack
-            // 
-            this.DeleteOfListTrack.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.DeleteOfListTrack.HeaderText = "Delete";
-            this.DeleteOfListTrack.MinimumWidth = 6;
-            this.DeleteOfListTrack.Name = "DeleteOfListTrack";
-            this.DeleteOfListTrack.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.DeleteOfListTrack.Text = "Del Me =((";
-            this.DeleteOfListTrack.UseColumnTextForButtonValue = true;
-            this.DeleteOfListTrack.Width = 49;
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2343,6 +2568,9 @@
             this.Load += new System.EventHandler(this.Home_Load);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
+            this.panelRounded3.ResumeLayout(false);
+            this.panelRounded3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit14.Properties)).EndInit();
             this.panelAccount.ResumeLayout(false);
             this.panelAccount.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).EndInit();
@@ -2389,10 +2617,8 @@
             this.trackArea.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.menuControl)).EndInit();
             this.menuControl.ResumeLayout(false);
-            this.tabPlaylistOfUser.ResumeLayout(false);
-            this.tabPlaylistOfUser.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvPlaylist)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tabProfile.ResumeLayout(false);
+            this.tabProfile.PerformLayout();
             this.homeTab.ResumeLayout(false);
             this.homeTab.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -2427,6 +2653,10 @@
             this.tabReg.PerformLayout();
             this.tabCreatPlaylist.ResumeLayout(false);
             this.tabCreatPlaylist.PerformLayout();
+            this.tabPlaylistOfUser.ResumeLayout(false);
+            this.tabPlaylistOfUser.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvPlaylist)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2574,5 +2804,20 @@
         private System.Windows.Forms.DataGridView dtgvPlaylist;
         private System.Windows.Forms.DataGridViewButtonColumn playOfListTrack;
         private System.Windows.Forms.DataGridViewButtonColumn DeleteOfListTrack;
+        private PanelRounded panelRounded3;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit14;
+        private DevExpress.XtraEditors.LabelControl lbAdmin;
+        private DevExpress.XtraTab.XtraTabPage tabProfile;
+        private System.Windows.Forms.Button btnLogOut;
+        private DevExpress.XtraEditors.LabelControl labelControl20;
+        private DevExpress.XtraEditors.LabelControl lbAccountOverview;
+        private DevExpress.XtraEditors.LabelControl lbCoinUShow;
+        private DevExpress.XtraEditors.LabelControl lbCoinU;
+        private DevExpress.XtraEditors.LabelControl lbSdtUShow;
+        private DevExpress.XtraEditors.LabelControl lbSdtU;
+        private DevExpress.XtraEditors.LabelControl lbBirthdayUShow;
+        private DevExpress.XtraEditors.LabelControl lbBirthdayU;
+        private DevExpress.XtraEditors.LabelControl lbNameUserShow;
+        private DevExpress.XtraEditors.LabelControl lbNameUser;
     }
 }

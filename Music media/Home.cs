@@ -38,6 +38,7 @@ namespace Music_media
         Control choiced = new Control(); //Save before of choice 
         List<XtraTabPage> listTabPages = new List<XtraTabPage>();
         public static MediaPlayer mediaPlayer = new MediaPlayer();
+        Boolean checkLogin = false;
         public Home()
         {
             InitializeComponent();
@@ -55,6 +56,7 @@ namespace Music_media
             listTabPages.Add(tabReg);
             listTabPages.Add(tabCreatPlaylist);
             listTabPages.Add(tabPlaylistOfUser);
+            listTabPages.Add(tabProfile);
             listTabPages.Add(noneTab);
             menuControl.SelectedTabPage = homeTab;
 
@@ -299,8 +301,15 @@ namespace Music_media
 
         private void panelAccount_Click(object sender, EventArgs e)
         {
-            // Chuyển đổi sang trang tài khoản (tabAccount)
-            menuControl.SelectedTabPage = tabLogin;
+            if (!checkLogin)
+            {
+                menuControl.SelectedTabPage = tabLogin;
+            }
+            else
+            {
+                menuControl.SelectedTabPage = tabProfile;
+
+            }
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -318,6 +327,7 @@ namespace Music_media
                 if (checkUsername && checkPass)
                 {
                     MessageBox.Show("Login success");
+                    checkLogin= true;
                     menuControl.SelectedTabPage = playlistsTab;
                     playlistsMenu.Visible= true;
                 }
@@ -546,23 +556,36 @@ namespace Music_media
 
                         menuItem.Click += (s, a) =>
                         {
-                            var selectedTrack = dtgTrack.Rows[e.RowIndex].DataBoundItem as Track;
+
 
                             using (var _dbMenu = new Music_media.khoabeo.MusicMediaDLDEntities1())
                             {
                                 var dbPlaylist = _dbMenu.Playlists.FirstOrDefault(p => p.PlaylistName == playlist.PlaylistName);
 
-                                var trackPlaylist = new Track_Playlist
-                                {
-                                    TrackID = selectedTrack.TrackID,
-                                    PlaylistID = dbPlaylist.PlaylistID
-                                };
-                                _dbMenu.Track_Playlist.Add(trackPlaylist);
+                                var selectedTrack = dtgTrack.Rows[e.RowIndex].DataBoundItem as Track;
 
-                                _dbMenu.SaveChanges();
+                                // Check if the Track_Playlist object already exists in the database
+                                var exists = _dbMenu.Track_Playlist.Any(tp => tp.TrackID == selectedTrack.TrackID && tp.PlaylistID == dbPlaylist.PlaylistID);
+
+                                if (!exists)
+                                {
+                                    var trackPlaylist = new Track_Playlist
+                                    {
+                                        TrackID = selectedTrack.TrackID,
+                                        PlaylistID = dbPlaylist.PlaylistID
+                                    };
+                                    _dbMenu.Track_Playlist.Add(trackPlaylist);
+                                    _dbMenu.SaveChanges();
+
+                                    MessageBox.Show($"Bài hát '{selectedTrack.TrackName}' đã được thêm vào playlist '{playlist.PlaylistName}' thành công!");
+                                }
+                                else
+                                {
+                                    MessageBox.Show($"Bài hát '{selectedTrack.TrackName}' đã tồn tại trong playlist '{playlist.PlaylistName}'!");
+                                }
                             }
 
-                            MessageBox.Show($"Bài hát '{selectedTrack.TrackName}' đã được thêm vào playlist '{playlist.PlaylistName}' thành công!");
+
                         };
 
                         menu.Items.Add(menuItem);
@@ -829,7 +852,8 @@ namespace Music_media
 
                 }
             }
-            if (dtgvPlaylist.Columns[e.ColumnIndex].Name == "playOfListTrack")
+            if (dtgvPlaylist.Columns[e.ColumnIndex].Name == "playOfListTrack" +
+                "")
             {
 
                 string TrackPath = dtgvPlaylist.Rows[e.RowIndex].Cells["Track_path"].Value.ToString();
@@ -845,6 +869,40 @@ namespace Music_media
 
                 PlayMp3(TrackPath, playBar, timer1, pictureBox, nameLabel, artistLabel);
             }
+        }
+
+        private void panelAccount_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tabProfile_Paint(object sender, PaintEventArgs e)
+        {
+            if (checkLogin)
+            {
+                using (var _db = new Music_media.khoabeo.MusicMediaDLDEntities1())
+                {
+                    var user = _db.Users.FirstOrDefault(u => u.UserName == txtUserName.Text);
+                    if (user != null)
+                    {
+
+                        lbNameUserShow.Text = user.ho + " " + user.Ten;
+
+                        lbBirthdayUShow.Text = user.ngaySinh.ToString();
+                        lbSdtUShow.Text = user.Sdt;
+                        lbCoinUShow.Text = user.Coin.ToString();
+                    }
+                }
+            }
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            checkLogin = false;
+            txtUserName.Text = "";
+            txtUserPass.Text = "";
+            MessageBox.Show("lOG OUT thành công !!!!");
+            menuControl.SelectedTabPage = tabLogin;
         }
 
 

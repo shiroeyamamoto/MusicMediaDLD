@@ -1219,7 +1219,7 @@
             this.menuControl.LookAndFeel.UseDefaultLookAndFeel = false;
             this.menuControl.Margin = new System.Windows.Forms.Padding(4);
             this.menuControl.Name = "menuControl";
-            this.menuControl.SelectedTabPage = this.tabProfile;
+            this.menuControl.SelectedTabPage = this.playlistsTab;
             this.menuControl.ShowTabHeader = DevExpress.Utils.DefaultBoolean.False;
             this.menuControl.Size = new System.Drawing.Size(987, 601);
             this.menuControl.TabIndex = 15;

@@ -571,6 +571,7 @@ namespace Music_media
                                 {
                                     var trackPlaylist = new Track_Playlist
                                     {
+                                        ReleaseDate = DateTime.Now,
                                         TrackID = selectedTrack.TrackID,
                                         PlaylistID = dbPlaylist.PlaylistID
                                     };
@@ -811,20 +812,15 @@ namespace Music_media
         {
             using (var _db = new Music_media.khoabeo.MusicMediaDLDEntities1())
             {
-                // Lấy danh sách các Track_Playlist có PlaylistID tương ứng
-                var trackPlaylist = _db.Track_Playlist
+                var tracks = _db.Track_Playlist
                     .Where(tp => tp.PlaylistID == playlistID)
-                    .ToList();
-
-                // Lấy danh sách các Track thuộc Playlist có PlaylistID tương ứng
-                var tracks = trackPlaylist
                     .Select(tp => tp.Track)
                     .ToList();
 
-                // Đặt danh sách này làm nguồn dữ liệu cho DataGridView
                 dtgvTrackPlaylist.DataSource = tracks;
             }
         }
+
 
         private void dtgvPlaylist_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

@@ -536,3 +536,4 @@ C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\TagLibShar
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\TagLibSharp.xml
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DAL_MusicMedia.pdb
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\bin\Debug\DAL_MusicMedia.exe.config
+C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\Music media\obj\Debug\Music_media.Home.resources

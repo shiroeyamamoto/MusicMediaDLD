@@ -54,17 +54,9 @@ namespace Music_media
             listTabPages.Add(noneTab);
             menuControl.SelectedTabPage = homeTab;
 
-            /*var file = TagLib.File.Create(@"C:\Users\ACER\Music\Akon - Lonely.mp3");
-            TimeSpan duration = file.Properties.Duration;
 
-            foreach (string page in file.Tag.Genres)
-            {
-                MessageBox.Show(page);
-            }*/
-
-
-            // Tạo nút
-
+            // Tạo control list track trên tab queue
+            BUS_ListQueue.addListQueue(flowLayoutPanel3);
 
         }
         //Form function
@@ -511,7 +503,6 @@ namespace Music_media
                 TimeSpan timeSpan = TimeSpan.FromSeconds(int.Parse(TrackLength));
                 endTime.Text = timeSpan.ToString(@"mm\:ss");
                 playBar.Maximum = Convert.ToInt32(TrackLength);
-                PlayMp3(TrackPath, playBar, timer1);
 
             }
         }
@@ -618,18 +609,24 @@ namespace Music_media
 
         }
 
-       
+
         //////TẤT CẢ ĐỀU CỦA THẰNG KHANG
 
-        //private void themFile(object sender, EventArgs e)
-        //{
-        //    OpenFileDialog file = new OpenFileDialog();
-        //    file.Filter = "All Media Files|*.mp3;*.flac;*.m4a;";
-        //    if (file.ShowDialog() == DialogResult.OK)
-        //    {
-        //        BUS_Track.addTrack(@file.FileName, dataGridView1);
-        //    }
-        //}
+        private void themFile(object sender, EventArgs e)
+        {
+            OpenFileDialog file = new OpenFileDialog();
+            file.Filter = "All Media Files|*.mp3;*.flac;*.m4a;";
+            file.Multiselect = true;
+
+            if (file.ShowDialog() == DialogResult.OK)
+            {
+                List<string> files = new List<string>();
+                files = file.FileNames.ToList();
+                //MessageBox.Show(files[0]);
+                BUS_Track.addTrack(files, KhangDataView);
+            }
+            
+        }
     }
 }
 

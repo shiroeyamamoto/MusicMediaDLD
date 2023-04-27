@@ -75,15 +75,8 @@ C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\
 C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\TagLibSharp.dll
-C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\NAudio.dll
-C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\NAudio.Core.dll
-C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\NAudio.WinMM.dll
-C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\NAudio.Wasapi.dll
-C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\Microsoft.Win32.Registry.dll
 C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\TagLibSharp.pdb
 C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\TagLibSharp.xml
-C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\NAudio.xml
-C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\Microsoft.Win32.Registry.xml
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\TagLibSharp.dll
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\NAudio.dll
@@ -96,3 +89,20 @@ C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\TagLibS
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\TagLibSharp.xml
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\NAudio.xml
 C:\Users\anhkh\Desktop\New folder\MusicMediaDLD\BUS_MusicMedia\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\DevExpress.XtraEditors.v22.2.dll
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\DevExpress.Utils.v22.2.dll
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\DevExpress.Data.v22.2.dll
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\DevExpress.Data.Desktop.v22.2.dll
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\DevExpress.Drawing.v22.2.dll
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\DevExpress.Printing.v22.2.Core.dll
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\DevExpress.Sparkline.v22.2.Core.dll
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\DevExpress.XtraEditors.v22.2.xml
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\DevExpress.Utils.v22.2.xml
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\DevExpress.Data.v22.2.xml
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\DevExpress.Printing.v22.2.Core.xml
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\DevExpress.Sparkline.v22.2.Core.xml
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
+C:\Users\ACER\OneDrive\Máy tính\Main Music Media\MusicMediaDLD\BUS_MusicMedia\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
